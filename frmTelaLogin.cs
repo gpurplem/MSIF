@@ -1,8 +1,8 @@
 namespace MSIF
 {
-    public partial class Form1 : Form
+    public partial class frmTelaLogin : Form
     {
-        public Form1()
+        public frmTelaLogin()
         {
             InitializeComponent();
         }
