@@ -28,12 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            btnCadastrar = new Button();
+            btnEntrar = new Button();
+            SuspendLayout();
+            // 
+            // btnCadastrar
+            // 
+            btnCadastrar.Location = new Point(12, 12);
+            btnCadastrar.Name = "btnCadastrar";
+            btnCadastrar.Size = new Size(112, 34);
+            btnCadastrar.TabIndex = 0;
+            btnCadastrar.Text = "Cadastrar";
+            btnCadastrar.UseVisualStyleBackColor = true;
+            // 
+            // btnEntrar
+            // 
+            btnEntrar.Location = new Point(12, 52);
+            btnEntrar.Name = "btnEntrar";
+            btnEntrar.Size = new Size(112, 34);
+            btnEntrar.TabIndex = 1;
+            btnEntrar.Text = "Entrar";
+            btnEntrar.UseVisualStyleBackColor = true;
+            // 
+            // frmTelaLogin
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Text = "Form1";
+            Controls.Add(btnEntrar);
+            Controls.Add(btnCadastrar);
+            Name = "frmTelaLogin";
+            Text = "MSIF - Login";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnCadastrar;
+        private Button btnEntrar;
     }
 }
