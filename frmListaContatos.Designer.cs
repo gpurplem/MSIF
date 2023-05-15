@@ -32,12 +32,16 @@
             btnEnviarMsg = new Button();
             btnDeletarContato = new Button();
             btnVisualizarPerfil = new Button();
+            FotoListaContatos = new DataGridViewTextBoxColumn();
+            ApelidoListaContatos = new DataGridViewTextBoxColumn();
+            StatusListaContatos = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { FotoListaContatos, ApelidoListaContatos, StatusListaContatos });
             dataGridView1.Location = new Point(12, 12);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
@@ -72,6 +76,27 @@
             btnVisualizarPerfil.Text = "Visualizar perfil";
             btnVisualizarPerfil.UseVisualStyleBackColor = true;
             // 
+            // FotoListaContatos
+            // 
+            FotoListaContatos.HeaderText = "Foto";
+            FotoListaContatos.MinimumWidth = 8;
+            FotoListaContatos.Name = "FotoListaContatos";
+            FotoListaContatos.Width = 150;
+            // 
+            // ApelidoListaContatos
+            // 
+            ApelidoListaContatos.HeaderText = "Apelido";
+            ApelidoListaContatos.MinimumWidth = 8;
+            ApelidoListaContatos.Name = "ApelidoListaContatos";
+            ApelidoListaContatos.Width = 150;
+            // 
+            // StatusListaContatos
+            // 
+            StatusListaContatos.HeaderText = "Status";
+            StatusListaContatos.MinimumWidth = 8;
+            StatusListaContatos.Name = "StatusListaContatos";
+            StatusListaContatos.Width = 150;
+            // 
             // frmListaContatos
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -93,5 +118,8 @@
         private Button btnEnviarMsg;
         private Button btnDeletarContato;
         private Button btnVisualizarPerfil;
+        private DataGridViewTextBoxColumn FotoListaContatos;
+        private DataGridViewTextBoxColumn ApelidoListaContatos;
+        private DataGridViewTextBoxColumn StatusListaContatos;
     }
 }
