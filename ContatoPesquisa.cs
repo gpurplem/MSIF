@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MSIF
 {
-    public partial class frmListaContatos : Form
+    public partial class ContatoPesquisa : UserControl
     {
-        public frmListaContatos()
+        public ContatoPesquisa()
         {
             InitializeComponent();
         }

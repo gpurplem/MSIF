@@ -40,12 +40,14 @@
             button1 = new Button();
             fileDialog = new OpenFileDialog();
             btnSelecionarImagem = new Button();
+            lblNome = new Label();
+            txtNomeCompleto = new TextBox();
             SuspendLayout();
             // 
             // lblApelido
             // 
             lblApelido.AutoSize = true;
-            lblApelido.Location = new Point(56, 13);
+            lblApelido.Location = new Point(61, 48);
             lblApelido.Name = "lblApelido";
             lblApelido.Size = new Size(74, 25);
             lblApelido.TabIndex = 0;
@@ -54,7 +56,7 @@
             // lblEmail
             // 
             lblEmail.AutoSize = true;
-            lblEmail.Location = new Point(69, 50);
+            lblEmail.Location = new Point(74, 85);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(61, 25);
             lblEmail.TabIndex = 1;
@@ -64,7 +66,7 @@
             // lblSenha1
             // 
             lblSenha1.AutoSize = true;
-            lblSenha1.Location = new Point(70, 87);
+            lblSenha1.Location = new Point(75, 122);
             lblSenha1.Name = "lblSenha1";
             lblSenha1.Size = new Size(60, 25);
             lblSenha1.TabIndex = 2;
@@ -73,7 +75,7 @@
             // lblSenha2
             // 
             lblSenha2.AutoSize = true;
-            lblSenha2.Location = new Point(12, 130);
+            lblSenha2.Location = new Point(17, 165);
             lblSenha2.Name = "lblSenha2";
             lblSenha2.Size = new Size(118, 25);
             lblSenha2.TabIndex = 3;
@@ -82,7 +84,7 @@
             // lblImagemPerfil
             // 
             lblImagemPerfil.AutoSize = true;
-            lblImagemPerfil.Location = new Point(7, 164);
+            lblImagemPerfil.Location = new Point(12, 199);
             lblImagemPerfil.Name = "lblImagemPerfil";
             lblImagemPerfil.Size = new Size(123, 25);
             lblImagemPerfil.TabIndex = 4;
@@ -90,35 +92,35 @@
             // 
             // txtApelido
             // 
-            txtApelido.Location = new Point(136, 13);
+            txtApelido.Location = new Point(141, 48);
             txtApelido.Name = "txtApelido";
             txtApelido.Size = new Size(179, 31);
             txtApelido.TabIndex = 5;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(136, 50);
+            txtEmail.Location = new Point(141, 85);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(179, 31);
             txtEmail.TabIndex = 6;
             // 
             // txtSenha1
             // 
-            txtSenha1.Location = new Point(136, 87);
+            txtSenha1.Location = new Point(141, 122);
             txtSenha1.Name = "txtSenha1";
             txtSenha1.Size = new Size(179, 31);
             txtSenha1.TabIndex = 7;
             // 
             // txtSenha2
             // 
-            txtSenha2.Location = new Point(136, 124);
+            txtSenha2.Location = new Point(141, 159);
             txtSenha2.Name = "txtSenha2";
             txtSenha2.Size = new Size(179, 31);
             txtSenha2.TabIndex = 8;
             // 
             // button1
             // 
-            button1.Location = new Point(12, 206);
+            button1.Location = new Point(17, 241);
             button1.Name = "button1";
             button1.Size = new Size(112, 34);
             button1.TabIndex = 10;
@@ -132,18 +134,36 @@
             // 
             // btnSelecionarImagem
             // 
-            btnSelecionarImagem.Location = new Point(136, 164);
+            btnSelecionarImagem.Location = new Point(141, 199);
             btnSelecionarImagem.Name = "btnSelecionarImagem";
             btnSelecionarImagem.Size = new Size(179, 34);
             btnSelecionarImagem.TabIndex = 11;
             btnSelecionarImagem.Text = "Selecionar imagem";
             btnSelecionarImagem.UseVisualStyleBackColor = true;
             // 
-            // telaCadastro
+            // lblNome
+            // 
+            lblNome.AutoSize = true;
+            lblNome.Location = new Point(-7, 9);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new Size(142, 25);
+            lblNome.TabIndex = 12;
+            lblNome.Text = "Nome completo";
+            // 
+            // txtNomeCompleto
+            // 
+            txtNomeCompleto.Location = new Point(141, 12);
+            txtNomeCompleto.Name = "txtNomeCompleto";
+            txtNomeCompleto.Size = new Size(179, 31);
+            txtNomeCompleto.TabIndex = 13;
+            // 
+            // frmTelaCadastro
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtNomeCompleto);
+            Controls.Add(lblNome);
             Controls.Add(btnSelecionarImagem);
             Controls.Add(button1);
             Controls.Add(txtSenha2);
@@ -155,7 +175,7 @@
             Controls.Add(lblSenha1);
             Controls.Add(lblEmail);
             Controls.Add(lblApelido);
-            Name = "telaCadastro";
+            Name = "frmTelaCadastro";
             Text = "MSIF - Cadastro";
             ResumeLayout(false);
             PerformLayout();
@@ -175,5 +195,7 @@
         private Button button1;
         private OpenFileDialog fileDialog;
         private Button btnSelecionarImagem;
+        private Label lblNome;
+        private TextBox txtNomeCompleto;
     }
 }

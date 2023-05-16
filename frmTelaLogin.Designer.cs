@@ -34,11 +34,12 @@
             lblSenha = new Label();
             txtEmailLogar = new TextBox();
             txtSenhaLogar = new TextBox();
+            btnRecuperarSenha = new Button();
             SuspendLayout();
             // 
             // btnCadastrar
             // 
-            btnCadastrar.Location = new Point(24, 219);
+            btnCadastrar.Location = new Point(24, 218);
             btnCadastrar.Name = "btnCadastrar";
             btnCadastrar.Size = new Size(112, 34);
             btnCadastrar.TabIndex = 0;
@@ -47,7 +48,7 @@
             // 
             // btnEntrar
             // 
-            btnEntrar.Location = new Point(226, 137);
+            btnEntrar.Location = new Point(226, 163);
             btnEntrar.Name = "btnEntrar";
             btnEntrar.Size = new Size(112, 34);
             btnEntrar.TabIndex = 1;
@@ -86,11 +87,21 @@
             txtSenhaLogar.Size = new Size(247, 31);
             txtSenhaLogar.TabIndex = 5;
             // 
+            // btnRecuperarSenha
+            // 
+            btnRecuperarSenha.Location = new Point(188, 123);
+            btnRecuperarSenha.Name = "btnRecuperarSenha";
+            btnRecuperarSenha.Size = new Size(150, 34);
+            btnRecuperarSenha.TabIndex = 6;
+            btnRecuperarSenha.Text = "Recuperar senha";
+            btnRecuperarSenha.UseVisualStyleBackColor = true;
+            // 
             // frmTelaLogin
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnRecuperarSenha);
             Controls.Add(txtSenhaLogar);
             Controls.Add(txtEmailLogar);
             Controls.Add(lblSenha);
@@ -111,5 +122,6 @@
         private Label lblSenha;
         private TextBox txtEmailLogar;
         private TextBox txtSenhaLogar;
+        private Button btnRecuperarSenha;
     }
 }
