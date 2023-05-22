@@ -36,5 +36,45 @@ namespace MSIF
         {
 
         }
+
+        private void frmTelaMenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAceitarSolicitacoes_Click(object sender, EventArgs e)
+        {
+            ContatoResumo contatoResumo = new ContatoResumo();
+            contatoResumo.Show();
+            flpSolicitacoes.Controls.Add(contatoResumo);
+        }
+
+        private void btnApelidoPesquisa_Click(object sender, EventArgs e)
+        {
+            ContatoResumo contatoResumo = new ContatoResumo();
+            contatoResumo.Show();
+            flpApelidoPesquisa.Controls.Add(contatoResumo);
+        }
+
+        private void btnAbrirMensagem_Click(object sender, EventArgs e)
+        {
+            ContatoResumo contatoResumo = new ContatoResumo();
+            contatoResumo.Show();
+            flpMensagem.Controls.Add(contatoResumo);
+        }
+
+        private void btnContatosConversar_Click(object sender, EventArgs e)
+        {
+            ContatoResumo contatoResumo = new ContatoResumo();
+            contatoResumo.Show();
+            flpContatosOnline.Controls.Add(contatoResumo);
+        }
+
+        private void btnContatosAbrirPerfil_Click(object sender, EventArgs e)
+        {
+            ContatoResumo contatoResumo = new ContatoResumo();
+            contatoResumo.Show();
+            flpContatosOffline.Controls.Add(contatoResumo);
+        }
     }
 }
