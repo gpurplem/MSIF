@@ -31,8 +31,18 @@
             tabControlMenuPrincipal = new TabControl();
             tabPage1 = new TabPage();
             tabPage2 = new TabPage();
+            flpMensagem = new FlowLayoutPanel();
+            btnAbrirMensagem = new Button();
+            btnApagarMensagem = new Button();
             tabPage3 = new TabPage();
+            btnAceitarSolicitacoes = new Button();
+            btnRecusarSolicitacoes = new Button();
+            flpSolicitacoes = new FlowLayoutPanel();
             tabPage4 = new TabPage();
+            flpApelidoPesquisa = new FlowLayoutPanel();
+            btnApelidoPesquisa = new Button();
+            txtApelidoPesquisa = new TextBox();
+            lblApelidoPesquisa = new Label();
             tabPage5 = new TabPage();
             lblNomeUsuarioMeuPerfil = new Label();
             picFotoMeuPerfil = new PictureBox();
@@ -47,17 +57,14 @@
             lblSenha1MeuPerfil = new Label();
             lblEmailMeuPerfil = new Label();
             lblApelidoMeuPerfil = new Label();
-            btnApelidoPesquisa = new Button();
-            txtApelidoPesquisa = new TextBox();
-            lblApelidoPesquisa = new Label();
-            flpApelidoPesquisa = new FlowLayoutPanel();
-            flpSolicitacoes = new FlowLayoutPanel();
-            btnRecusarSolicitacoes = new Button();
-            btnAceitarSolicitacoes = new Button();
-            btnApagarMensagem = new Button();
-            btnAbrirMensagem = new Button();
-            flpMensagem = new FlowLayoutPanel();
+            btnPesquisarAdicionar = new Button();
+            btnPesquisarVisualizarPerfil = new Button();
+            flpContatos = new FlowLayoutPanel();
+            btnContatosExcluir = new Button();
+            btnContatosConversar = new Button();
+            btnContatosAbrirPerfil = new Button();
             tabControlMenuPrincipal.SuspendLayout();
+            tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
             tabPage3.SuspendLayout();
             tabPage4.SuspendLayout();
@@ -80,6 +87,10 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(btnContatosAbrirPerfil);
+            tabPage1.Controls.Add(btnContatosConversar);
+            tabPage1.Controls.Add(btnContatosExcluir);
+            tabPage1.Controls.Add(flpContatos);
             tabPage1.Location = new Point(4, 34);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
@@ -101,6 +112,31 @@
             tabPage2.Text = "Mensagens";
             tabPage2.UseVisualStyleBackColor = true;
             // 
+            // flpMensagem
+            // 
+            flpMensagem.Location = new Point(7, 6);
+            flpMensagem.Name = "flpMensagem";
+            flpMensagem.Size = new Size(451, 580);
+            flpMensagem.TabIndex = 2;
+            // 
+            // btnAbrirMensagem
+            // 
+            btnAbrirMensagem.Location = new Point(346, 592);
+            btnAbrirMensagem.Name = "btnAbrirMensagem";
+            btnAbrirMensagem.Size = new Size(112, 34);
+            btnAbrirMensagem.TabIndex = 1;
+            btnAbrirMensagem.Text = "Abrir";
+            btnAbrirMensagem.UseVisualStyleBackColor = true;
+            // 
+            // btnApagarMensagem
+            // 
+            btnApagarMensagem.Location = new Point(6, 592);
+            btnApagarMensagem.Name = "btnApagarMensagem";
+            btnApagarMensagem.Size = new Size(112, 34);
+            btnApagarMensagem.TabIndex = 0;
+            btnApagarMensagem.Text = "Deletar";
+            btnApagarMensagem.UseVisualStyleBackColor = true;
+            // 
             // tabPage3
             // 
             tabPage3.Controls.Add(btnAceitarSolicitacoes);
@@ -114,8 +150,35 @@
             tabPage3.Text = "Solicitações";
             tabPage3.UseVisualStyleBackColor = true;
             // 
+            // btnAceitarSolicitacoes
+            // 
+            btnAceitarSolicitacoes.Location = new Point(346, 572);
+            btnAceitarSolicitacoes.Name = "btnAceitarSolicitacoes";
+            btnAceitarSolicitacoes.Size = new Size(112, 34);
+            btnAceitarSolicitacoes.TabIndex = 2;
+            btnAceitarSolicitacoes.Text = "Aceitar";
+            btnAceitarSolicitacoes.UseVisualStyleBackColor = true;
+            // 
+            // btnRecusarSolicitacoes
+            // 
+            btnRecusarSolicitacoes.Location = new Point(7, 572);
+            btnRecusarSolicitacoes.Name = "btnRecusarSolicitacoes";
+            btnRecusarSolicitacoes.Size = new Size(112, 34);
+            btnRecusarSolicitacoes.TabIndex = 1;
+            btnRecusarSolicitacoes.Text = "Recusar";
+            btnRecusarSolicitacoes.UseVisualStyleBackColor = true;
+            // 
+            // flpSolicitacoes
+            // 
+            flpSolicitacoes.Location = new Point(7, 6);
+            flpSolicitacoes.Name = "flpSolicitacoes";
+            flpSolicitacoes.Size = new Size(451, 560);
+            flpSolicitacoes.TabIndex = 0;
+            // 
             // tabPage4
             // 
+            tabPage4.Controls.Add(btnPesquisarVisualizarPerfil);
+            tabPage4.Controls.Add(btnPesquisarAdicionar);
             tabPage4.Controls.Add(flpApelidoPesquisa);
             tabPage4.Controls.Add(btnApelidoPesquisa);
             tabPage4.Controls.Add(txtApelidoPesquisa);
@@ -126,6 +189,40 @@
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Pesquisar";
             tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // flpApelidoPesquisa
+            // 
+            flpApelidoPesquisa.Location = new Point(7, 48);
+            flpApelidoPesquisa.Name = "flpApelidoPesquisa";
+            flpApelidoPesquisa.Size = new Size(451, 524);
+            flpApelidoPesquisa.TabIndex = 6;
+            flpApelidoPesquisa.Paint += flowLayoutPanel1_Paint;
+            // 
+            // btnApelidoPesquisa
+            // 
+            btnApelidoPesquisa.Location = new Point(346, 11);
+            btnApelidoPesquisa.Name = "btnApelidoPesquisa";
+            btnApelidoPesquisa.Size = new Size(112, 34);
+            btnApelidoPesquisa.TabIndex = 5;
+            btnApelidoPesquisa.Text = "Pesquisar";
+            btnApelidoPesquisa.UseVisualStyleBackColor = true;
+            // 
+            // txtApelidoPesquisa
+            // 
+            txtApelidoPesquisa.Location = new Point(87, 11);
+            txtApelidoPesquisa.Name = "txtApelidoPesquisa";
+            txtApelidoPesquisa.Size = new Size(253, 31);
+            txtApelidoPesquisa.TabIndex = 4;
+            // 
+            // lblApelidoPesquisa
+            // 
+            lblApelidoPesquisa.AutoSize = true;
+            lblApelidoPesquisa.Location = new Point(7, 17);
+            lblApelidoPesquisa.Name = "lblApelidoPesquisa";
+            lblApelidoPesquisa.Size = new Size(74, 25);
+            lblApelidoPesquisa.TabIndex = 3;
+            lblApelidoPesquisa.Text = "Apelido";
+            lblApelidoPesquisa.Click += label1_Click;
             // 
             // tabPage5
             // 
@@ -259,89 +356,57 @@
             lblApelidoMeuPerfil.TabIndex = 23;
             lblApelidoMeuPerfil.Text = "Apelido";
             // 
-            // btnApelidoPesquisa
+            // btnPesquisarAdicionar
             // 
-            btnApelidoPesquisa.Location = new Point(346, 11);
-            btnApelidoPesquisa.Name = "btnApelidoPesquisa";
-            btnApelidoPesquisa.Size = new Size(112, 34);
-            btnApelidoPesquisa.TabIndex = 5;
-            btnApelidoPesquisa.Text = "Pesquisar";
-            btnApelidoPesquisa.UseVisualStyleBackColor = true;
+            btnPesquisarAdicionar.Location = new Point(7, 578);
+            btnPesquisarAdicionar.Name = "btnPesquisarAdicionar";
+            btnPesquisarAdicionar.Size = new Size(105, 36);
+            btnPesquisarAdicionar.TabIndex = 7;
+            btnPesquisarAdicionar.Text = "Adicionar";
+            btnPesquisarAdicionar.UseVisualStyleBackColor = true;
             // 
-            // txtApelidoPesquisa
+            // btnPesquisarVisualizarPerfil
             // 
-            txtApelidoPesquisa.Location = new Point(87, 11);
-            txtApelidoPesquisa.Name = "txtApelidoPesquisa";
-            txtApelidoPesquisa.Size = new Size(253, 31);
-            txtApelidoPesquisa.TabIndex = 4;
+            btnPesquisarVisualizarPerfil.Location = new Point(346, 580);
+            btnPesquisarVisualizarPerfil.Name = "btnPesquisarVisualizarPerfil";
+            btnPesquisarVisualizarPerfil.Size = new Size(112, 34);
+            btnPesquisarVisualizarPerfil.TabIndex = 8;
+            btnPesquisarVisualizarPerfil.Text = "Ver perfil";
+            btnPesquisarVisualizarPerfil.UseVisualStyleBackColor = true;
             // 
-            // lblApelidoPesquisa
+            // flpContatos
             // 
-            lblApelidoPesquisa.AutoSize = true;
-            lblApelidoPesquisa.Location = new Point(7, 17);
-            lblApelidoPesquisa.Name = "lblApelidoPesquisa";
-            lblApelidoPesquisa.Size = new Size(74, 25);
-            lblApelidoPesquisa.TabIndex = 3;
-            lblApelidoPesquisa.Text = "Apelido";
-            lblApelidoPesquisa.Click += label1_Click;
+            flpContatos.Location = new Point(3, 3);
+            flpContatos.Name = "flpContatos";
+            flpContatos.Size = new Size(458, 569);
+            flpContatos.TabIndex = 0;
             // 
-            // flpApelidoPesquisa
+            // btnContatosExcluir
             // 
-            flpApelidoPesquisa.Location = new Point(7, 48);
-            flpApelidoPesquisa.Name = "flpApelidoPesquisa";
-            flpApelidoPesquisa.Size = new Size(451, 578);
-            flpApelidoPesquisa.TabIndex = 6;
-            flpApelidoPesquisa.Paint += flowLayoutPanel1_Paint;
+            btnContatosExcluir.Location = new Point(3, 578);
+            btnContatosExcluir.Name = "btnContatosExcluir";
+            btnContatosExcluir.Size = new Size(112, 34);
+            btnContatosExcluir.TabIndex = 1;
+            btnContatosExcluir.Text = "Excluir";
+            btnContatosExcluir.UseVisualStyleBackColor = true;
             // 
-            // flpSolicitacoes
+            // btnContatosConversar
             // 
-            flpSolicitacoes.Location = new Point(7, 6);
-            flpSolicitacoes.Name = "flpSolicitacoes";
-            flpSolicitacoes.Size = new Size(451, 560);
-            flpSolicitacoes.TabIndex = 0;
+            btnContatosConversar.Location = new Point(349, 578);
+            btnContatosConversar.Name = "btnContatosConversar";
+            btnContatosConversar.Size = new Size(112, 34);
+            btnContatosConversar.TabIndex = 2;
+            btnContatosConversar.Text = "Conversar";
+            btnContatosConversar.UseVisualStyleBackColor = true;
             // 
-            // btnRecusarSolicitacoes
+            // btnContatosAbrirPerfil
             // 
-            btnRecusarSolicitacoes.Location = new Point(7, 572);
-            btnRecusarSolicitacoes.Name = "btnRecusarSolicitacoes";
-            btnRecusarSolicitacoes.Size = new Size(112, 34);
-            btnRecusarSolicitacoes.TabIndex = 1;
-            btnRecusarSolicitacoes.Text = "Recusar";
-            btnRecusarSolicitacoes.UseVisualStyleBackColor = true;
-            // 
-            // btnAceitarSolicitacoes
-            // 
-            btnAceitarSolicitacoes.Location = new Point(346, 572);
-            btnAceitarSolicitacoes.Name = "btnAceitarSolicitacoes";
-            btnAceitarSolicitacoes.Size = new Size(112, 34);
-            btnAceitarSolicitacoes.TabIndex = 2;
-            btnAceitarSolicitacoes.Text = "Aceitar";
-            btnAceitarSolicitacoes.UseVisualStyleBackColor = true;
-            // 
-            // btnApagarMensagem
-            // 
-            btnApagarMensagem.Location = new Point(6, 592);
-            btnApagarMensagem.Name = "btnApagarMensagem";
-            btnApagarMensagem.Size = new Size(112, 34);
-            btnApagarMensagem.TabIndex = 0;
-            btnApagarMensagem.Text = "Deletar";
-            btnApagarMensagem.UseVisualStyleBackColor = true;
-            // 
-            // btnAbrirMensagem
-            // 
-            btnAbrirMensagem.Location = new Point(346, 592);
-            btnAbrirMensagem.Name = "btnAbrirMensagem";
-            btnAbrirMensagem.Size = new Size(112, 34);
-            btnAbrirMensagem.TabIndex = 1;
-            btnAbrirMensagem.Text = "Abrir";
-            btnAbrirMensagem.UseVisualStyleBackColor = true;
-            // 
-            // flpMensagem
-            // 
-            flpMensagem.Location = new Point(7, 6);
-            flpMensagem.Name = "flpMensagem";
-            flpMensagem.Size = new Size(451, 580);
-            flpMensagem.TabIndex = 2;
+            btnContatosAbrirPerfil.Location = new Point(182, 578);
+            btnContatosAbrirPerfil.Name = "btnContatosAbrirPerfil";
+            btnContatosAbrirPerfil.Size = new Size(112, 34);
+            btnContatosAbrirPerfil.TabIndex = 3;
+            btnContatosAbrirPerfil.Text = "Ver perfil";
+            btnContatosAbrirPerfil.UseVisualStyleBackColor = true;
             // 
             // frmTelaMenuPrincipal
             // 
@@ -352,6 +417,7 @@
             Name = "frmTelaMenuPrincipal";
             Text = "MenuPrincipal";
             tabControlMenuPrincipal.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
             tabPage3.ResumeLayout(false);
             tabPage4.ResumeLayout(false);
@@ -393,5 +459,11 @@
         private FlowLayoutPanel flpMensagem;
         private Button btnAbrirMensagem;
         private Button btnApagarMensagem;
+        private Button btnContatosAbrirPerfil;
+        private Button btnContatosConversar;
+        private Button btnContatosExcluir;
+        private FlowLayoutPanel flpContatos;
+        private Button btnPesquisarVisualizarPerfil;
+        private Button btnPesquisarAdicionar;
     }
 }
