@@ -28,10 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            pictureBox1 = new PictureBox();
+            lblNomeUsuario = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(3, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(82, 74);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // lblNomeUsuario
+            // 
+            lblNomeUsuario.AutoSize = true;
+            lblNomeUsuario.Location = new Point(91, 24);
+            lblNomeUsuario.Name = "lblNomeUsuario";
+            lblNomeUsuario.Size = new Size(121, 25);
+            lblNomeUsuario.TabIndex = 1;
+            lblNomeUsuario.Text = "NomeUsuario";
+            // 
+            // ContatoPesquisa
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BorderStyle = BorderStyle.FixedSingle;
+            Controls.Add(lblNomeUsuario);
+            Controls.Add(pictureBox1);
+            Name = "ContatoPesquisa";
+            Size = new Size(400, 80);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private PictureBox pictureBox1;
+        private Label lblNomeUsuario;
     }
 }
