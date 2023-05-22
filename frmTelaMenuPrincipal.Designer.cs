@@ -30,6 +30,10 @@
         {
             tabControlMenuPrincipal = new TabControl();
             tabPage1 = new TabPage();
+            btnContatosAbrirPerfil = new Button();
+            btnContatosConversar = new Button();
+            btnContatosExcluir = new Button();
+            flpContatosOnline = new FlowLayoutPanel();
             tabPage2 = new TabPage();
             flpMensagem = new FlowLayoutPanel();
             btnAbrirMensagem = new Button();
@@ -39,6 +43,8 @@
             btnRecusarSolicitacoes = new Button();
             flpSolicitacoes = new FlowLayoutPanel();
             tabPage4 = new TabPage();
+            btnPesquisarVisualizarPerfil = new Button();
+            btnPesquisarAdicionar = new Button();
             flpApelidoPesquisa = new FlowLayoutPanel();
             btnApelidoPesquisa = new Button();
             txtApelidoPesquisa = new TextBox();
@@ -57,12 +63,9 @@
             lblSenha1MeuPerfil = new Label();
             lblEmailMeuPerfil = new Label();
             lblApelidoMeuPerfil = new Label();
-            btnPesquisarAdicionar = new Button();
-            btnPesquisarVisualizarPerfil = new Button();
-            flpContatos = new FlowLayoutPanel();
-            btnContatosExcluir = new Button();
-            btnContatosConversar = new Button();
-            btnContatosAbrirPerfil = new Button();
+            label1 = new Label();
+            flpContatosOffline = new FlowLayoutPanel();
+            label2 = new Label();
             tabControlMenuPrincipal.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -87,10 +90,13 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(label2);
+            tabPage1.Controls.Add(flpContatosOffline);
+            tabPage1.Controls.Add(label1);
             tabPage1.Controls.Add(btnContatosAbrirPerfil);
             tabPage1.Controls.Add(btnContatosConversar);
             tabPage1.Controls.Add(btnContatosExcluir);
-            tabPage1.Controls.Add(flpContatos);
+            tabPage1.Controls.Add(flpContatosOnline);
             tabPage1.Location = new Point(4, 34);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
@@ -98,6 +104,40 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Contatos";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btnContatosAbrirPerfil
+            // 
+            btnContatosAbrirPerfil.Location = new Point(182, 578);
+            btnContatosAbrirPerfil.Name = "btnContatosAbrirPerfil";
+            btnContatosAbrirPerfil.Size = new Size(112, 34);
+            btnContatosAbrirPerfil.TabIndex = 3;
+            btnContatosAbrirPerfil.Text = "Ver perfil";
+            btnContatosAbrirPerfil.UseVisualStyleBackColor = true;
+            // 
+            // btnContatosConversar
+            // 
+            btnContatosConversar.Location = new Point(349, 578);
+            btnContatosConversar.Name = "btnContatosConversar";
+            btnContatosConversar.Size = new Size(112, 34);
+            btnContatosConversar.TabIndex = 2;
+            btnContatosConversar.Text = "Conversar";
+            btnContatosConversar.UseVisualStyleBackColor = true;
+            // 
+            // btnContatosExcluir
+            // 
+            btnContatosExcluir.Location = new Point(3, 578);
+            btnContatosExcluir.Name = "btnContatosExcluir";
+            btnContatosExcluir.Size = new Size(112, 34);
+            btnContatosExcluir.TabIndex = 1;
+            btnContatosExcluir.Text = "Excluir";
+            btnContatosExcluir.UseVisualStyleBackColor = true;
+            // 
+            // flpContatosOnline
+            // 
+            flpContatosOnline.Location = new Point(3, 28);
+            flpContatosOnline.Name = "flpContatosOnline";
+            flpContatosOnline.Size = new Size(458, 221);
+            flpContatosOnline.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -189,6 +229,24 @@
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Pesquisar";
             tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // btnPesquisarVisualizarPerfil
+            // 
+            btnPesquisarVisualizarPerfil.Location = new Point(346, 580);
+            btnPesquisarVisualizarPerfil.Name = "btnPesquisarVisualizarPerfil";
+            btnPesquisarVisualizarPerfil.Size = new Size(112, 34);
+            btnPesquisarVisualizarPerfil.TabIndex = 8;
+            btnPesquisarVisualizarPerfil.Text = "Ver perfil";
+            btnPesquisarVisualizarPerfil.UseVisualStyleBackColor = true;
+            // 
+            // btnPesquisarAdicionar
+            // 
+            btnPesquisarAdicionar.Location = new Point(7, 578);
+            btnPesquisarAdicionar.Name = "btnPesquisarAdicionar";
+            btnPesquisarAdicionar.Size = new Size(105, 36);
+            btnPesquisarAdicionar.TabIndex = 7;
+            btnPesquisarAdicionar.Text = "Adicionar";
+            btnPesquisarAdicionar.UseVisualStyleBackColor = true;
             // 
             // flpApelidoPesquisa
             // 
@@ -356,57 +414,30 @@
             lblApelidoMeuPerfil.TabIndex = 23;
             lblApelidoMeuPerfil.Text = "Apelido";
             // 
-            // btnPesquisarAdicionar
+            // label1
             // 
-            btnPesquisarAdicionar.Location = new Point(7, 578);
-            btnPesquisarAdicionar.Name = "btnPesquisarAdicionar";
-            btnPesquisarAdicionar.Size = new Size(105, 36);
-            btnPesquisarAdicionar.TabIndex = 7;
-            btnPesquisarAdicionar.Text = "Adicionar";
-            btnPesquisarAdicionar.UseVisualStyleBackColor = true;
+            label1.AutoSize = true;
+            label1.Location = new Point(7, 3);
+            label1.Name = "label1";
+            label1.Size = new Size(63, 25);
+            label1.TabIndex = 4;
+            label1.Text = "Online";
             // 
-            // btnPesquisarVisualizarPerfil
+            // flpContatosOffline
             // 
-            btnPesquisarVisualizarPerfil.Location = new Point(346, 580);
-            btnPesquisarVisualizarPerfil.Name = "btnPesquisarVisualizarPerfil";
-            btnPesquisarVisualizarPerfil.Size = new Size(112, 34);
-            btnPesquisarVisualizarPerfil.TabIndex = 8;
-            btnPesquisarVisualizarPerfil.Text = "Ver perfil";
-            btnPesquisarVisualizarPerfil.UseVisualStyleBackColor = true;
+            flpContatosOffline.Location = new Point(3, 319);
+            flpContatosOffline.Name = "flpContatosOffline";
+            flpContatosOffline.Size = new Size(458, 221);
+            flpContatosOffline.TabIndex = 5;
             // 
-            // flpContatos
+            // label2
             // 
-            flpContatos.Location = new Point(3, 3);
-            flpContatos.Name = "flpContatos";
-            flpContatos.Size = new Size(458, 569);
-            flpContatos.TabIndex = 0;
-            // 
-            // btnContatosExcluir
-            // 
-            btnContatosExcluir.Location = new Point(3, 578);
-            btnContatosExcluir.Name = "btnContatosExcluir";
-            btnContatosExcluir.Size = new Size(112, 34);
-            btnContatosExcluir.TabIndex = 1;
-            btnContatosExcluir.Text = "Excluir";
-            btnContatosExcluir.UseVisualStyleBackColor = true;
-            // 
-            // btnContatosConversar
-            // 
-            btnContatosConversar.Location = new Point(349, 578);
-            btnContatosConversar.Name = "btnContatosConversar";
-            btnContatosConversar.Size = new Size(112, 34);
-            btnContatosConversar.TabIndex = 2;
-            btnContatosConversar.Text = "Conversar";
-            btnContatosConversar.UseVisualStyleBackColor = true;
-            // 
-            // btnContatosAbrirPerfil
-            // 
-            btnContatosAbrirPerfil.Location = new Point(182, 578);
-            btnContatosAbrirPerfil.Name = "btnContatosAbrirPerfil";
-            btnContatosAbrirPerfil.Size = new Size(112, 34);
-            btnContatosAbrirPerfil.TabIndex = 3;
-            btnContatosAbrirPerfil.Text = "Ver perfil";
-            btnContatosAbrirPerfil.UseVisualStyleBackColor = true;
+            label2.AutoSize = true;
+            label2.Location = new Point(7, 291);
+            label2.Name = "label2";
+            label2.Size = new Size(65, 25);
+            label2.TabIndex = 6;
+            label2.Text = "Offline";
             // 
             // frmTelaMenuPrincipal
             // 
@@ -418,6 +449,7 @@
             Text = "MenuPrincipal";
             tabControlMenuPrincipal.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
+            tabPage1.PerformLayout();
             tabPage2.ResumeLayout(false);
             tabPage3.ResumeLayout(false);
             tabPage4.ResumeLayout(false);
@@ -462,8 +494,11 @@
         private Button btnContatosAbrirPerfil;
         private Button btnContatosConversar;
         private Button btnContatosExcluir;
-        private FlowLayoutPanel flpContatos;
+        private FlowLayoutPanel flpContatosOnline;
         private Button btnPesquisarVisualizarPerfil;
         private Button btnPesquisarAdicionar;
+        private FlowLayoutPanel flpContatosOffline;
+        private Label label1;
+        private Label label2;
     }
 }

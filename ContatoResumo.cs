@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace MSIF
 {
-    public partial class frmListaContatos : Form
+    public partial class ContatoResumo : UserControl
     {
-        public frmListaContatos()
+        public ContatoResumo()
         {
             InitializeComponent();
+        }
+
+        private void ContatoResumo_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

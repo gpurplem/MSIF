@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace MSIF
 {
-    public partial class ContatoPesquisa : UserControl
+    public partial class Mensagem : UserControl
     {
-        public ContatoPesquisa()
+        public Mensagem()
         {
             InitializeComponent();
+        }
+
+        private void lblMensagemNome_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

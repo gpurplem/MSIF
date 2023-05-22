@@ -1,6 +1,6 @@
 ﻿namespace MSIF
 {
-    partial class ContatoPesquisa
+    partial class ContatoResumo
     {
         /// <summary> 
         /// Variável de designer necessária.
@@ -50,15 +50,16 @@
             lblNomeUsuario.TabIndex = 1;
             lblNomeUsuario.Text = "NomeUsuario";
             // 
-            // ContatoPesquisa
+            // ContatoResumo
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BorderStyle = BorderStyle.FixedSingle;
             Controls.Add(lblNomeUsuario);
             Controls.Add(pictureBox1);
-            Name = "ContatoPesquisa";
+            Name = "ContatoResumo";
             Size = new Size(400, 80);
+            Load += ContatoResumo_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
