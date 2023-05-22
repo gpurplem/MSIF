@@ -30,7 +30,7 @@
         {
             txtMsg = new TextBox();
             btnEnviar = new Button();
-            flowLayoutPanel1 = new FlowLayoutPanel();
+            flpMensagem = new FlowLayoutPanel();
             SuspendLayout();
             // 
             // txtMsg
@@ -48,20 +48,24 @@
             btnEnviar.TabIndex = 2;
             btnEnviar.Text = "Enviar";
             btnEnviar.UseVisualStyleBackColor = true;
+            btnEnviar.Click += btnEnviar_Click;
             // 
-            // flowLayoutPanel1
+            // flpMensagem
             // 
-            flowLayoutPanel1.Location = new Point(12, 12);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(776, 386);
-            flowLayoutPanel1.TabIndex = 3;
+            flpMensagem.AutoScroll = true;
+            flpMensagem.FlowDirection = FlowDirection.TopDown;
+            flpMensagem.Location = new Point(12, 12);
+            flpMensagem.Name = "flpMensagem";
+            flpMensagem.Size = new Size(776, 386);
+            flpMensagem.TabIndex = 3;
+            flpMensagem.WrapContents = false;
             // 
             // frmChat
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(flowLayoutPanel1);
+            Controls.Add(flpMensagem);
             Controls.Add(btnEnviar);
             Controls.Add(txtMsg);
             Name = "frmChat";
@@ -73,6 +77,6 @@
         #endregion
         private TextBox txtMsg;
         private Button btnEnviar;
-        private FlowLayoutPanel flowLayoutPanel1;
+        private FlowLayoutPanel flpMensagem;
     }
 }

@@ -16,5 +16,12 @@ namespace MSIF
         {
             InitializeComponent();
         }
+
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
+            Mensagem mensagem = new Mensagem();
+            mensagem.Show();
+            flpMensagem.Controls.Add(mensagem);
+        }
     }
 }
