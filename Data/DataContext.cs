@@ -12,7 +12,7 @@ namespace MSIF.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("");
+            optionsBuilder.UseSqlServer("Data Source=localhost\\SQLEXPRESS; Initial Catalog=DBMSIF; Integrated Security=SSPI");
         }
     }
 }
