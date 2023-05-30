@@ -1,3 +1,6 @@
+using MSIF.Controller;
+using MSIF.Model;
+
 namespace MSIF
 {
     internal static class Program

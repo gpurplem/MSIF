@@ -8,11 +8,12 @@ namespace MSIF.Model
 {
     public class Usuario
     {
-        public int ID { get; set; }
-        public string email { get; set; }
-        public string senha { get; set; }
-        public string nomeCompleto { get; set; }
-        public string apelido { get; set; }
-        public int status { get; set; }
+        public int UsuarioId { get; set; }
+        public string Email { get; set; }
+        public string Senha { get; set; }
+        public string Nome { get; set; }
+        public string Apelido { get; set; }
+        public string Url { get; set; }
+        public int Status { get; set; }
     }
 }

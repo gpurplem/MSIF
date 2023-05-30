@@ -8,7 +8,8 @@ namespace MSIF.Model
 {
     public class Contatos
     {
-        public int idLogado { get; set; }
-        public int idContato { get; set; }
+        public int ContatosId { get; set; }
+        public int Logado { get; set; }
+        public int Contato { get; set; }
     }
 }

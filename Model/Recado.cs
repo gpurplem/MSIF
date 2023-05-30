@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace MSIF.Model
 {
-    public class Solicitacao
+    public class Recado
     {
-        public int SolicitacaoId { get; set; }
+        public int RecadoId { get; set; }
         public int Remetente { get; set; }
         public int Destinatario { get; set; }
+        public DateTime Dataenvio { get; set; }
+        public string Texto { get; set; }
         public int Status { get; set; }
     }
 }
