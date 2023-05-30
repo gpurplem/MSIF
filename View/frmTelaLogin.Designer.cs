@@ -28,90 +28,122 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnCadastrar = new Button();
-            btnEntrar = new Button();
-            lblEmail = new Label();
-            lblSenha = new Label();
-            txtEmailLogar = new TextBox();
-            txtSenhaLogar = new TextBox();
-            btnRecuperarSenha = new Button();
-            SuspendLayout();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.btnEntrar = new System.Windows.Forms.Button();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.txtEmailLogar = new System.Windows.Forms.TextBox();
+            this.txtSenhaLogar = new System.Windows.Forms.TextBox();
+            this.btnRecuperarSenha = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // btnCadastrar
             // 
-            btnCadastrar.Location = new Point(24, 218);
-            btnCadastrar.Name = "btnCadastrar";
-            btnCadastrar.Size = new Size(112, 34);
-            btnCadastrar.TabIndex = 0;
-            btnCadastrar.Text = "Cadastrar";
-            btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCadastrar.Font = new System.Drawing.Font("Caladea", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
+            this.btnCadastrar.Location = new System.Drawing.Point(22, 166);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(221, 31);
+            this.btnCadastrar.TabIndex = 0;
+            this.btnCadastrar.Text = "CADASTRAR";
+            this.btnCadastrar.UseVisualStyleBackColor = false;
             // 
             // btnEntrar
             // 
-            btnEntrar.Location = new Point(226, 163);
-            btnEntrar.Name = "btnEntrar";
-            btnEntrar.Size = new Size(112, 34);
-            btnEntrar.TabIndex = 1;
-            btnEntrar.Text = "Entrar";
-            btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEntrar.Font = new System.Drawing.Font("Caladea", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnEntrar.ForeColor = System.Drawing.Color.White;
+            this.btnEntrar.Location = new System.Drawing.Point(22, 131);
+            this.btnEntrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(221, 31);
+            this.btnEntrar.TabIndex = 1;
+            this.btnEntrar.Text = "LOGIN";
+            this.btnEntrar.UseVisualStyleBackColor = false;
             // 
             // lblEmail
             // 
-            lblEmail.AutoSize = true;
-            lblEmail.Location = new Point(24, 39);
-            lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(61, 25);
-            lblEmail.TabIndex = 2;
-            lblEmail.Text = "E-mail";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("Caladea", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblEmail.Location = new System.Drawing.Point(11, 47);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(61, 17);
+            this.lblEmail.TabIndex = 2;
+            this.lblEmail.Text = "E-mail:";
             // 
             // lblSenha
             // 
-            lblSenha.AutoSize = true;
-            lblSenha.Location = new Point(24, 86);
-            lblSenha.Name = "lblSenha";
-            lblSenha.Size = new Size(60, 25);
-            lblSenha.TabIndex = 3;
-            lblSenha.Text = "Senha";
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.BackColor = System.Drawing.Color.Transparent;
+            this.lblSenha.Font = new System.Drawing.Font("Caladea", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblSenha.Location = new System.Drawing.Point(11, 75);
+            this.lblSenha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(56, 17);
+            this.lblSenha.TabIndex = 3;
+            this.lblSenha.Text = "Senha:";
             // 
             // txtEmailLogar
             // 
-            txtEmailLogar.Location = new Point(91, 39);
-            txtEmailLogar.Name = "txtEmailLogar";
-            txtEmailLogar.Size = new Size(247, 31);
-            txtEmailLogar.TabIndex = 4;
+            this.txtEmailLogar.BackColor = System.Drawing.Color.White;
+            this.txtEmailLogar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmailLogar.Font = new System.Drawing.Font("Caladea", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtEmailLogar.Location = new System.Drawing.Point(69, 46);
+            this.txtEmailLogar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmailLogar.Name = "txtEmailLogar";
+            this.txtEmailLogar.Size = new System.Drawing.Size(174, 23);
+            this.txtEmailLogar.TabIndex = 4;
             // 
             // txtSenhaLogar
             // 
-            txtSenhaLogar.Location = new Point(91, 86);
-            txtSenhaLogar.Name = "txtSenhaLogar";
-            txtSenhaLogar.Size = new Size(247, 31);
-            txtSenhaLogar.TabIndex = 5;
+            this.txtSenhaLogar.Location = new System.Drawing.Point(69, 75);
+            this.txtSenhaLogar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSenhaLogar.Name = "txtSenhaLogar";
+            this.txtSenhaLogar.Size = new System.Drawing.Size(174, 23);
+            this.txtSenhaLogar.TabIndex = 5;
             // 
             // btnRecuperarSenha
             // 
-            btnRecuperarSenha.Location = new Point(188, 123);
-            btnRecuperarSenha.Name = "btnRecuperarSenha";
-            btnRecuperarSenha.Size = new Size(150, 34);
-            btnRecuperarSenha.TabIndex = 6;
-            btnRecuperarSenha.Text = "Recuperar senha";
-            btnRecuperarSenha.UseVisualStyleBackColor = true;
+            this.btnRecuperarSenha.BackColor = System.Drawing.Color.Transparent;
+            this.btnRecuperarSenha.FlatAppearance.BorderSize = 0;
+            this.btnRecuperarSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecuperarSenha.Font = new System.Drawing.Font("Caladea", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.btnRecuperarSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnRecuperarSenha.Location = new System.Drawing.Point(43, 102);
+            this.btnRecuperarSenha.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRecuperarSenha.Name = "btnRecuperarSenha";
+            this.btnRecuperarSenha.Size = new System.Drawing.Size(178, 28);
+            this.btnRecuperarSenha.TabIndex = 6;
+            this.btnRecuperarSenha.Text = "Esqueci minha senha";
+            this.btnRecuperarSenha.UseVisualStyleBackColor = false;
             // 
             // frmTelaLogin
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(btnRecuperarSenha);
-            Controls.Add(txtSenhaLogar);
-            Controls.Add(txtEmailLogar);
-            Controls.Add(lblSenha);
-            Controls.Add(lblEmail);
-            Controls.Add(btnEntrar);
-            Controls.Add(btnCadastrar);
-            Name = "frmTelaLogin";
-            Text = "MSIF - Login";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MSIF.Properties.Resources.TELA_LOGIN;
+            this.ClientSize = new System.Drawing.Size(560, 270);
+            this.Controls.Add(this.btnRecuperarSenha);
+            this.Controls.Add(this.txtSenhaLogar);
+            this.Controls.Add(this.txtEmailLogar);
+            this.Controls.Add(this.lblSenha);
+            this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.btnEntrar);
+            this.Controls.Add(this.btnCadastrar);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "frmTelaLogin";
+            this.Text = "MSIF - Login";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
