@@ -8,19 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MSIF
+namespace MSIF.View
 {
-    public partial class ContatoResumo : UserControl
+    public partial class frmRecuperarSenha : Form
     {
-        public ContatoResumo(String apelido)
+        public frmRecuperarSenha()
         {
             InitializeComponent();
-            lblNomeUsuario.Text = apelido;
         }
 
-        private void ContatoResumo_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

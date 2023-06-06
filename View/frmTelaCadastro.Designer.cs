@@ -37,7 +37,7 @@
             txtEmail = new TextBox();
             txtSenha1 = new TextBox();
             txtSenha2 = new TextBox();
-            button1 = new Button();
+            btnCadastrar = new Button();
             fileDialog = new OpenFileDialog();
             btnSelecionarImagem = new Button();
             lblNome = new Label();
@@ -50,7 +50,7 @@
             lblApelido.Location = new Point(61, 48);
             lblApelido.Name = "lblApelido";
             lblApelido.Size = new Size(74, 25);
-            lblApelido.TabIndex = 0;
+            lblApelido.TabIndex = 8;
             lblApelido.Text = "Apelido";
             // 
             // lblEmail
@@ -59,7 +59,7 @@
             lblEmail.Location = new Point(74, 85);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(61, 25);
-            lblEmail.TabIndex = 1;
+            lblEmail.TabIndex = 9;
             lblEmail.Text = "E-mail";
             lblEmail.Click += lblEmail_Click;
             // 
@@ -69,8 +69,9 @@
             lblSenha1.Location = new Point(75, 122);
             lblSenha1.Name = "lblSenha1";
             lblSenha1.Size = new Size(60, 25);
-            lblSenha1.TabIndex = 2;
+            lblSenha1.TabIndex = 10;
             lblSenha1.Text = "Senha";
+            lblSenha1.Click += lblSenha1_Click;
             // 
             // lblSenha2
             // 
@@ -78,7 +79,7 @@
             lblSenha2.Location = new Point(17, 165);
             lblSenha2.Name = "lblSenha2";
             lblSenha2.Size = new Size(118, 25);
-            lblSenha2.TabIndex = 3;
+            lblSenha2.TabIndex = 11;
             lblSenha2.Text = "Repetir senha";
             // 
             // lblImagemPerfil
@@ -87,7 +88,7 @@
             lblImagemPerfil.Location = new Point(12, 199);
             lblImagemPerfil.Name = "lblImagemPerfil";
             lblImagemPerfil.Size = new Size(123, 25);
-            lblImagemPerfil.TabIndex = 4;
+            lblImagemPerfil.TabIndex = 12;
             lblImagemPerfil.Text = "Imagem perfil";
             // 
             // txtApelido
@@ -95,41 +96,41 @@
             txtApelido.Location = new Point(141, 48);
             txtApelido.Name = "txtApelido";
             txtApelido.Size = new Size(179, 31);
-            txtApelido.TabIndex = 5;
+            txtApelido.TabIndex = 1;
             // 
             // txtEmail
             // 
             txtEmail.Location = new Point(141, 85);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(179, 31);
-            txtEmail.TabIndex = 6;
+            txtEmail.TabIndex = 2;
             // 
             // txtSenha1
             // 
             txtSenha1.Location = new Point(141, 122);
             txtSenha1.Name = "txtSenha1";
             txtSenha1.Size = new Size(179, 31);
-            txtSenha1.TabIndex = 7;
+            txtSenha1.TabIndex = 3;
             // 
             // txtSenha2
             // 
             txtSenha2.Location = new Point(141, 159);
             txtSenha2.Name = "txtSenha2";
             txtSenha2.Size = new Size(179, 31);
-            txtSenha2.TabIndex = 8;
+            txtSenha2.TabIndex = 4;
             // 
-            // button1
+            // btnCadastrar
             // 
-            button1.Location = new Point(17, 241);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 10;
-            button1.Text = "Cadastrar";
-            button1.UseVisualStyleBackColor = true;
+            btnCadastrar.Location = new Point(17, 241);
+            btnCadastrar.Name = "btnCadastrar";
+            btnCadastrar.Size = new Size(112, 34);
+            btnCadastrar.TabIndex = 6;
+            btnCadastrar.Text = "Cadastrar";
+            btnCadastrar.UseVisualStyleBackColor = true;
+            btnCadastrar.Click += btnCadastrar_Click;
             // 
             // fileDialog
             // 
-            fileDialog.FileName = "openFileDialog1";
             fileDialog.FileOk += openFileDialog1_FileOk;
             // 
             // btnSelecionarImagem
@@ -137,9 +138,10 @@
             btnSelecionarImagem.Location = new Point(141, 199);
             btnSelecionarImagem.Name = "btnSelecionarImagem";
             btnSelecionarImagem.Size = new Size(179, 34);
-            btnSelecionarImagem.TabIndex = 11;
+            btnSelecionarImagem.TabIndex = 5;
             btnSelecionarImagem.Text = "Selecionar imagem";
             btnSelecionarImagem.UseVisualStyleBackColor = true;
+            btnSelecionarImagem.Click += btnSelecionarImagem_Click;
             // 
             // lblNome
             // 
@@ -147,7 +149,7 @@
             lblNome.Location = new Point(-7, 9);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(142, 25);
-            lblNome.TabIndex = 12;
+            lblNome.TabIndex = 7;
             lblNome.Text = "Nome completo";
             // 
             // txtNomeCompleto
@@ -155,7 +157,7 @@
             txtNomeCompleto.Location = new Point(141, 12);
             txtNomeCompleto.Name = "txtNomeCompleto";
             txtNomeCompleto.Size = new Size(179, 31);
-            txtNomeCompleto.TabIndex = 13;
+            txtNomeCompleto.TabIndex = 0;
             // 
             // frmTelaCadastro
             // 
@@ -165,7 +167,7 @@
             Controls.Add(txtNomeCompleto);
             Controls.Add(lblNome);
             Controls.Add(btnSelecionarImagem);
-            Controls.Add(button1);
+            Controls.Add(btnCadastrar);
             Controls.Add(txtSenha2);
             Controls.Add(txtSenha1);
             Controls.Add(txtEmail);
@@ -177,6 +179,7 @@
             Controls.Add(lblApelido);
             Name = "frmTelaCadastro";
             Text = "MSIF - Cadastro";
+            Load += frmTelaCadastro_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -192,7 +195,7 @@
         private TextBox txtEmail;
         private TextBox txtSenha1;
         private TextBox txtSenha2;
-        private Button button1;
+        private Button btnCadastrar;
         private OpenFileDialog fileDialog;
         private Button btnSelecionarImagem;
         private Label lblNome;

@@ -66,6 +66,7 @@
             lblSenha1MeuPerfil = new Label();
             lblEmailMeuPerfil = new Label();
             lblApelidoMeuPerfil = new Label();
+            ofdMeuPerfil = new OpenFileDialog();
             tabControlMenuPrincipal.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -87,6 +88,7 @@
             tabControlMenuPrincipal.SelectedIndex = 0;
             tabControlMenuPrincipal.Size = new Size(475, 670);
             tabControlMenuPrincipal.TabIndex = 0;
+            tabControlMenuPrincipal.Click += tabControlMenuPrincipal_Click;
             // 
             // tabPage1
             // 
@@ -364,6 +366,7 @@
             picFotoMeuPerfil.Location = new Point(136, 23);
             picFotoMeuPerfil.Name = "picFotoMeuPerfil";
             picFotoMeuPerfil.Size = new Size(212, 185);
+            picFotoMeuPerfil.SizeMode = PictureBoxSizeMode.Zoom;
             picFotoMeuPerfil.TabIndex = 34;
             picFotoMeuPerfil.TabStop = false;
             picFotoMeuPerfil.Click += pictureBox1_Click;
@@ -376,6 +379,7 @@
             btnSelecionarImagemMeuPerfil.TabIndex = 33;
             btnSelecionarImagemMeuPerfil.Text = "Selecionar imagem";
             btnSelecionarImagemMeuPerfil.UseVisualStyleBackColor = true;
+            btnSelecionarImagemMeuPerfil.Click += btnSelecionarImagemMeuPerfil_Click;
             // 
             // btnSalvarMeuPerfil
             // 
@@ -385,6 +389,7 @@
             btnSalvarMeuPerfil.TabIndex = 32;
             btnSalvarMeuPerfil.Text = "Salvar mudanças";
             btnSalvarMeuPerfil.UseVisualStyleBackColor = true;
+            btnSalvarMeuPerfil.Click += btnSalvarMeuPerfil_Click;
             // 
             // txtSenha2MeuPerfil
             // 
@@ -402,6 +407,7 @@
             // 
             // txtEmailMeuPerfil
             // 
+            txtEmailMeuPerfil.Enabled = false;
             txtEmailMeuPerfil.Location = new Point(185, 308);
             txtEmailMeuPerfil.Name = "txtEmailMeuPerfil";
             txtEmailMeuPerfil.Size = new Size(179, 31);
@@ -458,6 +464,10 @@
             lblApelidoMeuPerfil.Size = new Size(74, 25);
             lblApelidoMeuPerfil.TabIndex = 23;
             lblApelidoMeuPerfil.Text = "Apelido";
+            // 
+            // ofdMeuPerfil
+            // 
+            ofdMeuPerfil.FileName = "openFileDialog1";
             // 
             // frmTelaMenuPrincipal
             // 
@@ -521,5 +531,6 @@
         private FlowLayoutPanel flpContatosOffline;
         private Label label1;
         private Label label2;
+        private OpenFileDialog ofdMeuPerfil;
     }
 }

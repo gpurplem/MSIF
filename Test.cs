@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MSIF.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,15 +11,17 @@ using System.Windows.Forms;
 
 namespace MSIF
 {
-    public partial class ContatoResumo : UserControl
+    public partial class Test : Form
     {
-        public ContatoResumo(String apelido)
+        public Test()
         {
             InitializeComponent();
-            lblNomeUsuario.Text = apelido;
+            UsuarioController controller = new UsuarioController();
+            //controller.ReadTeste();
+            label1.Text = "aiii";
         }
 
-        private void ContatoResumo_Load(object sender, EventArgs e)
+        private void Test_Load(object sender, EventArgs e)
         {
 
         }

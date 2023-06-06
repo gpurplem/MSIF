@@ -20,6 +20,7 @@ namespace MSIF.Data
         public DbSet<Recado> Recado { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Solicitacao> Solicitacao { get; set; }
+        public DbSet<Imagem> Imagem { get; set; }
     }
 }
 

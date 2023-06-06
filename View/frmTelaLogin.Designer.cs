@@ -42,18 +42,20 @@
             btnCadastrar.Location = new Point(24, 218);
             btnCadastrar.Name = "btnCadastrar";
             btnCadastrar.Size = new Size(112, 34);
-            btnCadastrar.TabIndex = 0;
+            btnCadastrar.TabIndex = 4;
             btnCadastrar.Text = "Cadastrar";
             btnCadastrar.UseVisualStyleBackColor = true;
+            btnCadastrar.Click += btnCadastrar_Click;
             // 
             // btnEntrar
             // 
             btnEntrar.Location = new Point(226, 163);
             btnEntrar.Name = "btnEntrar";
             btnEntrar.Size = new Size(112, 34);
-            btnEntrar.TabIndex = 1;
+            btnEntrar.TabIndex = 3;
             btnEntrar.Text = "Entrar";
             btnEntrar.UseVisualStyleBackColor = true;
+            btnEntrar.Click += btnEntrar_Click;
             // 
             // lblEmail
             // 
@@ -61,7 +63,7 @@
             lblEmail.Location = new Point(24, 39);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(61, 25);
-            lblEmail.TabIndex = 2;
+            lblEmail.TabIndex = 5;
             lblEmail.Text = "E-mail";
             // 
             // lblSenha
@@ -70,7 +72,7 @@
             lblSenha.Location = new Point(24, 86);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(60, 25);
-            lblSenha.TabIndex = 3;
+            lblSenha.TabIndex = 6;
             lblSenha.Text = "Senha";
             // 
             // txtEmailLogar
@@ -78,23 +80,24 @@
             txtEmailLogar.Location = new Point(91, 39);
             txtEmailLogar.Name = "txtEmailLogar";
             txtEmailLogar.Size = new Size(247, 31);
-            txtEmailLogar.TabIndex = 4;
+            txtEmailLogar.TabIndex = 0;
             // 
             // txtSenhaLogar
             // 
             txtSenhaLogar.Location = new Point(91, 86);
             txtSenhaLogar.Name = "txtSenhaLogar";
             txtSenhaLogar.Size = new Size(247, 31);
-            txtSenhaLogar.TabIndex = 5;
+            txtSenhaLogar.TabIndex = 1;
             // 
             // btnRecuperarSenha
             // 
             btnRecuperarSenha.Location = new Point(188, 123);
             btnRecuperarSenha.Name = "btnRecuperarSenha";
             btnRecuperarSenha.Size = new Size(150, 34);
-            btnRecuperarSenha.TabIndex = 6;
+            btnRecuperarSenha.TabIndex = 2;
             btnRecuperarSenha.Text = "Recuperar senha";
             btnRecuperarSenha.UseVisualStyleBackColor = true;
+            btnRecuperarSenha.Click += btnRecuperarSenha_Click;
             // 
             // frmTelaLogin
             // 
@@ -110,6 +113,7 @@
             Controls.Add(btnCadastrar);
             Name = "frmTelaLogin";
             Text = "MSIF - Login";
+            Load += frmTelaLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }
