@@ -28,457 +28,539 @@
         /// </summary>
         private void InitializeComponent()
         {
-            tabControlMenuPrincipal = new TabControl();
-            tabPage1 = new TabPage();
-            label2 = new Label();
-            flpContatosOffline = new FlowLayoutPanel();
-            label1 = new Label();
-            btnContatosAbrirPerfil = new Button();
-            btnContatosConversar = new Button();
-            btnContatosExcluir = new Button();
-            flpContatosOnline = new FlowLayoutPanel();
-            tabPage2 = new TabPage();
-            flpMensagem = new FlowLayoutPanel();
-            btnAbrirMensagem = new Button();
-            btnApagarMensagem = new Button();
-            tabPage3 = new TabPage();
-            btnAceitarSolicitacoes = new Button();
-            btnRecusarSolicitacoes = new Button();
-            flpSolicitacoes = new FlowLayoutPanel();
-            tabPage4 = new TabPage();
-            btnPesquisarVisualizarPerfil = new Button();
-            btnPesquisarAdicionar = new Button();
-            flpApelidoPesquisa = new FlowLayoutPanel();
-            btnApelidoPesquisa = new Button();
-            txtApelidoPesquisa = new TextBox();
-            lblApelidoPesquisa = new Label();
-            tabPage5 = new TabPage();
-            lblNomeUsuarioMeuPerfil = new Label();
-            picFotoMeuPerfil = new PictureBox();
-            btnSelecionarImagemMeuPerfil = new Button();
-            btnSalvarMeuPerfil = new Button();
-            txtSenha2MeuPerfil = new TextBox();
-            txtSenha1MeuPerfil = new TextBox();
-            txtEmailMeuPerfil = new TextBox();
-            txtApelidoMeuPerfil = new TextBox();
-            lblImagemPerfilMeuPerfil = new Label();
-            lblSenha2MeuPerfil = new Label();
-            lblSenha1MeuPerfil = new Label();
-            lblEmailMeuPerfil = new Label();
-            lblApelidoMeuPerfil = new Label();
-            tabControlMenuPrincipal.SuspendLayout();
-            tabPage1.SuspendLayout();
-            tabPage2.SuspendLayout();
-            tabPage3.SuspendLayout();
-            tabPage4.SuspendLayout();
-            tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picFotoMeuPerfil).BeginInit();
-            SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTelaMenuPrincipal));
+            this.tabControlMenuPrincipal = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.flpContatosOffline = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnContatosAbrirPerfil = new System.Windows.Forms.Button();
+            this.btnContatosConversar = new System.Windows.Forms.Button();
+            this.btnContatosExcluir = new System.Windows.Forms.Button();
+            this.flpContatosOnline = new System.Windows.Forms.FlowLayoutPanel();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.flpMensagem = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnAbrirMensagem = new System.Windows.Forms.Button();
+            this.btnApagarMensagem = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnAceitarSolicitacoes = new System.Windows.Forms.Button();
+            this.btnRecusarSolicitacoes = new System.Windows.Forms.Button();
+            this.flpSolicitacoes = new System.Windows.Forms.FlowLayoutPanel();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnPesquisarVisualizarPerfil = new System.Windows.Forms.Button();
+            this.btnPesquisarAdicionar = new System.Windows.Forms.Button();
+            this.flpApelidoPesquisa = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnApelidoPesquisa = new System.Windows.Forms.Button();
+            this.txtApelidoPesquisa = new System.Windows.Forms.TextBox();
+            this.lblApelidoPesquisa = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.lblNomeUsuarioMeuPerfil = new System.Windows.Forms.Label();
+            this.picFotoMeuPerfil = new System.Windows.Forms.PictureBox();
+            this.btnSelecionarImagemMeuPerfil = new System.Windows.Forms.Button();
+            this.btnSalvarMeuPerfil = new System.Windows.Forms.Button();
+            this.txtSenha2MeuPerfil = new System.Windows.Forms.TextBox();
+            this.txtSenha1MeuPerfil = new System.Windows.Forms.TextBox();
+            this.txtEmailMeuPerfil = new System.Windows.Forms.TextBox();
+            this.txtApelidoMeuPerfil = new System.Windows.Forms.TextBox();
+            this.lblImagemPerfilMeuPerfil = new System.Windows.Forms.Label();
+            this.lblSenha2MeuPerfil = new System.Windows.Forms.Label();
+            this.lblSenha1MeuPerfil = new System.Windows.Forms.Label();
+            this.lblEmailMeuPerfil = new System.Windows.Forms.Label();
+            this.lblApelidoMeuPerfil = new System.Windows.Forms.Label();
+            this.tabControlMenuPrincipal.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoMeuPerfil)).BeginInit();
+            this.SuspendLayout();
             // 
             // tabControlMenuPrincipal
             // 
-            tabControlMenuPrincipal.Controls.Add(tabPage1);
-            tabControlMenuPrincipal.Controls.Add(tabPage2);
-            tabControlMenuPrincipal.Controls.Add(tabPage3);
-            tabControlMenuPrincipal.Controls.Add(tabPage4);
-            tabControlMenuPrincipal.Controls.Add(tabPage5);
-            tabControlMenuPrincipal.Location = new Point(1, 1);
-            tabControlMenuPrincipal.Name = "tabControlMenuPrincipal";
-            tabControlMenuPrincipal.SelectedIndex = 0;
-            tabControlMenuPrincipal.Size = new Size(475, 670);
-            tabControlMenuPrincipal.TabIndex = 0;
+            this.tabControlMenuPrincipal.Controls.Add(this.tabPage1);
+            this.tabControlMenuPrincipal.Controls.Add(this.tabPage2);
+            this.tabControlMenuPrincipal.Controls.Add(this.tabPage3);
+            this.tabControlMenuPrincipal.Controls.Add(this.tabPage4);
+            this.tabControlMenuPrincipal.Controls.Add(this.tabPage5);
+            this.tabControlMenuPrincipal.Font = new System.Drawing.Font("Caladea", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tabControlMenuPrincipal.Location = new System.Drawing.Point(5, 5);
+            this.tabControlMenuPrincipal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControlMenuPrincipal.Name = "tabControlMenuPrincipal";
+            this.tabControlMenuPrincipal.SelectedIndex = 0;
+            this.tabControlMenuPrincipal.Size = new System.Drawing.Size(353, 485);
+            this.tabControlMenuPrincipal.TabIndex = 0;
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(label2);
-            tabPage1.Controls.Add(flpContatosOffline);
-            tabPage1.Controls.Add(label1);
-            tabPage1.Controls.Add(btnContatosAbrirPerfil);
-            tabPage1.Controls.Add(btnContatosConversar);
-            tabPage1.Controls.Add(btnContatosExcluir);
-            tabPage1.Controls.Add(flpContatosOnline);
-            tabPage1.Location = new Point(4, 34);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(467, 632);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Contatos";
-            tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.BackgroundImage = global::MSIF.Properties.Resources.TELA_FUNDO_INICIAL;
+            this.tabPage1.Controls.Add(this.btnContatosConversar);
+            this.tabPage1.Controls.Add(this.btnContatosAbrirPerfil);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.flpContatosOffline);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.btnContatosExcluir);
+            this.tabPage1.Controls.Add(this.flpContatosOnline);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(345, 457);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Contatos";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(7, 291);
-            label2.Name = "label2";
-            label2.Size = new Size(65, 25);
-            label2.TabIndex = 6;
-            label2.Text = "Offline";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Caladea", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label2.Location = new System.Drawing.Point(38, 229);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 17);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "OFFLINE";
             // 
             // flpContatosOffline
             // 
-            flpContatosOffline.AutoScroll = true;
-            flpContatosOffline.FlowDirection = FlowDirection.TopDown;
-            flpContatosOffline.Location = new Point(3, 319);
-            flpContatosOffline.Name = "flpContatosOffline";
-            flpContatosOffline.Size = new Size(458, 221);
-            flpContatosOffline.TabIndex = 5;
-            flpContatosOffline.WrapContents = false;
+            this.flpContatosOffline.AutoScroll = true;
+            this.flpContatosOffline.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpContatosOffline.Location = new System.Drawing.Point(38, 248);
+            this.flpContatosOffline.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flpContatosOffline.Name = "flpContatosOffline";
+            this.flpContatosOffline.Size = new System.Drawing.Size(269, 172);
+            this.flpContatosOffline.TabIndex = 5;
+            this.flpContatosOffline.WrapContents = false;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(7, 3);
-            label1.Name = "label1";
-            label1.Size = new Size(63, 25);
-            label1.TabIndex = 4;
-            label1.Text = "Online";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Caladea", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(38, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 17);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "ONLINE";
             // 
             // btnContatosAbrirPerfil
             // 
-            btnContatosAbrirPerfil.Location = new Point(182, 578);
-            btnContatosAbrirPerfil.Name = "btnContatosAbrirPerfil";
-            btnContatosAbrirPerfil.Size = new Size(112, 34);
-            btnContatosAbrirPerfil.TabIndex = 3;
-            btnContatosAbrirPerfil.Text = "Ver perfil";
-            btnContatosAbrirPerfil.UseVisualStyleBackColor = true;
-            btnContatosAbrirPerfil.Click += btnContatosAbrirPerfil_Click;
+            this.btnContatosAbrirPerfil.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btnContatosAbrirPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnContatosAbrirPerfil.Font = new System.Drawing.Font("Caladea", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnContatosAbrirPerfil.ForeColor = System.Drawing.Color.White;
+            this.btnContatosAbrirPerfil.Location = new System.Drawing.Point(108, 427);
+            this.btnContatosAbrirPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnContatosAbrirPerfil.Name = "btnContatosAbrirPerfil";
+            this.btnContatosAbrirPerfil.Size = new System.Drawing.Size(97, 25);
+            this.btnContatosAbrirPerfil.TabIndex = 3;
+            this.btnContatosAbrirPerfil.Text = "VER PERFIL";
+            this.btnContatosAbrirPerfil.UseVisualStyleBackColor = false;
             // 
             // btnContatosConversar
             // 
-            btnContatosConversar.Location = new Point(349, 578);
-            btnContatosConversar.Name = "btnContatosConversar";
-            btnContatosConversar.Size = new Size(112, 34);
-            btnContatosConversar.TabIndex = 2;
-            btnContatosConversar.Text = "Conversar";
-            btnContatosConversar.UseVisualStyleBackColor = true;
-            btnContatosConversar.Click += btnContatosConversar_Click;
+            this.btnContatosConversar.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btnContatosConversar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnContatosConversar.Font = new System.Drawing.Font("Caladea", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnContatosConversar.ForeColor = System.Drawing.Color.White;
+            this.btnContatosConversar.Location = new System.Drawing.Point(207, 427);
+            this.btnContatosConversar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnContatosConversar.Name = "btnContatosConversar";
+            this.btnContatosConversar.Size = new System.Drawing.Size(100, 25);
+            this.btnContatosConversar.TabIndex = 2;
+            this.btnContatosConversar.Text = "CONVERSAR";
+            this.btnContatosConversar.UseVisualStyleBackColor = false;
             // 
             // btnContatosExcluir
             // 
-            btnContatosExcluir.Location = new Point(3, 578);
-            btnContatosExcluir.Name = "btnContatosExcluir";
-            btnContatosExcluir.Size = new Size(112, 34);
-            btnContatosExcluir.TabIndex = 1;
-            btnContatosExcluir.Text = "Excluir";
-            btnContatosExcluir.UseVisualStyleBackColor = true;
+            this.btnContatosExcluir.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btnContatosExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnContatosExcluir.Font = new System.Drawing.Font("Caladea", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnContatosExcluir.ForeColor = System.Drawing.Color.White;
+            this.btnContatosExcluir.Location = new System.Drawing.Point(37, 427);
+            this.btnContatosExcluir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnContatosExcluir.Name = "btnContatosExcluir";
+            this.btnContatosExcluir.Size = new System.Drawing.Size(70, 25);
+            this.btnContatosExcluir.TabIndex = 1;
+            this.btnContatosExcluir.Text = "EXCLUIR";
+            this.btnContatosExcluir.UseVisualStyleBackColor = false;
             // 
             // flpContatosOnline
             // 
-            flpContatosOnline.AutoScroll = true;
-            flpContatosOnline.FlowDirection = FlowDirection.TopDown;
-            flpContatosOnline.Location = new Point(3, 28);
-            flpContatosOnline.Name = "flpContatosOnline";
-            flpContatosOnline.Size = new Size(458, 221);
-            flpContatosOnline.TabIndex = 0;
-            flpContatosOnline.WrapContents = false;
+            this.flpContatosOnline.AutoScroll = true;
+            this.flpContatosOnline.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpContatosOnline.Location = new System.Drawing.Point(38, 41);
+            this.flpContatosOnline.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flpContatosOnline.Name = "flpContatosOnline";
+            this.flpContatosOnline.Size = new System.Drawing.Size(269, 172);
+            this.flpContatosOnline.TabIndex = 0;
+            this.flpContatosOnline.WrapContents = false;
             // 
             // tabPage2
             // 
-            tabPage2.Controls.Add(flpMensagem);
-            tabPage2.Controls.Add(btnAbrirMensagem);
-            tabPage2.Controls.Add(btnApagarMensagem);
-            tabPage2.Location = new Point(4, 34);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(467, 632);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Mensagens";
-            tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
+            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tabPage2.Controls.Add(this.flpMensagem);
+            this.tabPage2.Controls.Add(this.btnAbrirMensagem);
+            this.tabPage2.Controls.Add(this.btnApagarMensagem);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Size = new System.Drawing.Size(345, 457);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Mensagens";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // flpMensagem
             // 
-            flpMensagem.AutoScroll = true;
-            flpMensagem.FlowDirection = FlowDirection.TopDown;
-            flpMensagem.Location = new Point(7, 6);
-            flpMensagem.Name = "flpMensagem";
-            flpMensagem.Size = new Size(451, 580);
-            flpMensagem.TabIndex = 2;
-            flpMensagem.WrapContents = false;
+            this.flpMensagem.AutoScroll = true;
+            this.flpMensagem.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpMensagem.Location = new System.Drawing.Point(32, 38);
+            this.flpMensagem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flpMensagem.Name = "flpMensagem";
+            this.flpMensagem.Size = new System.Drawing.Size(276, 382);
+            this.flpMensagem.TabIndex = 2;
+            this.flpMensagem.WrapContents = false;
             // 
             // btnAbrirMensagem
             // 
-            btnAbrirMensagem.Location = new Point(346, 592);
-            btnAbrirMensagem.Name = "btnAbrirMensagem";
-            btnAbrirMensagem.Size = new Size(112, 34);
-            btnAbrirMensagem.TabIndex = 1;
-            btnAbrirMensagem.Text = "Abrir";
-            btnAbrirMensagem.UseVisualStyleBackColor = true;
-            btnAbrirMensagem.Click += btnAbrirMensagem_Click;
+            this.btnAbrirMensagem.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btnAbrirMensagem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAbrirMensagem.Font = new System.Drawing.Font("Caladea", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAbrirMensagem.ForeColor = System.Drawing.Color.White;
+            this.btnAbrirMensagem.Location = new System.Drawing.Point(230, 424);
+            this.btnAbrirMensagem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAbrirMensagem.Name = "btnAbrirMensagem";
+            this.btnAbrirMensagem.Size = new System.Drawing.Size(78, 25);
+            this.btnAbrirMensagem.TabIndex = 1;
+            this.btnAbrirMensagem.Text = "ABRIR";
+            this.btnAbrirMensagem.UseVisualStyleBackColor = false;
             // 
             // btnApagarMensagem
             // 
-            btnApagarMensagem.Location = new Point(6, 592);
-            btnApagarMensagem.Name = "btnApagarMensagem";
-            btnApagarMensagem.Size = new Size(112, 34);
-            btnApagarMensagem.TabIndex = 0;
-            btnApagarMensagem.Text = "Deletar";
-            btnApagarMensagem.UseVisualStyleBackColor = true;
+            this.btnApagarMensagem.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btnApagarMensagem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnApagarMensagem.Font = new System.Drawing.Font("Caladea", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnApagarMensagem.ForeColor = System.Drawing.Color.White;
+            this.btnApagarMensagem.Location = new System.Drawing.Point(37, 424);
+            this.btnApagarMensagem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnApagarMensagem.Name = "btnApagarMensagem";
+            this.btnApagarMensagem.Size = new System.Drawing.Size(78, 25);
+            this.btnApagarMensagem.TabIndex = 0;
+            this.btnApagarMensagem.Text = "DELETAR";
+            this.btnApagarMensagem.UseVisualStyleBackColor = false;
             // 
             // tabPage3
             // 
-            tabPage3.Controls.Add(btnAceitarSolicitacoes);
-            tabPage3.Controls.Add(btnRecusarSolicitacoes);
-            tabPage3.Controls.Add(flpSolicitacoes);
-            tabPage3.Location = new Point(4, 34);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(467, 632);
-            tabPage3.TabIndex = 2;
-            tabPage3.Text = "Solicitações";
-            tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.BackgroundImage = global::MSIF.Properties.Resources.TELA_FUNDO_INICIAL;
+            this.tabPage3.Controls.Add(this.btnAceitarSolicitacoes);
+            this.tabPage3.Controls.Add(this.btnRecusarSolicitacoes);
+            this.tabPage3.Controls.Add(this.flpSolicitacoes);
+            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Size = new System.Drawing.Size(345, 457);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Solicitações";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // btnAceitarSolicitacoes
             // 
-            btnAceitarSolicitacoes.Location = new Point(346, 572);
-            btnAceitarSolicitacoes.Name = "btnAceitarSolicitacoes";
-            btnAceitarSolicitacoes.Size = new Size(112, 34);
-            btnAceitarSolicitacoes.TabIndex = 2;
-            btnAceitarSolicitacoes.Text = "Aceitar";
-            btnAceitarSolicitacoes.UseVisualStyleBackColor = true;
-            btnAceitarSolicitacoes.Click += btnAceitarSolicitacoes_Click;
+            this.btnAceitarSolicitacoes.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btnAceitarSolicitacoes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAceitarSolicitacoes.ForeColor = System.Drawing.Color.White;
+            this.btnAceitarSolicitacoes.Location = new System.Drawing.Point(230, 424);
+            this.btnAceitarSolicitacoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAceitarSolicitacoes.Name = "btnAceitarSolicitacoes";
+            this.btnAceitarSolicitacoes.Size = new System.Drawing.Size(78, 25);
+            this.btnAceitarSolicitacoes.TabIndex = 2;
+            this.btnAceitarSolicitacoes.Text = "ACEITAR";
+            this.btnAceitarSolicitacoes.UseVisualStyleBackColor = false;
             // 
             // btnRecusarSolicitacoes
             // 
-            btnRecusarSolicitacoes.Location = new Point(7, 572);
-            btnRecusarSolicitacoes.Name = "btnRecusarSolicitacoes";
-            btnRecusarSolicitacoes.Size = new Size(112, 34);
-            btnRecusarSolicitacoes.TabIndex = 1;
-            btnRecusarSolicitacoes.Text = "Recusar";
-            btnRecusarSolicitacoes.UseVisualStyleBackColor = true;
+            this.btnRecusarSolicitacoes.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btnRecusarSolicitacoes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRecusarSolicitacoes.ForeColor = System.Drawing.Color.White;
+            this.btnRecusarSolicitacoes.Location = new System.Drawing.Point(37, 425);
+            this.btnRecusarSolicitacoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRecusarSolicitacoes.Name = "btnRecusarSolicitacoes";
+            this.btnRecusarSolicitacoes.Size = new System.Drawing.Size(78, 25);
+            this.btnRecusarSolicitacoes.TabIndex = 1;
+            this.btnRecusarSolicitacoes.Text = "RECUSAR";
+            this.btnRecusarSolicitacoes.UseVisualStyleBackColor = false;
             // 
             // flpSolicitacoes
             // 
-            flpSolicitacoes.AutoScroll = true;
-            flpSolicitacoes.FlowDirection = FlowDirection.TopDown;
-            flpSolicitacoes.Location = new Point(7, 6);
-            flpSolicitacoes.Name = "flpSolicitacoes";
-            flpSolicitacoes.Size = new Size(451, 560);
-            flpSolicitacoes.TabIndex = 0;
-            flpSolicitacoes.WrapContents = false;
+            this.flpSolicitacoes.AutoScroll = true;
+            this.flpSolicitacoes.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpSolicitacoes.Location = new System.Drawing.Point(37, 42);
+            this.flpSolicitacoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flpSolicitacoes.Name = "flpSolicitacoes";
+            this.flpSolicitacoes.Size = new System.Drawing.Size(271, 378);
+            this.flpSolicitacoes.TabIndex = 0;
+            this.flpSolicitacoes.WrapContents = false;
             // 
             // tabPage4
             // 
-            tabPage4.Controls.Add(btnPesquisarVisualizarPerfil);
-            tabPage4.Controls.Add(btnPesquisarAdicionar);
-            tabPage4.Controls.Add(flpApelidoPesquisa);
-            tabPage4.Controls.Add(btnApelidoPesquisa);
-            tabPage4.Controls.Add(txtApelidoPesquisa);
-            tabPage4.Controls.Add(lblApelidoPesquisa);
-            tabPage4.Location = new Point(4, 34);
-            tabPage4.Name = "tabPage4";
-            tabPage4.Size = new Size(467, 632);
-            tabPage4.TabIndex = 3;
-            tabPage4.Text = "Pesquisar";
-            tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.BackgroundImage = global::MSIF.Properties.Resources.TELA_FUNDO_INICIAL;
+            this.tabPage4.Controls.Add(this.btnPesquisarVisualizarPerfil);
+            this.tabPage4.Controls.Add(this.btnPesquisarAdicionar);
+            this.tabPage4.Controls.Add(this.flpApelidoPesquisa);
+            this.tabPage4.Controls.Add(this.btnApelidoPesquisa);
+            this.tabPage4.Controls.Add(this.txtApelidoPesquisa);
+            this.tabPage4.Controls.Add(this.lblApelidoPesquisa);
+            this.tabPage4.Location = new System.Drawing.Point(4, 24);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(345, 457);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Pesquisar";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // btnPesquisarVisualizarPerfil
             // 
-            btnPesquisarVisualizarPerfil.Location = new Point(346, 580);
-            btnPesquisarVisualizarPerfil.Name = "btnPesquisarVisualizarPerfil";
-            btnPesquisarVisualizarPerfil.Size = new Size(112, 34);
-            btnPesquisarVisualizarPerfil.TabIndex = 8;
-            btnPesquisarVisualizarPerfil.Text = "Ver perfil";
-            btnPesquisarVisualizarPerfil.UseVisualStyleBackColor = true;
+            this.btnPesquisarVisualizarPerfil.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btnPesquisarVisualizarPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPesquisarVisualizarPerfil.ForeColor = System.Drawing.Color.White;
+            this.btnPesquisarVisualizarPerfil.Location = new System.Drawing.Point(228, 425);
+            this.btnPesquisarVisualizarPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPesquisarVisualizarPerfil.Name = "btnPesquisarVisualizarPerfil";
+            this.btnPesquisarVisualizarPerfil.Size = new System.Drawing.Size(78, 25);
+            this.btnPesquisarVisualizarPerfil.TabIndex = 8;
+            this.btnPesquisarVisualizarPerfil.Text = "VER PERFIL";
+            this.btnPesquisarVisualizarPerfil.UseVisualStyleBackColor = false;
             // 
             // btnPesquisarAdicionar
             // 
-            btnPesquisarAdicionar.Location = new Point(7, 578);
-            btnPesquisarAdicionar.Name = "btnPesquisarAdicionar";
-            btnPesquisarAdicionar.Size = new Size(105, 36);
-            btnPesquisarAdicionar.TabIndex = 7;
-            btnPesquisarAdicionar.Text = "Adicionar";
-            btnPesquisarAdicionar.UseVisualStyleBackColor = true;
+            this.btnPesquisarAdicionar.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btnPesquisarAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPesquisarAdicionar.ForeColor = System.Drawing.Color.White;
+            this.btnPesquisarAdicionar.Location = new System.Drawing.Point(37, 425);
+            this.btnPesquisarAdicionar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPesquisarAdicionar.Name = "btnPesquisarAdicionar";
+            this.btnPesquisarAdicionar.Size = new System.Drawing.Size(88, 25);
+            this.btnPesquisarAdicionar.TabIndex = 7;
+            this.btnPesquisarAdicionar.Text = "ADICIONAR";
+            this.btnPesquisarAdicionar.UseVisualStyleBackColor = false;
             // 
             // flpApelidoPesquisa
             // 
-            flpApelidoPesquisa.AutoScroll = true;
-            flpApelidoPesquisa.FlowDirection = FlowDirection.TopDown;
-            flpApelidoPesquisa.Location = new Point(7, 48);
-            flpApelidoPesquisa.Name = "flpApelidoPesquisa";
-            flpApelidoPesquisa.Size = new Size(451, 524);
-            flpApelidoPesquisa.TabIndex = 6;
-            flpApelidoPesquisa.WrapContents = false;
-            flpApelidoPesquisa.Paint += flowLayoutPanel1_Paint;
+            this.flpApelidoPesquisa.AutoScroll = true;
+            this.flpApelidoPesquisa.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpApelidoPesquisa.Location = new System.Drawing.Point(35, 41);
+            this.flpApelidoPesquisa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flpApelidoPesquisa.Name = "flpApelidoPesquisa";
+            this.flpApelidoPesquisa.Size = new System.Drawing.Size(270, 375);
+            this.flpApelidoPesquisa.TabIndex = 6;
+            this.flpApelidoPesquisa.WrapContents = false;
             // 
             // btnApelidoPesquisa
             // 
-            btnApelidoPesquisa.Location = new Point(346, 11);
-            btnApelidoPesquisa.Name = "btnApelidoPesquisa";
-            btnApelidoPesquisa.Size = new Size(112, 34);
-            btnApelidoPesquisa.TabIndex = 5;
-            btnApelidoPesquisa.Text = "Pesquisar";
-            btnApelidoPesquisa.UseVisualStyleBackColor = true;
-            btnApelidoPesquisa.Click += btnApelidoPesquisa_Click;
+            this.btnApelidoPesquisa.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btnApelidoPesquisa.BackgroundImage = global::MSIF.Properties.Resources.LUPA;
+            this.btnApelidoPesquisa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnApelidoPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnApelidoPesquisa.ForeColor = System.Drawing.Color.White;
+            this.btnApelidoPesquisa.Location = new System.Drawing.Point(271, 9);
+            this.btnApelidoPesquisa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnApelidoPesquisa.Name = "btnApelidoPesquisa";
+            this.btnApelidoPesquisa.Size = new System.Drawing.Size(35, 25);
+            this.btnApelidoPesquisa.TabIndex = 5;
+            this.btnApelidoPesquisa.UseVisualStyleBackColor = false;
             // 
             // txtApelidoPesquisa
             // 
-            txtApelidoPesquisa.Location = new Point(87, 11);
-            txtApelidoPesquisa.Name = "txtApelidoPesquisa";
-            txtApelidoPesquisa.Size = new Size(253, 31);
-            txtApelidoPesquisa.TabIndex = 4;
+            this.txtApelidoPesquisa.Font = new System.Drawing.Font("Caladea", 9.749999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.txtApelidoPesquisa.Location = new System.Drawing.Point(115, 9);
+            this.txtApelidoPesquisa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApelidoPesquisa.Name = "txtApelidoPesquisa";
+            this.txtApelidoPesquisa.Size = new System.Drawing.Size(152, 23);
+            this.txtApelidoPesquisa.TabIndex = 4;
             // 
             // lblApelidoPesquisa
             // 
-            lblApelidoPesquisa.AutoSize = true;
-            lblApelidoPesquisa.Location = new Point(7, 17);
-            lblApelidoPesquisa.Name = "lblApelidoPesquisa";
-            lblApelidoPesquisa.Size = new Size(74, 25);
-            lblApelidoPesquisa.TabIndex = 3;
-            lblApelidoPesquisa.Text = "Apelido";
-            lblApelidoPesquisa.Click += label1_Click;
+            this.lblApelidoPesquisa.AutoSize = true;
+            this.lblApelidoPesquisa.Font = new System.Drawing.Font("Caladea", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblApelidoPesquisa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblApelidoPesquisa.Location = new System.Drawing.Point(39, 12);
+            this.lblApelidoPesquisa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblApelidoPesquisa.Name = "lblApelidoPesquisa";
+            this.lblApelidoPesquisa.Size = new System.Drawing.Size(78, 17);
+            this.lblApelidoPesquisa.TabIndex = 3;
+            this.lblApelidoPesquisa.Text = "APELIDO:";
             // 
             // tabPage5
             // 
-            tabPage5.Controls.Add(lblNomeUsuarioMeuPerfil);
-            tabPage5.Controls.Add(picFotoMeuPerfil);
-            tabPage5.Controls.Add(btnSelecionarImagemMeuPerfil);
-            tabPage5.Controls.Add(btnSalvarMeuPerfil);
-            tabPage5.Controls.Add(txtSenha2MeuPerfil);
-            tabPage5.Controls.Add(txtSenha1MeuPerfil);
-            tabPage5.Controls.Add(txtEmailMeuPerfil);
-            tabPage5.Controls.Add(txtApelidoMeuPerfil);
-            tabPage5.Controls.Add(lblImagemPerfilMeuPerfil);
-            tabPage5.Controls.Add(lblSenha2MeuPerfil);
-            tabPage5.Controls.Add(lblSenha1MeuPerfil);
-            tabPage5.Controls.Add(lblEmailMeuPerfil);
-            tabPage5.Controls.Add(lblApelidoMeuPerfil);
-            tabPage5.Location = new Point(4, 34);
-            tabPage5.Name = "tabPage5";
-            tabPage5.Size = new Size(467, 632);
-            tabPage5.TabIndex = 4;
-            tabPage5.Text = "Meu perfil";
-            tabPage5.UseVisualStyleBackColor = true;
-            tabPage5.Click += tabPage5_Click;
+            this.tabPage5.BackgroundImage = global::MSIF.Properties.Resources.TELA_FUNDO_INICIAL;
+            this.tabPage5.Controls.Add(this.lblNomeUsuarioMeuPerfil);
+            this.tabPage5.Controls.Add(this.picFotoMeuPerfil);
+            this.tabPage5.Controls.Add(this.btnSelecionarImagemMeuPerfil);
+            this.tabPage5.Controls.Add(this.btnSalvarMeuPerfil);
+            this.tabPage5.Controls.Add(this.txtSenha2MeuPerfil);
+            this.tabPage5.Controls.Add(this.txtSenha1MeuPerfil);
+            this.tabPage5.Controls.Add(this.txtEmailMeuPerfil);
+            this.tabPage5.Controls.Add(this.txtApelidoMeuPerfil);
+            this.tabPage5.Controls.Add(this.lblImagemPerfilMeuPerfil);
+            this.tabPage5.Controls.Add(this.lblSenha2MeuPerfil);
+            this.tabPage5.Controls.Add(this.lblSenha1MeuPerfil);
+            this.tabPage5.Controls.Add(this.lblEmailMeuPerfil);
+            this.tabPage5.Controls.Add(this.lblApelidoMeuPerfil);
+            this.tabPage5.Location = new System.Drawing.Point(4, 24);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(345, 457);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Meu perfil";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // lblNomeUsuarioMeuPerfil
             // 
-            lblNomeUsuarioMeuPerfil.AutoSize = true;
-            lblNomeUsuarioMeuPerfil.Location = new Point(136, 225);
-            lblNomeUsuarioMeuPerfil.Name = "lblNomeUsuarioMeuPerfil";
-            lblNomeUsuarioMeuPerfil.Size = new Size(121, 25);
-            lblNomeUsuarioMeuPerfil.TabIndex = 35;
-            lblNomeUsuarioMeuPerfil.Text = "NomeUsuario";
+            this.lblNomeUsuarioMeuPerfil.AutoSize = true;
+            this.lblNomeUsuarioMeuPerfil.Location = new System.Drawing.Point(95, 135);
+            this.lblNomeUsuarioMeuPerfil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNomeUsuarioMeuPerfil.Name = "lblNomeUsuarioMeuPerfil";
+            this.lblNomeUsuarioMeuPerfil.Size = new System.Drawing.Size(93, 15);
+            this.lblNomeUsuarioMeuPerfil.TabIndex = 35;
+            this.lblNomeUsuarioMeuPerfil.Text = "NomeUsuario";
             // 
             // picFotoMeuPerfil
             // 
-            picFotoMeuPerfil.Location = new Point(136, 23);
-            picFotoMeuPerfil.Name = "picFotoMeuPerfil";
-            picFotoMeuPerfil.Size = new Size(212, 185);
-            picFotoMeuPerfil.TabIndex = 34;
-            picFotoMeuPerfil.TabStop = false;
-            picFotoMeuPerfil.Click += pictureBox1_Click;
+            this.picFotoMeuPerfil.Location = new System.Drawing.Point(95, 14);
+            this.picFotoMeuPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picFotoMeuPerfil.Name = "picFotoMeuPerfil";
+            this.picFotoMeuPerfil.Size = new System.Drawing.Size(148, 111);
+            this.picFotoMeuPerfil.TabIndex = 34;
+            this.picFotoMeuPerfil.TabStop = false;
             // 
             // btnSelecionarImagemMeuPerfil
             // 
-            btnSelecionarImagemMeuPerfil.Location = new Point(185, 422);
-            btnSelecionarImagemMeuPerfil.Name = "btnSelecionarImagemMeuPerfil";
-            btnSelecionarImagemMeuPerfil.Size = new Size(179, 34);
-            btnSelecionarImagemMeuPerfil.TabIndex = 33;
-            btnSelecionarImagemMeuPerfil.Text = "Selecionar imagem";
-            btnSelecionarImagemMeuPerfil.UseVisualStyleBackColor = true;
+            this.btnSelecionarImagemMeuPerfil.Location = new System.Drawing.Point(130, 253);
+            this.btnSelecionarImagemMeuPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSelecionarImagemMeuPerfil.Name = "btnSelecionarImagemMeuPerfil";
+            this.btnSelecionarImagemMeuPerfil.Size = new System.Drawing.Size(125, 20);
+            this.btnSelecionarImagemMeuPerfil.TabIndex = 33;
+            this.btnSelecionarImagemMeuPerfil.Text = "Selecionar imagem";
+            this.btnSelecionarImagemMeuPerfil.UseVisualStyleBackColor = true;
             // 
             // btnSalvarMeuPerfil
             // 
-            btnSalvarMeuPerfil.Location = new Point(61, 464);
-            btnSalvarMeuPerfil.Name = "btnSalvarMeuPerfil";
-            btnSalvarMeuPerfil.Size = new Size(163, 34);
-            btnSalvarMeuPerfil.TabIndex = 32;
-            btnSalvarMeuPerfil.Text = "Salvar mudanças";
-            btnSalvarMeuPerfil.UseVisualStyleBackColor = true;
+            this.btnSalvarMeuPerfil.Location = new System.Drawing.Point(43, 278);
+            this.btnSalvarMeuPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalvarMeuPerfil.Name = "btnSalvarMeuPerfil";
+            this.btnSalvarMeuPerfil.Size = new System.Drawing.Size(114, 20);
+            this.btnSalvarMeuPerfil.TabIndex = 32;
+            this.btnSalvarMeuPerfil.Text = "Salvar mudanças";
+            this.btnSalvarMeuPerfil.UseVisualStyleBackColor = true;
             // 
             // txtSenha2MeuPerfil
             // 
-            txtSenha2MeuPerfil.Location = new Point(185, 382);
-            txtSenha2MeuPerfil.Name = "txtSenha2MeuPerfil";
-            txtSenha2MeuPerfil.Size = new Size(179, 31);
-            txtSenha2MeuPerfil.TabIndex = 31;
+            this.txtSenha2MeuPerfil.Location = new System.Drawing.Point(130, 229);
+            this.txtSenha2MeuPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSenha2MeuPerfil.Name = "txtSenha2MeuPerfil";
+            this.txtSenha2MeuPerfil.Size = new System.Drawing.Size(126, 23);
+            this.txtSenha2MeuPerfil.TabIndex = 31;
             // 
             // txtSenha1MeuPerfil
             // 
-            txtSenha1MeuPerfil.Location = new Point(185, 345);
-            txtSenha1MeuPerfil.Name = "txtSenha1MeuPerfil";
-            txtSenha1MeuPerfil.Size = new Size(179, 31);
-            txtSenha1MeuPerfil.TabIndex = 30;
+            this.txtSenha1MeuPerfil.Location = new System.Drawing.Point(130, 207);
+            this.txtSenha1MeuPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSenha1MeuPerfil.Name = "txtSenha1MeuPerfil";
+            this.txtSenha1MeuPerfil.Size = new System.Drawing.Size(126, 23);
+            this.txtSenha1MeuPerfil.TabIndex = 30;
             // 
             // txtEmailMeuPerfil
             // 
-            txtEmailMeuPerfil.Location = new Point(185, 308);
-            txtEmailMeuPerfil.Name = "txtEmailMeuPerfil";
-            txtEmailMeuPerfil.Size = new Size(179, 31);
-            txtEmailMeuPerfil.TabIndex = 29;
+            this.txtEmailMeuPerfil.Location = new System.Drawing.Point(130, 185);
+            this.txtEmailMeuPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmailMeuPerfil.Name = "txtEmailMeuPerfil";
+            this.txtEmailMeuPerfil.Size = new System.Drawing.Size(126, 23);
+            this.txtEmailMeuPerfil.TabIndex = 29;
             // 
             // txtApelidoMeuPerfil
             // 
-            txtApelidoMeuPerfil.Location = new Point(185, 271);
-            txtApelidoMeuPerfil.Name = "txtApelidoMeuPerfil";
-            txtApelidoMeuPerfil.Size = new Size(179, 31);
-            txtApelidoMeuPerfil.TabIndex = 28;
+            this.txtApelidoMeuPerfil.Location = new System.Drawing.Point(130, 163);
+            this.txtApelidoMeuPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApelidoMeuPerfil.Name = "txtApelidoMeuPerfil";
+            this.txtApelidoMeuPerfil.Size = new System.Drawing.Size(126, 23);
+            this.txtApelidoMeuPerfil.TabIndex = 28;
             // 
             // lblImagemPerfilMeuPerfil
             // 
-            lblImagemPerfilMeuPerfil.AutoSize = true;
-            lblImagemPerfilMeuPerfil.Location = new Point(56, 422);
-            lblImagemPerfilMeuPerfil.Name = "lblImagemPerfilMeuPerfil";
-            lblImagemPerfilMeuPerfil.Size = new Size(123, 25);
-            lblImagemPerfilMeuPerfil.TabIndex = 27;
-            lblImagemPerfilMeuPerfil.Text = "Imagem perfil";
+            this.lblImagemPerfilMeuPerfil.AutoSize = true;
+            this.lblImagemPerfilMeuPerfil.Location = new System.Drawing.Point(39, 253);
+            this.lblImagemPerfilMeuPerfil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblImagemPerfilMeuPerfil.Name = "lblImagemPerfilMeuPerfil";
+            this.lblImagemPerfilMeuPerfil.Size = new System.Drawing.Size(96, 15);
+            this.lblImagemPerfilMeuPerfil.TabIndex = 27;
+            this.lblImagemPerfilMeuPerfil.Text = "Imagem perfil";
             // 
             // lblSenha2MeuPerfil
             // 
-            lblSenha2MeuPerfil.AutoSize = true;
-            lblSenha2MeuPerfil.Location = new Point(61, 388);
-            lblSenha2MeuPerfil.Name = "lblSenha2MeuPerfil";
-            lblSenha2MeuPerfil.Size = new Size(118, 25);
-            lblSenha2MeuPerfil.TabIndex = 26;
-            lblSenha2MeuPerfil.Text = "Repetir senha";
+            this.lblSenha2MeuPerfil.AutoSize = true;
+            this.lblSenha2MeuPerfil.Location = new System.Drawing.Point(43, 233);
+            this.lblSenha2MeuPerfil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSenha2MeuPerfil.Name = "lblSenha2MeuPerfil";
+            this.lblSenha2MeuPerfil.Size = new System.Drawing.Size(95, 15);
+            this.lblSenha2MeuPerfil.TabIndex = 26;
+            this.lblSenha2MeuPerfil.Text = "Repetir senha";
             // 
             // lblSenha1MeuPerfil
             // 
-            lblSenha1MeuPerfil.AutoSize = true;
-            lblSenha1MeuPerfil.Location = new Point(74, 345);
-            lblSenha1MeuPerfil.Name = "lblSenha1MeuPerfil";
-            lblSenha1MeuPerfil.Size = new Size(105, 25);
-            lblSenha1MeuPerfil.TabIndex = 25;
-            lblSenha1MeuPerfil.Text = "Nova senha";
+            this.lblSenha1MeuPerfil.AutoSize = true;
+            this.lblSenha1MeuPerfil.Location = new System.Drawing.Point(52, 207);
+            this.lblSenha1MeuPerfil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSenha1MeuPerfil.Name = "lblSenha1MeuPerfil";
+            this.lblSenha1MeuPerfil.Size = new System.Drawing.Size(81, 15);
+            this.lblSenha1MeuPerfil.TabIndex = 25;
+            this.lblSenha1MeuPerfil.Text = "Nova senha";
             // 
             // lblEmailMeuPerfil
             // 
-            lblEmailMeuPerfil.AutoSize = true;
-            lblEmailMeuPerfil.Location = new Point(118, 308);
-            lblEmailMeuPerfil.Name = "lblEmailMeuPerfil";
-            lblEmailMeuPerfil.Size = new Size(61, 25);
-            lblEmailMeuPerfil.TabIndex = 24;
-            lblEmailMeuPerfil.Text = "E-mail";
+            this.lblEmailMeuPerfil.AutoSize = true;
+            this.lblEmailMeuPerfil.Location = new System.Drawing.Point(83, 185);
+            this.lblEmailMeuPerfil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmailMeuPerfil.Name = "lblEmailMeuPerfil";
+            this.lblEmailMeuPerfil.Size = new System.Drawing.Size(48, 15);
+            this.lblEmailMeuPerfil.TabIndex = 24;
+            this.lblEmailMeuPerfil.Text = "E-mail";
             // 
             // lblApelidoMeuPerfil
             // 
-            lblApelidoMeuPerfil.AutoSize = true;
-            lblApelidoMeuPerfil.Location = new Point(105, 271);
-            lblApelidoMeuPerfil.Name = "lblApelidoMeuPerfil";
-            lblApelidoMeuPerfil.Size = new Size(74, 25);
-            lblApelidoMeuPerfil.TabIndex = 23;
-            lblApelidoMeuPerfil.Text = "Apelido";
+            this.lblApelidoMeuPerfil.AutoSize = true;
+            this.lblApelidoMeuPerfil.Location = new System.Drawing.Point(74, 163);
+            this.lblApelidoMeuPerfil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblApelidoMeuPerfil.Name = "lblApelidoMeuPerfil";
+            this.lblApelidoMeuPerfil.Size = new System.Drawing.Size(56, 15);
+            this.lblApelidoMeuPerfil.TabIndex = 23;
+            this.lblApelidoMeuPerfil.Text = "Apelido";
             // 
             // frmTelaMenuPrincipal
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(475, 673);
-            Controls.Add(tabControlMenuPrincipal);
-            Name = "frmTelaMenuPrincipal";
-            Text = "MenuPrincipal";
-            Load += frmTelaMenuPrincipal_Load;
-            tabControlMenuPrincipal.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            tabPage1.PerformLayout();
-            tabPage2.ResumeLayout(false);
-            tabPage3.ResumeLayout(false);
-            tabPage4.ResumeLayout(false);
-            tabPage4.PerformLayout();
-            tabPage5.ResumeLayout(false);
-            tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)picFotoMeuPerfil).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(364, 501);
+            this.Controls.Add(this.tabControlMenuPrincipal);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "frmTelaMenuPrincipal";
+            this.Text = "MenuPrincipal";
+            this.tabControlMenuPrincipal.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoMeuPerfil)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

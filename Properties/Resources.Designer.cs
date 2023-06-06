@@ -63,6 +63,26 @@ namespace MSIF.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FUNDO_TELA_INICIAL {
+            get {
+                object obj = ResourceManager.GetObject("FUNDO TELA-INICIAL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LUPA {
+            get {
+                object obj = ResourceManager.GetObject("LUPA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SEM_FOTO {
             get {
                 object obj = ResourceManager.GetObject("SEM FOTO", resourceCulture);
@@ -73,9 +93,39 @@ namespace MSIF.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TELA_CHAT {
+            get {
+                object obj = ResourceManager.GetObject("TELA CHAT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TELA_FUNDO_INICIAL {
+            get {
+                object obj = ResourceManager.GetObject("TELA FUNDO INICIAL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TELA_LOGIN {
             get {
                 object obj = ResourceManager.GetObject("TELA LOGIN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TELA_PERFIL {
+            get {
+                object obj = ResourceManager.GetObject("TELA PERFIL", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

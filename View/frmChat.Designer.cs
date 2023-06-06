@@ -28,50 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtMsg = new TextBox();
-            btnEnviar = new Button();
-            flpMensagem = new FlowLayoutPanel();
-            SuspendLayout();
+            this.txtMsg = new System.Windows.Forms.TextBox();
+            this.btnEnviar = new System.Windows.Forms.Button();
+            this.flpMensagem = new System.Windows.Forms.FlowLayoutPanel();
+            this.SuspendLayout();
             // 
             // txtMsg
             // 
-            txtMsg.Location = new Point(11, 404);
-            txtMsg.Name = "txtMsg";
-            txtMsg.Size = new Size(659, 31);
-            txtMsg.TabIndex = 1;
+            this.txtMsg.BackColor = System.Drawing.Color.Black;
+            this.txtMsg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMsg.Font = new System.Drawing.Font("Caladea", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtMsg.ForeColor = System.Drawing.Color.White;
+            this.txtMsg.Location = new System.Drawing.Point(20, 306);
+            this.txtMsg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMsg.Name = "txtMsg";
+            this.txtMsg.Size = new System.Drawing.Size(450, 16);
+            this.txtMsg.TabIndex = 1;
             // 
             // btnEnviar
             // 
-            btnEnviar.Location = new Point(676, 404);
-            btnEnviar.Name = "btnEnviar";
-            btnEnviar.Size = new Size(112, 34);
-            btnEnviar.TabIndex = 2;
-            btnEnviar.Text = "Enviar";
-            btnEnviar.UseVisualStyleBackColor = true;
-            btnEnviar.Click += btnEnviar_Click;
+            this.btnEnviar.BackColor = System.Drawing.Color.Black;
+            this.btnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEnviar.Font = new System.Drawing.Font("Caladea", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEnviar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnEnviar.Location = new System.Drawing.Point(460, 299);
+            this.btnEnviar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(91, 29);
+            this.btnEnviar.TabIndex = 2;
+            this.btnEnviar.Text = "ENVIAR";
+            this.btnEnviar.UseVisualStyleBackColor = false;
             // 
             // flpMensagem
             // 
-            flpMensagem.AutoScroll = true;
-            flpMensagem.FlowDirection = FlowDirection.TopDown;
-            flpMensagem.Location = new Point(12, 12);
-            flpMensagem.Name = "flpMensagem";
-            flpMensagem.Size = new Size(776, 386);
-            flpMensagem.TabIndex = 3;
-            flpMensagem.WrapContents = false;
+            this.flpMensagem.AutoScroll = true;
+            this.flpMensagem.BackColor = System.Drawing.Color.Black;
+            this.flpMensagem.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpMensagem.Location = new System.Drawing.Point(30, 36);
+            this.flpMensagem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flpMensagem.Name = "flpMensagem";
+            this.flpMensagem.Size = new System.Drawing.Size(510, 195);
+            this.flpMensagem.TabIndex = 3;
+            this.flpMensagem.WrapContents = false;
             // 
             // frmChat
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(flpMensagem);
-            Controls.Add(btnEnviar);
-            Controls.Add(txtMsg);
-            Name = "frmChat";
-            Text = "MSIF - Chat";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MSIF.Properties.Resources.TELA_CHAT;
+            this.ClientSize = new System.Drawing.Size(575, 349);
+            this.Controls.Add(this.flpMensagem);
+            this.Controls.Add(this.btnEnviar);
+            this.Controls.Add(this.txtMsg);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "frmChat";
+            this.Text = "MSIF - Chat";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

@@ -43,7 +43,7 @@
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCadastrar.Font = new System.Drawing.Font("Caladea", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(22, 166);
+            this.btnCadastrar.Location = new System.Drawing.Point(34, 181);
             this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(221, 31);
@@ -57,7 +57,7 @@
             this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEntrar.Font = new System.Drawing.Font("Caladea", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnEntrar.ForeColor = System.Drawing.Color.White;
-            this.btnEntrar.Location = new System.Drawing.Point(22, 131);
+            this.btnEntrar.Location = new System.Drawing.Point(34, 146);
             this.btnEntrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(221, 31);
@@ -71,7 +71,7 @@
             this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.Font = new System.Drawing.Font("Caladea", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblEmail.Location = new System.Drawing.Point(11, 47);
+            this.lblEmail.Location = new System.Drawing.Point(23, 62);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(61, 17);
@@ -84,7 +84,7 @@
             this.lblSenha.BackColor = System.Drawing.Color.Transparent;
             this.lblSenha.Font = new System.Drawing.Font("Caladea", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblSenha.Location = new System.Drawing.Point(11, 75);
+            this.lblSenha.Location = new System.Drawing.Point(23, 90);
             this.lblSenha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(56, 17);
@@ -96,7 +96,7 @@
             this.txtEmailLogar.BackColor = System.Drawing.Color.White;
             this.txtEmailLogar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmailLogar.Font = new System.Drawing.Font("Caladea", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtEmailLogar.Location = new System.Drawing.Point(69, 46);
+            this.txtEmailLogar.Location = new System.Drawing.Point(81, 61);
             this.txtEmailLogar.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmailLogar.Name = "txtEmailLogar";
             this.txtEmailLogar.Size = new System.Drawing.Size(174, 23);
@@ -104,7 +104,7 @@
             // 
             // txtSenhaLogar
             // 
-            this.txtSenhaLogar.Location = new System.Drawing.Point(69, 75);
+            this.txtSenhaLogar.Location = new System.Drawing.Point(81, 90);
             this.txtSenhaLogar.Margin = new System.Windows.Forms.Padding(2);
             this.txtSenhaLogar.Name = "txtSenhaLogar";
             this.txtSenhaLogar.Size = new System.Drawing.Size(174, 23);
@@ -117,7 +117,7 @@
             this.btnRecuperarSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecuperarSenha.Font = new System.Drawing.Font("Caladea", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.btnRecuperarSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnRecuperarSenha.Location = new System.Drawing.Point(43, 102);
+            this.btnRecuperarSenha.Location = new System.Drawing.Point(55, 117);
             this.btnRecuperarSenha.Margin = new System.Windows.Forms.Padding(2);
             this.btnRecuperarSenha.Name = "btnRecuperarSenha";
             this.btnRecuperarSenha.Size = new System.Drawing.Size(178, 28);
