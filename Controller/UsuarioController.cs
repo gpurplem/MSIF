@@ -122,5 +122,12 @@ namespace MSIF.Controller
             return quantidade != 0;
         }
 
+        public Boolean HaApelidoRepetido(String apelido)
+        {
+            int quantidade = Context.Usuario.Where(r => r.Apelido.Equals(apelido)).Count();
+
+            return quantidade != 0;
+        }
+
     }
 }

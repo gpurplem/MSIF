@@ -28,18 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
+            pbFotoUsuario = new PictureBox();
             lblNomeUsuario = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbFotoUsuario).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // pbFotoUsuario
             // 
-            pictureBox1.Location = new Point(3, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(82, 74);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            pbFotoUsuario.Location = new Point(3, 3);
+            pbFotoUsuario.Name = "pbFotoUsuario";
+            pbFotoUsuario.Size = new Size(82, 74);
+            pbFotoUsuario.SizeMode = PictureBoxSizeMode.Zoom;
+            pbFotoUsuario.TabIndex = 0;
+            pbFotoUsuario.TabStop = false;
+            pbFotoUsuario.Click += pictureBox1_Click;
             // 
             // lblNomeUsuario
             // 
@@ -49,6 +51,7 @@
             lblNomeUsuario.Size = new Size(121, 25);
             lblNomeUsuario.TabIndex = 1;
             lblNomeUsuario.Text = "NomeUsuario";
+            lblNomeUsuario.Click += lblNomeUsuario_Click;
             // 
             // ContatoResumo
             // 
@@ -56,18 +59,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             BorderStyle = BorderStyle.FixedSingle;
             Controls.Add(lblNomeUsuario);
-            Controls.Add(pictureBox1);
+            Controls.Add(pbFotoUsuario);
             Name = "ContatoResumo";
             Size = new Size(400, 80);
             Load += ContatoResumo_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbFotoUsuario).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private PictureBox pbFotoUsuario;
         private Label lblNomeUsuario;
     }
 }

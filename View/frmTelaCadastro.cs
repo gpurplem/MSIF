@@ -32,6 +32,8 @@ namespace MSIF
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            UsuarioController uc = new UsuarioController();
+
             Boolean haProblema = false;
 
             String nomeCompleto = txtNomeCompleto.Text;
@@ -97,6 +99,13 @@ namespace MSIF
                 haProblema = true;
             }
 
+            //Apelido repetido
+            if (uc.HaApelidoRepetido(apelido))
+            {
+                txtApelido.BackColor = Color.Plum;
+                haProblema = true;
+            }
+
             if (!haProblema)
             {
                 Usuario usuario = new Usuario();
@@ -108,7 +117,7 @@ namespace MSIF
                 usuario.Url = nomeArquivo;
 
                 //Verificar email repetido
-                UsuarioController uc = new UsuarioController();
+                //UsuarioController uc = new UsuarioController();
                 if (uc.HaEmailRepetido(usuario))
                 {
                     txtEmail.BackColor = Color.Plum;

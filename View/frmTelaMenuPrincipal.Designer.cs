@@ -33,7 +33,6 @@
             label2 = new Label();
             flpContatosOffline = new FlowLayoutPanel();
             label1 = new Label();
-            btnContatosAbrirPerfil = new Button();
             btnContatosConversar = new Button();
             btnContatosExcluir = new Button();
             flpContatosOnline = new FlowLayoutPanel();
@@ -46,7 +45,6 @@
             btnRecusarSolicitacoes = new Button();
             flpSolicitacoes = new FlowLayoutPanel();
             tabPage4 = new TabPage();
-            btnPesquisarVisualizarPerfil = new Button();
             btnPesquisarAdicionar = new Button();
             flpApelidoPesquisa = new FlowLayoutPanel();
             btnApelidoPesquisa = new Button();
@@ -95,7 +93,6 @@
             tabPage1.Controls.Add(label2);
             tabPage1.Controls.Add(flpContatosOffline);
             tabPage1.Controls.Add(label1);
-            tabPage1.Controls.Add(btnContatosAbrirPerfil);
             tabPage1.Controls.Add(btnContatosConversar);
             tabPage1.Controls.Add(btnContatosExcluir);
             tabPage1.Controls.Add(flpContatosOnline);
@@ -134,16 +131,6 @@
             label1.Size = new Size(63, 25);
             label1.TabIndex = 4;
             label1.Text = "Online";
-            // 
-            // btnContatosAbrirPerfil
-            // 
-            btnContatosAbrirPerfil.Location = new Point(182, 578);
-            btnContatosAbrirPerfil.Name = "btnContatosAbrirPerfil";
-            btnContatosAbrirPerfil.Size = new Size(112, 34);
-            btnContatosAbrirPerfil.TabIndex = 3;
-            btnContatosAbrirPerfil.Text = "Ver perfil";
-            btnContatosAbrirPerfil.UseVisualStyleBackColor = true;
-            btnContatosAbrirPerfil.Click += btnContatosAbrirPerfil_Click;
             // 
             // btnContatosConversar
             // 
@@ -260,7 +247,6 @@
             // 
             // tabPage4
             // 
-            tabPage4.Controls.Add(btnPesquisarVisualizarPerfil);
             tabPage4.Controls.Add(btnPesquisarAdicionar);
             tabPage4.Controls.Add(flpApelidoPesquisa);
             tabPage4.Controls.Add(btnApelidoPesquisa);
@@ -273,23 +259,15 @@
             tabPage4.Text = "Pesquisar";
             tabPage4.UseVisualStyleBackColor = true;
             // 
-            // btnPesquisarVisualizarPerfil
-            // 
-            btnPesquisarVisualizarPerfil.Location = new Point(346, 580);
-            btnPesquisarVisualizarPerfil.Name = "btnPesquisarVisualizarPerfil";
-            btnPesquisarVisualizarPerfil.Size = new Size(112, 34);
-            btnPesquisarVisualizarPerfil.TabIndex = 8;
-            btnPesquisarVisualizarPerfil.Text = "Ver perfil";
-            btnPesquisarVisualizarPerfil.UseVisualStyleBackColor = true;
-            // 
             // btnPesquisarAdicionar
             // 
-            btnPesquisarAdicionar.Location = new Point(7, 578);
+            btnPesquisarAdicionar.Location = new Point(353, 578);
             btnPesquisarAdicionar.Name = "btnPesquisarAdicionar";
             btnPesquisarAdicionar.Size = new Size(105, 36);
             btnPesquisarAdicionar.TabIndex = 7;
             btnPesquisarAdicionar.Text = "Adicionar";
             btnPesquisarAdicionar.UseVisualStyleBackColor = true;
+            btnPesquisarAdicionar.Click += btnPesquisarAdicionar_Click;
             // 
             // flpApelidoPesquisa
             // 
@@ -419,6 +397,7 @@
             txtApelidoMeuPerfil.Name = "txtApelidoMeuPerfil";
             txtApelidoMeuPerfil.Size = new Size(179, 31);
             txtApelidoMeuPerfil.TabIndex = 28;
+            txtApelidoMeuPerfil.TextChanged += txtApelidoMeuPerfil_TextChanged;
             // 
             // lblImagemPerfilMeuPerfil
             // 
@@ -522,11 +501,9 @@
         private FlowLayoutPanel flpMensagem;
         private Button btnAbrirMensagem;
         private Button btnApagarMensagem;
-        private Button btnContatosAbrirPerfil;
         private Button btnContatosConversar;
         private Button btnContatosExcluir;
         private FlowLayoutPanel flpContatosOnline;
-        private Button btnPesquisarVisualizarPerfil;
         private Button btnPesquisarAdicionar;
         private FlowLayoutPanel flpContatosOffline;
         private Label label1;

@@ -125,7 +125,13 @@ namespace MSIF
 
             Boolean haProblema = false;
 
+            //Apelido
             if (apelidoNovo.IsNullOrEmpty())
+            {
+                txtApelidoMeuPerfil.BackColor = Color.Plum;
+                haProblema = true;
+            }
+            else if (!apelidoOriginal.Equals(apelidoNovo) && usuarioController.HaApelidoRepetido(apelidoNovo))
             {
                 txtApelidoMeuPerfil.BackColor = Color.Plum;
                 haProblema = true;
@@ -178,6 +184,16 @@ namespace MSIF
             {
                 btnSelecionarImagemMeuPerfil.Text = ofdMeuPerfil.SafeFileName;
             }
+        }
+
+        private void txtApelidoMeuPerfil_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPesquisarAdicionar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
