@@ -18,6 +18,7 @@ namespace MSIF
         private int idLogado;
         private Usuario usuarioLogado;
         private UsuarioController usuarioController;
+        Usuario usuarioPesquisado;
         public frmTelaMenuPrincipal(int IdLogado)
         {
             this.idLogado = IdLogado;
@@ -74,7 +75,7 @@ namespace MSIF
         {
             this.flpApelidoPesquisa.Controls.Clear();
 
-            Usuario usuarioPesquisado = usuarioController.GetUsuarioObj(txtApelidoPesquisa.Text);
+            usuarioPesquisado = usuarioController.GetUsuarioObj(txtApelidoPesquisa.Text);
 
             if (usuarioPesquisado != null)
             {
@@ -193,6 +194,42 @@ namespace MSIF
 
         private void btnPesquisarAdicionar_Click(object sender, EventArgs e)
         {
+            if (usuarioLogado != null)
+            {
+                ContatosController cc = new ContatosController();
+                Contatos contatos = new Contatos();
+                contatos.Logado = idLogado;
+                contatos.Contato = usuarioPesquisado.UsuarioId;
+
+                SolicitacaoController sc = new SolicitacaoController();
+                Solicitacao solicitacao = new Solicitacao();
+                solicitacao.Remetente = contatos.Logado;
+                solicitacao.Destinatario = contatos.Contato;
+                solicitacao.Status = 1;
+
+                if (!cc.HaContatoRepetido(contatos))
+                {
+                    sc.Salvar(solicitacao);
+                }
+            }
+        }
+
+        private void btnAtualizarSolicitacoes_Click(object sender, EventArgs e)
+        {
+            this.flpSolicitacoes.Controls.Clear();
+
+            UsuarioController uc = new UsuarioController();
+
+            SolicitacaoController sc = new SolicitacaoController();
+            List<Solicitacao> ls = sc.GetSolicitacoesObjs(idLogado);
+            foreach(Solicitacao solicitacao in ls)
+            {
+                int idRemetente = solicitacao.Remetente;
+
+                ContatoResumo contatoResumo = new ContatoResumo(uc.GetUsuarioObj(idRemetente).Apelido);
+                contatoResumo.Show();
+                flpSolicitacoes.Controls.Add(contatoResumo);
+            }          
 
         }
     }

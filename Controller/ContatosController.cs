@@ -10,15 +10,22 @@ namespace MSIF.Controller
 {
     public class ContatosController : DefaultController
     {
-        public static void Salvar(Contatos item)
+        public void Salvar(Contatos item)
         {
             Context.Add(item);
             Context.SaveChanges();
         }
 
-        public static void Pesquisar(Contatos item)
+        public void Pesquisar(Contatos item)
         {
             Context.Contatos.Where(x => x.Logado == item.Logado).ToList();
+        }
+
+        public Boolean HaContatoRepetido(Contatos item)
+        {
+            int quantidade = Context.Contatos.Where(r => r.Logado.Equals(item.Logado) && r.Contato.Equals(item.Contato)).Count();
+
+            return quantidade != 0;
         }
 
     }

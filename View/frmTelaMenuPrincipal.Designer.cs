@@ -65,6 +65,7 @@
             lblEmailMeuPerfil = new Label();
             lblApelidoMeuPerfil = new Label();
             ofdMeuPerfil = new OpenFileDialog();
+            btnAtualizarSolicitacoes = new Button();
             tabControlMenuPrincipal.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -205,6 +206,7 @@
             // 
             // tabPage3
             // 
+            tabPage3.Controls.Add(btnAtualizarSolicitacoes);
             tabPage3.Controls.Add(btnAceitarSolicitacoes);
             tabPage3.Controls.Add(btnRecusarSolicitacoes);
             tabPage3.Controls.Add(flpSolicitacoes);
@@ -448,6 +450,16 @@
             // 
             ofdMeuPerfil.FileName = "openFileDialog1";
             // 
+            // btnAtualizarSolicitacoes
+            // 
+            btnAtualizarSolicitacoes.Location = new Point(179, 572);
+            btnAtualizarSolicitacoes.Name = "btnAtualizarSolicitacoes";
+            btnAtualizarSolicitacoes.Size = new Size(112, 34);
+            btnAtualizarSolicitacoes.TabIndex = 3;
+            btnAtualizarSolicitacoes.Text = "Atualizar";
+            btnAtualizarSolicitacoes.UseVisualStyleBackColor = true;
+            btnAtualizarSolicitacoes.Click += btnAtualizarSolicitacoes_Click;
+            // 
             // frmTelaMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -509,5 +521,6 @@
         private Label label1;
         private Label label2;
         private OpenFileDialog ofdMeuPerfil;
+        private Button btnAtualizarSolicitacoes;
     }
 }
