@@ -30,19 +30,10 @@
         {
             tabControlMenuPrincipal = new TabControl();
             tabPage1 = new TabPage();
-            label2 = new Label();
-            flpContatosOffline = new FlowLayoutPanel();
-            label1 = new Label();
-            btnContatosConversar = new Button();
-            btnContatosExcluir = new Button();
-            flpContatosOnline = new FlowLayoutPanel();
-            tabPage2 = new TabPage();
-            flpMensagem = new FlowLayoutPanel();
-            btnAbrirMensagem = new Button();
-            btnApagarMensagem = new Button();
+            btnContatosAtualizar = new Button();
+            flpContatos = new FlowLayoutPanel();
             tabPage3 = new TabPage();
-            btnAceitarSolicitacoes = new Button();
-            btnRecusarSolicitacoes = new Button();
+            btnAtualizarSolicitacoes = new Button();
             flpSolicitacoes = new FlowLayoutPanel();
             tabPage4 = new TabPage();
             btnPesquisarAdicionar = new Button();
@@ -65,10 +56,8 @@
             lblEmailMeuPerfil = new Label();
             lblApelidoMeuPerfil = new Label();
             ofdMeuPerfil = new OpenFileDialog();
-            btnAtualizarSolicitacoes = new Button();
             tabControlMenuPrincipal.SuspendLayout();
             tabPage1.SuspendLayout();
-            tabPage2.SuspendLayout();
             tabPage3.SuspendLayout();
             tabPage4.SuspendLayout();
             tabPage5.SuspendLayout();
@@ -78,7 +67,6 @@
             // tabControlMenuPrincipal
             // 
             tabControlMenuPrincipal.Controls.Add(tabPage1);
-            tabControlMenuPrincipal.Controls.Add(tabPage2);
             tabControlMenuPrincipal.Controls.Add(tabPage3);
             tabControlMenuPrincipal.Controls.Add(tabPage4);
             tabControlMenuPrincipal.Controls.Add(tabPage5);
@@ -91,12 +79,8 @@
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(label2);
-            tabPage1.Controls.Add(flpContatosOffline);
-            tabPage1.Controls.Add(label1);
-            tabPage1.Controls.Add(btnContatosConversar);
-            tabPage1.Controls.Add(btnContatosExcluir);
-            tabPage1.Controls.Add(flpContatosOnline);
+            tabPage1.Controls.Add(btnContatosAtualizar);
+            tabPage1.Controls.Add(flpContatos);
             tabPage1.Location = new Point(4, 34);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
@@ -105,110 +89,29 @@
             tabPage1.Text = "Contatos";
             tabPage1.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // btnContatosAtualizar
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(7, 291);
-            label2.Name = "label2";
-            label2.Size = new Size(65, 25);
-            label2.TabIndex = 6;
-            label2.Text = "Offline";
+            btnContatosAtualizar.Location = new Point(178, 578);
+            btnContatosAtualizar.Name = "btnContatosAtualizar";
+            btnContatosAtualizar.Size = new Size(112, 34);
+            btnContatosAtualizar.TabIndex = 4;
+            btnContatosAtualizar.Text = "Atualizar";
+            btnContatosAtualizar.UseVisualStyleBackColor = true;
+            btnContatosAtualizar.Click += btnContatosAtualizar_Click;
             // 
-            // flpContatosOffline
+            // flpContatos
             // 
-            flpContatosOffline.AutoScroll = true;
-            flpContatosOffline.FlowDirection = FlowDirection.TopDown;
-            flpContatosOffline.Location = new Point(3, 319);
-            flpContatosOffline.Name = "flpContatosOffline";
-            flpContatosOffline.Size = new Size(458, 221);
-            flpContatosOffline.TabIndex = 5;
-            flpContatosOffline.WrapContents = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(7, 3);
-            label1.Name = "label1";
-            label1.Size = new Size(63, 25);
-            label1.TabIndex = 4;
-            label1.Text = "Online";
-            // 
-            // btnContatosConversar
-            // 
-            btnContatosConversar.Location = new Point(349, 578);
-            btnContatosConversar.Name = "btnContatosConversar";
-            btnContatosConversar.Size = new Size(112, 34);
-            btnContatosConversar.TabIndex = 2;
-            btnContatosConversar.Text = "Conversar";
-            btnContatosConversar.UseVisualStyleBackColor = true;
-            btnContatosConversar.Click += btnContatosConversar_Click;
-            // 
-            // btnContatosExcluir
-            // 
-            btnContatosExcluir.Location = new Point(3, 578);
-            btnContatosExcluir.Name = "btnContatosExcluir";
-            btnContatosExcluir.Size = new Size(112, 34);
-            btnContatosExcluir.TabIndex = 1;
-            btnContatosExcluir.Text = "Excluir";
-            btnContatosExcluir.UseVisualStyleBackColor = true;
-            // 
-            // flpContatosOnline
-            // 
-            flpContatosOnline.AutoScroll = true;
-            flpContatosOnline.FlowDirection = FlowDirection.TopDown;
-            flpContatosOnline.Location = new Point(3, 28);
-            flpContatosOnline.Name = "flpContatosOnline";
-            flpContatosOnline.Size = new Size(458, 221);
-            flpContatosOnline.TabIndex = 0;
-            flpContatosOnline.WrapContents = false;
-            // 
-            // tabPage2
-            // 
-            tabPage2.Controls.Add(flpMensagem);
-            tabPage2.Controls.Add(btnAbrirMensagem);
-            tabPage2.Controls.Add(btnApagarMensagem);
-            tabPage2.Location = new Point(4, 34);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(467, 632);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Mensagens";
-            tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // flpMensagem
-            // 
-            flpMensagem.AutoScroll = true;
-            flpMensagem.FlowDirection = FlowDirection.TopDown;
-            flpMensagem.Location = new Point(7, 6);
-            flpMensagem.Name = "flpMensagem";
-            flpMensagem.Size = new Size(451, 580);
-            flpMensagem.TabIndex = 2;
-            flpMensagem.WrapContents = false;
-            // 
-            // btnAbrirMensagem
-            // 
-            btnAbrirMensagem.Location = new Point(346, 592);
-            btnAbrirMensagem.Name = "btnAbrirMensagem";
-            btnAbrirMensagem.Size = new Size(112, 34);
-            btnAbrirMensagem.TabIndex = 1;
-            btnAbrirMensagem.Text = "Abrir";
-            btnAbrirMensagem.UseVisualStyleBackColor = true;
-            btnAbrirMensagem.Click += btnAbrirMensagem_Click;
-            // 
-            // btnApagarMensagem
-            // 
-            btnApagarMensagem.Location = new Point(6, 592);
-            btnApagarMensagem.Name = "btnApagarMensagem";
-            btnApagarMensagem.Size = new Size(112, 34);
-            btnApagarMensagem.TabIndex = 0;
-            btnApagarMensagem.Text = "Deletar";
-            btnApagarMensagem.UseVisualStyleBackColor = true;
+            flpContatos.AutoScroll = true;
+            flpContatos.FlowDirection = FlowDirection.TopDown;
+            flpContatos.Location = new Point(3, 6);
+            flpContatos.Name = "flpContatos";
+            flpContatos.Size = new Size(458, 566);
+            flpContatos.TabIndex = 0;
+            flpContatos.WrapContents = false;
             // 
             // tabPage3
             // 
             tabPage3.Controls.Add(btnAtualizarSolicitacoes);
-            tabPage3.Controls.Add(btnAceitarSolicitacoes);
-            tabPage3.Controls.Add(btnRecusarSolicitacoes);
             tabPage3.Controls.Add(flpSolicitacoes);
             tabPage3.Location = new Point(4, 34);
             tabPage3.Name = "tabPage3";
@@ -218,24 +121,15 @@
             tabPage3.Text = "Solicitações";
             tabPage3.UseVisualStyleBackColor = true;
             // 
-            // btnAceitarSolicitacoes
+            // btnAtualizarSolicitacoes
             // 
-            btnAceitarSolicitacoes.Location = new Point(346, 572);
-            btnAceitarSolicitacoes.Name = "btnAceitarSolicitacoes";
-            btnAceitarSolicitacoes.Size = new Size(112, 34);
-            btnAceitarSolicitacoes.TabIndex = 2;
-            btnAceitarSolicitacoes.Text = "Aceitar";
-            btnAceitarSolicitacoes.UseVisualStyleBackColor = true;
-            btnAceitarSolicitacoes.Click += btnAceitarSolicitacoes_Click;
-            // 
-            // btnRecusarSolicitacoes
-            // 
-            btnRecusarSolicitacoes.Location = new Point(7, 572);
-            btnRecusarSolicitacoes.Name = "btnRecusarSolicitacoes";
-            btnRecusarSolicitacoes.Size = new Size(112, 34);
-            btnRecusarSolicitacoes.TabIndex = 1;
-            btnRecusarSolicitacoes.Text = "Recusar";
-            btnRecusarSolicitacoes.UseVisualStyleBackColor = true;
+            btnAtualizarSolicitacoes.Location = new Point(179, 572);
+            btnAtualizarSolicitacoes.Name = "btnAtualizarSolicitacoes";
+            btnAtualizarSolicitacoes.Size = new Size(112, 34);
+            btnAtualizarSolicitacoes.TabIndex = 3;
+            btnAtualizarSolicitacoes.Text = "Atualizar";
+            btnAtualizarSolicitacoes.UseVisualStyleBackColor = true;
+            btnAtualizarSolicitacoes.Click += btnAtualizarSolicitacoes_Click;
             // 
             // flpSolicitacoes
             // 
@@ -246,6 +140,7 @@
             flpSolicitacoes.Size = new Size(451, 560);
             flpSolicitacoes.TabIndex = 0;
             flpSolicitacoes.WrapContents = false;
+            flpSolicitacoes.Paint += flpSolicitacoes_Paint;
             // 
             // tabPage4
             // 
@@ -450,16 +345,6 @@
             // 
             ofdMeuPerfil.FileName = "openFileDialog1";
             // 
-            // btnAtualizarSolicitacoes
-            // 
-            btnAtualizarSolicitacoes.Location = new Point(179, 572);
-            btnAtualizarSolicitacoes.Name = "btnAtualizarSolicitacoes";
-            btnAtualizarSolicitacoes.Size = new Size(112, 34);
-            btnAtualizarSolicitacoes.TabIndex = 3;
-            btnAtualizarSolicitacoes.Text = "Atualizar";
-            btnAtualizarSolicitacoes.UseVisualStyleBackColor = true;
-            btnAtualizarSolicitacoes.Click += btnAtualizarSolicitacoes_Click;
-            // 
             // frmTelaMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -471,8 +356,6 @@
             Load += frmTelaMenuPrincipal_Load;
             tabControlMenuPrincipal.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
-            tabPage1.PerformLayout();
-            tabPage2.ResumeLayout(false);
             tabPage3.ResumeLayout(false);
             tabPage4.ResumeLayout(false);
             tabPage4.PerformLayout();
@@ -486,7 +369,6 @@
 
         private TabControl tabControlMenuPrincipal;
         private TabPage tabPage1;
-        private TabPage tabPage2;
         private TabPage tabPage3;
         private TabPage tabPage4;
         private TabPage tabPage5;
@@ -507,20 +389,11 @@
         private Button btnApelidoPesquisa;
         private TextBox txtApelidoPesquisa;
         private Label lblApelidoPesquisa;
-        private Button btnAceitarSolicitacoes;
-        private Button btnRecusarSolicitacoes;
         private FlowLayoutPanel flpSolicitacoes;
-        private FlowLayoutPanel flpMensagem;
-        private Button btnAbrirMensagem;
-        private Button btnApagarMensagem;
-        private Button btnContatosConversar;
-        private Button btnContatosExcluir;
-        private FlowLayoutPanel flpContatosOnline;
+        private FlowLayoutPanel flpContatos;
         private Button btnPesquisarAdicionar;
-        private FlowLayoutPanel flpContatosOffline;
-        private Label label1;
-        private Label label2;
         private OpenFileDialog ofdMeuPerfil;
         private Button btnAtualizarSolicitacoes;
+        private Button btnContatosAtualizar;
     }
 }

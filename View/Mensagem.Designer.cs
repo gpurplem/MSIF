@@ -30,35 +30,48 @@
         {
             lblMensagemNome = new Label();
             lblMensagemCorpo = new Label();
+            lblDataMsg = new Label();
             SuspendLayout();
             // 
             // lblMensagemNome
             // 
             lblMensagemNome.AutoSize = true;
-            lblMensagemNome.Location = new Point(3, 26);
+            lblMensagemNome.Location = new Point(206, 26);
             lblMensagemNome.Name = "lblMensagemNome";
-            lblMensagemNome.Size = new Size(65, 25);
+            lblMensagemNome.Size = new Size(58, 25);
             lblMensagemNome.TabIndex = 0;
-            lblMensagemNome.Text = "Nome:";
+            lblMensagemNome.Text = "nome";
             lblMensagemNome.Click += lblMensagemNome_Click;
             // 
             // lblMensagemCorpo
             // 
             lblMensagemCorpo.AutoSize = true;
-            lblMensagemCorpo.Location = new Point(74, 26);
+            lblMensagemCorpo.Location = new Point(328, 26);
             lblMensagemCorpo.Name = "lblMensagemCorpo";
             lblMensagemCorpo.Size = new Size(100, 25);
             lblMensagemCorpo.TabIndex = 1;
             lblMensagemCorpo.Text = "mensagem";
             // 
+            // lblDataMsg
+            // 
+            lblDataMsg.AutoSize = true;
+            lblDataMsg.Location = new Point(17, 26);
+            lblDataMsg.Name = "lblDataMsg";
+            lblDataMsg.Size = new Size(47, 25);
+            lblDataMsg.TabIndex = 2;
+            lblDataMsg.Text = "data";
+            // 
             // Mensagem
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BorderStyle = BorderStyle.FixedSingle;
+            Controls.Add(lblDataMsg);
             Controls.Add(lblMensagemCorpo);
             Controls.Add(lblMensagemNome);
             Name = "Mensagem";
-            Size = new Size(387, 78);
+            Size = new Size(740, 76);
+            Load += Mensagem_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -67,5 +80,6 @@
 
         private Label lblMensagemNome;
         private Label lblMensagemCorpo;
+        private Label lblDataMsg;
     }
 }

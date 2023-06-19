@@ -12,12 +12,20 @@ namespace MSIF
 {
     public partial class Mensagem : UserControl
     {
-        public Mensagem()
+        public Mensagem(DateTime dataMsg, String nome, String mensagem)
         {
             InitializeComponent();
+            lblDataMsg.Text = dataMsg.ToString();
+            lblMensagemNome.Text = nome;
+            lblMensagemCorpo.Text = mensagem;
         }
 
         private void lblMensagemNome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mensagem_Load(object sender, EventArgs e)
         {
 
         }

@@ -28,5 +28,19 @@ namespace MSIF.Controller
             return quantidade != 0;
         }
 
+        public List<Contatos> GetContatosObjs(int idLogado)
+        {
+            List<Contatos> ls = Context.Contatos.Where(r => r.Logado.Equals(idLogado)).ToList();
+
+            if (ls.Count != 0)
+            {
+                return ls;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
     }
 }

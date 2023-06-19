@@ -29,5 +29,12 @@ namespace MSIF.Controller
             }
         }
 
+        public void DeleteSolicitacao(int idUsuarioAdd, int idLogado)
+        {
+            Solicitacao solicitacao = Context.Solicitacao.Where(r => r.Destinatario.Equals(idLogado) && r.Remetente.Equals(idUsuarioAdd)).FirstOrDefault();
+            Context.Solicitacao.Remove(solicitacao);
+            Context.SaveChanges();
+        }
+
     }
 }

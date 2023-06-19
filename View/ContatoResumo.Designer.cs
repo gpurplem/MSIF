@@ -63,6 +63,7 @@
             Name = "ContatoResumo";
             Size = new Size(400, 80);
             Load += ContatoResumo_Load;
+            MouseClick += ContatoResumo_MouseClick;
             ((System.ComponentModel.ISupportInitialize)pbFotoUsuario).EndInit();
             ResumeLayout(false);
             PerformLayout();

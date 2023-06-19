@@ -79,7 +79,7 @@ namespace MSIF
 
             if (usuarioPesquisado != null)
             {
-                ContatoResumo contatoResumo = new ContatoResumo(usuarioPesquisado.Apelido);
+                ContatoResumo contatoResumo = new ContatoResumo(usuarioPesquisado.Apelido, idLogado);
                 contatoResumo.Show();
                 flpApelidoPesquisa.Controls.Add(contatoResumo);
             }
@@ -222,15 +222,42 @@ namespace MSIF
 
             SolicitacaoController sc = new SolicitacaoController();
             List<Solicitacao> ls = sc.GetSolicitacoesObjs(idLogado);
-            foreach(Solicitacao solicitacao in ls)
+            foreach (Solicitacao solicitacao in ls)
             {
                 int idRemetente = solicitacao.Remetente;
 
-                ContatoResumo contatoResumo = new ContatoResumo(uc.GetUsuarioObj(idRemetente).Apelido);
+                ContatoResumo contatoResumo = new ContatoResumo(uc.GetUsuarioObj(idRemetente).Apelido, idLogado);
                 contatoResumo.Show();
                 flpSolicitacoes.Controls.Add(contatoResumo);
-            }          
+            }
 
+        }
+
+        private void flpSolicitacoes_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnContatosAtualizar_Click(object sender, EventArgs e)
+        {
+            this.flpContatos.Controls.Clear();
+
+            UsuarioController uc = new UsuarioController();
+            ContatosController cc = new ContatosController();
+
+            List<Contatos> ls = cc.GetContatosObjs(idLogado);
+
+            foreach (Contatos contato in ls)
+            {
+                ContatoResumo contatoResumo = new ContatoResumo(uc.GetUsuarioObj(contato.Contato).Apelido, idLogado);
+                contatoResumo.Show();
+                flpContatos.Controls.Add(contatoResumo);
+            }
         }
     }
 }
