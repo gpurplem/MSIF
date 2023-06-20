@@ -26,6 +26,29 @@ namespace MSIF.View
 
         private void btnSolicitacaoAceitar_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnSolicitacaoRejeitar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void frmAceitarRecurasSolicitacao_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSolicitacaoRejeitar_Click_1(object sender, EventArgs e)
+        {
+            SolicitacaoController sc = new SolicitacaoController();
+            sc.DeleteSolicitacao(idUsuarioAdd, idLogado);
+
+            this.Close();
+        }
+
+        private void btnSolicitacaoAceitar_Click_1(object sender, EventArgs e)
+        {
             Contatos contato = new Contatos();
             contato.Logado = idLogado;
             contato.Contato = idUsuarioAdd;
@@ -40,19 +63,6 @@ namespace MSIF.View
             sc.DeleteSolicitacao(idUsuarioAdd, idLogado);
 
             this.Close();
-        }
-
-        private void btnSolicitacaoRejeitar_Click(object sender, EventArgs e)
-        {
-            SolicitacaoController sc = new SolicitacaoController();
-            sc.DeleteSolicitacao(idUsuarioAdd, idLogado);
-
-            this.Close();
-        }
-
-        private void frmAceitarRecurasSolicitacao_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

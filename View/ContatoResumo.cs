@@ -61,10 +61,14 @@ namespace MSIF
                 frmAceitarRecurasSolicitacao frm = new frmAceitarRecurasSolicitacao(idUsuario, idLogado);
                 frm.ShowDialog();
             }
-            else
+            if (Parent.Name == "flpContatos")
             {
                 frmChat frm = new frmChat(idLogado, idUsuario);
                 frm.ShowDialog();
+            }
+            else
+            {
+
             }
         }
     }

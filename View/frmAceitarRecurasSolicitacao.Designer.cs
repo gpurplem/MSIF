@@ -40,6 +40,7 @@
             btnSolicitacaoAceitar.TabIndex = 0;
             btnSolicitacaoAceitar.Text = "Aceitar";
             btnSolicitacaoAceitar.UseVisualStyleBackColor = true;
+            btnSolicitacaoAceitar.Click += btnSolicitacaoAceitar_Click_1;
             // 
             // btnSolicitacaoRejeitar
             // 
@@ -49,6 +50,7 @@
             btnSolicitacaoRejeitar.TabIndex = 1;
             btnSolicitacaoRejeitar.Text = "Rejeitar";
             btnSolicitacaoRejeitar.UseVisualStyleBackColor = true;
+            btnSolicitacaoRejeitar.Click += btnSolicitacaoRejeitar_Click_1;
             // 
             // frmAceitarRecurasSolicitacao
             // 

@@ -36,5 +36,12 @@ namespace MSIF.Controller
             Context.SaveChanges();
         }
 
+        public Boolean HaSolicitacaoRepetida(Solicitacao item)
+        {
+            int quantidade = Context.Solicitacao.Where(r => r.Remetente.Equals(item.Remetente) && r.Destinatario.Equals(item.Destinatario)).Count();
+
+            return quantidade != 0;
+        }
+
     }
 }

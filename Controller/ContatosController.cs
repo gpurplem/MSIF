@@ -12,7 +12,18 @@ namespace MSIF.Controller
     {
         public void Salvar(Contatos item)
         {
-            Context.Add(item);
+            Contatos contato1 = new Contatos();
+            Contatos contato2 = new Contatos();
+
+            contato1.Logado = item.Logado;
+            contato1.Contato = item.Contato;
+
+            contato2.Logado = item.Contato;
+            contato2.Contato = item.Logado;
+
+            Context.Add(contato1);
+            Context.SaveChanges();
+            Context.Add(contato2);
             Context.SaveChanges();
         }
 

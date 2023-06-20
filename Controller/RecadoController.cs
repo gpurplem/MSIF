@@ -22,7 +22,19 @@ namespace MSIF.Controller
 
         public List<Recado> GetRecadosObjs(int idLogado, int idDestinatario)
         {
-            List<Recado> ls = Context.Recado.Where(r => r.Remetente.Equals(idLogado) && r.Destinatario.Equals(idDestinatario)).OrderBy(p => p.Dataenvio).ToList();
+            List<Recado> ls = Context.Recado
+                .Where
+                (r => 
+                    (
+                        r.Remetente.Equals(idLogado) && r.Destinatario.Equals(idDestinatario)
+                    )
+                    || 
+                    (
+                        r.Remetente.Equals(idDestinatario) && r.Destinatario.Equals(idLogado)
+                    )
+                )
+                .OrderBy(p => p.Dataenvio)
+                .ToList();
 
             if (ls.Count != 0)
             {
