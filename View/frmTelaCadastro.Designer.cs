@@ -88,7 +88,7 @@
             this.lblSenha2.BackColor = System.Drawing.Color.Transparent;
             this.lblSenha2.Font = new System.Drawing.Font("Caladea", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblSenha2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblSenha2.Location = new System.Drawing.Point(17, 161);
+            this.lblSenha2.Location = new System.Drawing.Point(17, 159);
             this.lblSenha2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSenha2.Name = "lblSenha2";
             this.lblSenha2.Size = new System.Drawing.Size(112, 17);
@@ -98,7 +98,7 @@
             // txtApelido
             // 
             this.txtApelido.Location = new System.Drawing.Point(133, 82);
-            this.txtApelido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApelido.Margin = new System.Windows.Forms.Padding(2);
             this.txtApelido.Name = "txtApelido";
             this.txtApelido.Size = new System.Drawing.Size(126, 23);
             this.txtApelido.TabIndex = 5;
@@ -106,7 +106,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(133, 107);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(126, 23);
             this.txtEmail.TabIndex = 6;
@@ -114,7 +114,7 @@
             // txtSenha1
             // 
             this.txtSenha1.Location = new System.Drawing.Point(133, 132);
-            this.txtSenha1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSenha1.Margin = new System.Windows.Forms.Padding(2);
             this.txtSenha1.Name = "txtSenha1";
             this.txtSenha1.Size = new System.Drawing.Size(126, 23);
             this.txtSenha1.TabIndex = 7;
@@ -122,7 +122,7 @@
             // txtSenha2
             // 
             this.txtSenha2.Location = new System.Drawing.Point(133, 157);
-            this.txtSenha2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSenha2.Margin = new System.Windows.Forms.Padding(2);
             this.txtSenha2.Name = "txtSenha2";
             this.txtSenha2.Size = new System.Drawing.Size(126, 23);
             this.txtSenha2.TabIndex = 8;
@@ -134,7 +134,7 @@
             this.button1.Font = new System.Drawing.Font("Caladea", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(73, 184);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(186, 28);
             this.button1.TabIndex = 10;
@@ -152,7 +152,7 @@
             this.btnSelecionarImagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelecionarImagem.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnSelecionarImagem.Location = new System.Drawing.Point(263, 57);
-            this.btnSelecionarImagem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSelecionarImagem.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelecionarImagem.Name = "btnSelecionarImagem";
             this.btnSelecionarImagem.Size = new System.Drawing.Size(84, 83);
             this.btnSelecionarImagem.TabIndex = 11;
@@ -174,7 +174,7 @@
             // txtNomeCompleto
             // 
             this.txtNomeCompleto.Location = new System.Drawing.Point(133, 57);
-            this.txtNomeCompleto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNomeCompleto.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomeCompleto.Name = "txtNomeCompleto";
             this.txtNomeCompleto.Size = new System.Drawing.Size(126, 23);
             this.txtNomeCompleto.TabIndex = 13;
@@ -197,7 +197,7 @@
             this.Controls.Add(this.lblSenha1);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblApelido);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmTelaCadastro";
             this.Text = "MSIF - Cadastro";
             this.ResumeLayout(false);

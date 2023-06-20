@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MSIF
+namespace MSIF.View
 {
-    public partial class frmPerfil : Form
+    public partial class frmAceitarRecurasSoli : Form
     {
-        public frmPerfil()
+        public frmAceitarRecurasSoli()
         {
             InitializeComponent();
         }

@@ -28,41 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
-            lblNomeUsuario = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblNomeUsuario = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(3, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(82, 74);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(44, 44);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // lblNomeUsuario
             // 
-            lblNomeUsuario.AutoSize = true;
-            lblNomeUsuario.Location = new Point(91, 24);
-            lblNomeUsuario.Name = "lblNomeUsuario";
-            lblNomeUsuario.Size = new Size(121, 25);
-            lblNomeUsuario.TabIndex = 1;
-            lblNomeUsuario.Text = "NomeUsuario";
+            this.lblNomeUsuario.AutoSize = true;
+            this.lblNomeUsuario.Font = new System.Drawing.Font("Caladea", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNomeUsuario.ForeColor = System.Drawing.Color.White;
+            this.lblNomeUsuario.Location = new System.Drawing.Point(53, 16);
+            this.lblNomeUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNomeUsuario.Name = "lblNomeUsuario";
+            this.lblNomeUsuario.Size = new System.Drawing.Size(105, 17);
+            this.lblNomeUsuario.TabIndex = 1;
+            this.lblNomeUsuario.Text = "NomeUsuario";
             // 
             // ContatoResumo
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BorderStyle = BorderStyle.FixedSingle;
-            Controls.Add(lblNomeUsuario);
-            Controls.Add(pictureBox1);
-            Name = "ContatoResumo";
-            Size = new Size(400, 80);
-            Load += ContatoResumo_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.lblNomeUsuario);
+            this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "ContatoResumo";
+            this.Size = new System.Drawing.Size(280, 48);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

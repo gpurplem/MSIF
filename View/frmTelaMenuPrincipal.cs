@@ -60,21 +60,46 @@ namespace MSIF
         {
             ContatoResumo contatoResumo = new ContatoResumo();
             contatoResumo.Show();
-            flpMensagem.Controls.Add(contatoResumo);
+            //flpMensagem.Controls.Add(contatoResumo);
         }
 
         private void btnContatosConversar_Click(object sender, EventArgs e)
         {
             ContatoResumo contatoResumo = new ContatoResumo();
             contatoResumo.Show();
-            flpContatosOnline.Controls.Add(contatoResumo);
+            //flpContatosOnline.Controls.Add(contatoResumo);
         }
 
         private void btnContatosAbrirPerfil_Click(object sender, EventArgs e)
         {
             ContatoResumo contatoResumo = new ContatoResumo();
             contatoResumo.Show();
-            flpContatosOffline.Controls.Add(contatoResumo);
+            //flpContatosOffline.Controls.Add(contatoResumo);
+        }
+
+        private void tabPage5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEmailMeuPerfil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblApelidoMeuPerfil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSenha1MeuPerfil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSenha2MeuPerfil_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
