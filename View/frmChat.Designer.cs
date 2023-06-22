@@ -61,7 +61,6 @@
             flpMensagem.Size = new Size(776, 386);
             flpMensagem.TabIndex = 3;
             flpMensagem.WrapContents = false;
-            flpMensagem.Paint += flpMensagem_Paint;
             // 
             // timerMensagens
             // 

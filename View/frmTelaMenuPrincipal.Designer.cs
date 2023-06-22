@@ -58,6 +58,7 @@
             lblApelidoMeuPerfil = new Label();
             ofdMeuPerfil = new OpenFileDialog();
             timer1 = new System.Windows.Forms.Timer(components);
+            timerContatos = new System.Windows.Forms.Timer(components);
             tabControlMenuPrincipal.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage3.SuspendLayout();
@@ -77,7 +78,6 @@
             tabControlMenuPrincipal.SelectedIndex = 0;
             tabControlMenuPrincipal.Size = new Size(475, 670);
             tabControlMenuPrincipal.TabIndex = 0;
-            tabControlMenuPrincipal.Click += tabControlMenuPrincipal_Click;
             // 
             // tabPage1
             // 
@@ -144,7 +144,6 @@
             flpSolicitacoes.Size = new Size(451, 560);
             flpSolicitacoes.TabIndex = 0;
             flpSolicitacoes.WrapContents = false;
-            flpSolicitacoes.Paint += flpSolicitacoes_Paint;
             // 
             // tabPage4
             // 
@@ -179,7 +178,6 @@
             flpApelidoPesquisa.Size = new Size(451, 524);
             flpApelidoPesquisa.TabIndex = 6;
             flpApelidoPesquisa.WrapContents = false;
-            flpApelidoPesquisa.Paint += flowLayoutPanel1_Paint;
             // 
             // btnApelidoPesquisa
             // 
@@ -206,7 +204,6 @@
             lblApelidoPesquisa.Size = new Size(74, 25);
             lblApelidoPesquisa.TabIndex = 3;
             lblApelidoPesquisa.Text = "Apelido";
-            lblApelidoPesquisa.Click += label1_Click;
             // 
             // tabPage5
             // 
@@ -229,7 +226,6 @@
             tabPage5.TabIndex = 4;
             tabPage5.Text = "Meu perfil";
             tabPage5.UseVisualStyleBackColor = true;
-            tabPage5.Click += tabPage5_Click;
             // 
             // lblNomeUsuarioMeuPerfil
             // 
@@ -248,7 +244,6 @@
             picFotoMeuPerfil.SizeMode = PictureBoxSizeMode.Zoom;
             picFotoMeuPerfil.TabIndex = 34;
             picFotoMeuPerfil.TabStop = false;
-            picFotoMeuPerfil.Click += pictureBox1_Click;
             // 
             // btnSelecionarImagemMeuPerfil
             // 
@@ -298,7 +293,6 @@
             txtApelidoMeuPerfil.Name = "txtApelidoMeuPerfil";
             txtApelidoMeuPerfil.Size = new Size(179, 31);
             txtApelidoMeuPerfil.TabIndex = 28;
-            txtApelidoMeuPerfil.TextChanged += txtApelidoMeuPerfil_TextChanged;
             // 
             // lblImagemPerfilMeuPerfil
             // 
@@ -355,6 +349,12 @@
             timer1.Interval = 1000;
             timer1.Tick += timer1_Tick;
             // 
+            // timerContatos
+            // 
+            timerContatos.Enabled = true;
+            timerContatos.Interval = 7000;
+            timerContatos.Tick += timerContatos_Tick;
+            // 
             // frmTelaMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -363,7 +363,6 @@
             Controls.Add(tabControlMenuPrincipal);
             Name = "frmTelaMenuPrincipal";
             Text = "MenuPrincipal";
-            Load += frmTelaMenuPrincipal_Load;
             tabControlMenuPrincipal.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage3.ResumeLayout(false);
@@ -406,5 +405,6 @@
         private Button btnAtualizarSolicitacoes;
         private Button btnContatosAtualizar;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timerContatos;
     }
 }

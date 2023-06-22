@@ -1,15 +1,6 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using MSIF.Controller;
 using MSIF.Model;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace MSIF
 {
@@ -76,16 +67,6 @@ namespace MSIF
                 txtMsg.Text = "";
                 CarregarMensagens();
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flpMensagem_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private Boolean verificaNovasMensagens()

@@ -113,7 +113,6 @@
             Controls.Add(btnCadastrar);
             Name = "frmTelaLogin";
             Text = "MSIF - Login";
-            Load += frmTelaLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }

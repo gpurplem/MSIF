@@ -41,7 +41,6 @@
             pbFotoUsuario.SizeMode = PictureBoxSizeMode.Zoom;
             pbFotoUsuario.TabIndex = 0;
             pbFotoUsuario.TabStop = false;
-            pbFotoUsuario.Click += pictureBox1_Click;
             // 
             // lblNomeUsuario
             // 
@@ -51,7 +50,6 @@
             lblNomeUsuario.Size = new Size(121, 25);
             lblNomeUsuario.TabIndex = 1;
             lblNomeUsuario.Text = "NomeUsuario";
-            lblNomeUsuario.Click += lblNomeUsuario_Click;
             // 
             // ContatoResumo
             // 
@@ -62,7 +60,6 @@
             Controls.Add(pbFotoUsuario);
             Name = "ContatoResumo";
             Size = new Size(400, 80);
-            Load += ContatoResumo_Load;
             MouseClick += ContatoResumo_MouseClick;
             ((System.ComponentModel.ISupportInitialize)pbFotoUsuario).EndInit();
             ResumeLayout(false);

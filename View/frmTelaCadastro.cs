@@ -1,15 +1,7 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using MSIF.Controller;
 using MSIF.Model;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace MSIF
 {
@@ -18,16 +10,6 @@ namespace MSIF
         public frmTelaCadastro()
         {
             InitializeComponent();
-        }
-
-        private void lblEmail_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -125,15 +107,6 @@ namespace MSIF
                 else
                 {
                     uc.Create(usuario);
-
-                    //Limpar campos
-                    //txtNomeCompleto.Text = "";
-                    //txtApelido.Text = "";
-                    //txtEmail.Text = "";
-                    //txtSenha1.Text = "";
-                    //txtSenha2.Text = "";
-                    //btnSelecionarImagem.Text = "Selecionar imagem";
-
                     this.Close();
                 }
             }
@@ -146,16 +119,6 @@ namespace MSIF
             {
                 btnSelecionarImagem.Text = fileDialog.SafeFileName;
             }
-
-        }
-
-        private void lblSenha1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmTelaCadastro_Load(object sender, EventArgs e)
-        {
 
         }
     }

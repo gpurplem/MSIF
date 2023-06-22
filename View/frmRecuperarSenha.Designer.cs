@@ -58,7 +58,6 @@
             label1.Size = new Size(210, 25);
             label1.TabIndex = 2;
             label1.Text = "Digite e-mail cadastrado:";
-            label1.Click += label1_Click;
             // 
             // frmRecuperarSenha
             // 

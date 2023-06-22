@@ -61,7 +61,6 @@
             lblEmail.Size = new Size(61, 25);
             lblEmail.TabIndex = 9;
             lblEmail.Text = "E-mail";
-            lblEmail.Click += lblEmail_Click;
             // 
             // lblSenha1
             // 
@@ -71,7 +70,6 @@
             lblSenha1.Size = new Size(60, 25);
             lblSenha1.TabIndex = 10;
             lblSenha1.Text = "Senha";
-            lblSenha1.Click += lblSenha1_Click;
             // 
             // lblSenha2
             // 
@@ -131,7 +129,6 @@
             // 
             // fileDialog
             // 
-            fileDialog.FileOk += openFileDialog1_FileOk;
             // 
             // btnSelecionarImagem
             // 
@@ -179,7 +176,6 @@
             Controls.Add(lblApelido);
             Name = "frmTelaCadastro";
             Text = "MSIF - Cadastro";
-            Load += frmTelaCadastro_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -1,16 +1,6 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using MSIF.Controller;
 using MSIF.Model;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-//using Timer = System.Windows.Forms.Timer;
 
 namespace MSIF
 {
@@ -42,11 +32,6 @@ namespace MSIF
             atualizarCampos(idLogado);
             atualizarSolicitacoes();
             atualizarContatos();
-
-            //TimerSolicitacoes = new Timer();
-            //TimerSolicitacoes.Interval = (5 * 1000); // 5 secs
-            //TimerSolicitacoes.Tick += new EventHandler(atualizarSolicitacoes);
-            //TimerSolicitacoes.Start();
         }
 
         public void atualizarCampos(int IdLogado)
@@ -64,37 +49,6 @@ namespace MSIF
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void tabPage5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmTelaMenuPrincipal_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAceitarSolicitacoes_Click(object sender, EventArgs e)
-        {
-            //ContatoResumo contatoResumo = new ContatoResumo();
-            //contatoResumo.Show();
-            //flpSolicitacoes.Controls.Add(contatoResumo);
-        }
-
         private void btnApelidoPesquisa_Click(object sender, EventArgs e)
         {
             this.flpApelidoPesquisa.Controls.Clear();
@@ -107,32 +61,6 @@ namespace MSIF
                 contatoResumo.Show();
                 flpApelidoPesquisa.Controls.Add(contatoResumo);
             }
-        }
-
-        private void btnAbrirMensagem_Click(object sender, EventArgs e)
-        {
-            //ContatoResumo contatoResumo = new ContatoResumo();
-            //contatoResumo.Show();
-            //flpMensagem.Controls.Add(contatoResumo);
-        }
-
-        private void btnContatosConversar_Click(object sender, EventArgs e)
-        {
-            //ContatoResumo contatoResumo = new ContatoResumo();
-            //contatoResumo.Show();
-            //flpContatosOnline.Controls.Add(contatoResumo);
-        }
-
-        private void btnContatosAbrirPerfil_Click(object sender, EventArgs e)
-        {
-            //ContatoResumo contatoResumo = new ContatoResumo();
-            //contatoResumo.Show();
-            //flpContatosOffline.Controls.Add(contatoResumo);
-        }
-
-        private void tabControlMenuPrincipal_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnSalvarMeuPerfil_Click(object sender, EventArgs e)
@@ -212,11 +140,6 @@ namespace MSIF
             }
         }
 
-        private void txtApelidoMeuPerfil_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnPesquisarAdicionar_Click(object sender, EventArgs e)
         {
             if (usuarioLogado != null && usuarioPesquisado != null)
@@ -266,16 +189,6 @@ namespace MSIF
             }
         }
 
-        private void flpSolicitacoes_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnAtualizar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnContatosAtualizar_Click(object sender, EventArgs e)
         {
             atualizarContatos();
@@ -293,7 +206,7 @@ namespace MSIF
                 {
                     ContatoResumo contatoResumo = new ContatoResumo(usuarioController.GetUsuarioObj(contato.Contato).Apelido, idLogado);
 
-                    if(haNovasMensagens(contato.Contato))
+                    if (haNovasMensagens(contato.Contato))
                     {
                         contatoResumo.BackColor = Color.LightGreen;
                     }
@@ -310,11 +223,32 @@ namespace MSIF
 
             List<Recado> recados = recadoController.GetRecadosObjsParaLogado(idLogado);
 
-            if(recados != null)
+            if (recados != null)
             {
-                foreach(Recado recado in recados)
+                foreach (Recado recado in recados)
                 {
-                   if(recado.Remetente == RemetenteId && recado.Status == 0)
+                    if (recado.Remetente == RemetenteId && recado.Status == 0)
+                    {
+                        haNovasMensagens = true;
+                        return haNovasMensagens;
+                    }
+                }
+            }
+
+            return haNovasMensagens;
+        }
+
+        public Boolean haNovasMensagensParaLogado()
+        {
+            Boolean haNovasMensagens = false;
+
+            List<Recado> recados = recadoController.GetRecadosObjsParaLogado(idLogado);
+
+            if (recados != null)
+            {
+                foreach (Recado recado in recados)
+                {
+                    if (recado.Destinatario == idLogado && recado.Status == 0)
                     {
                         haNovasMensagens = true;
                         return haNovasMensagens;
@@ -359,6 +293,11 @@ namespace MSIF
             {
                 atualizarContatos();
             }
+        }
+
+        private void timerContatos_Tick(object sender, EventArgs e)
+        {
+            atualizarContatos();
         }
     }
 }

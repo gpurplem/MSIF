@@ -63,11 +63,6 @@ namespace MSIF
             }
         }
 
-        private void frmTelaLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnRecuperarSenha_Click(object sender, EventArgs e)
         {
             frmRecuperarSenha frm = new frmRecuperarSenha();
