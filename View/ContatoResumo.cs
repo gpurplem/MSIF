@@ -68,7 +68,7 @@ namespace MSIF
                 frmChat frm = new frmChat(idLogado, idUsuario);
 
                 RecadoController rc = new RecadoController();
-                rc.MarcarRecadosLidos(idUsuario, idLogado);
+                //rc.MarcarRecadosLidos(idUsuario, idLogado);
                 frm.ShowDialog();
             }
             else

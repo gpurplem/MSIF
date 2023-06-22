@@ -32,8 +32,6 @@
             txtMsg = new TextBox();
             btnEnviar = new Button();
             flpMensagem = new FlowLayoutPanel();
-            btnLimparChat = new Button();
-            btnChatExcluirContato = new Button();
             timerMensagens = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
@@ -65,25 +63,6 @@
             flpMensagem.WrapContents = false;
             flpMensagem.Paint += flpMensagem_Paint;
             // 
-            // btnLimparChat
-            // 
-            btnLimparChat.Location = new Point(11, 446);
-            btnLimparChat.Name = "btnLimparChat";
-            btnLimparChat.Size = new Size(112, 34);
-            btnLimparChat.TabIndex = 4;
-            btnLimparChat.Text = "Limpar chat";
-            btnLimparChat.UseVisualStyleBackColor = true;
-            btnLimparChat.Click += button1_Click;
-            // 
-            // btnChatExcluirContato
-            // 
-            btnChatExcluirContato.Location = new Point(129, 446);
-            btnChatExcluirContato.Name = "btnChatExcluirContato";
-            btnChatExcluirContato.Size = new Size(166, 34);
-            btnChatExcluirContato.TabIndex = 5;
-            btnChatExcluirContato.Text = "Excluir contato";
-            btnChatExcluirContato.UseVisualStyleBackColor = true;
-            // 
             // timerMensagens
             // 
             timerMensagens.Enabled = true;
@@ -95,8 +74,6 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 492);
-            Controls.Add(btnChatExcluirContato);
-            Controls.Add(btnLimparChat);
             Controls.Add(flpMensagem);
             Controls.Add(btnEnviar);
             Controls.Add(txtMsg);
@@ -110,8 +87,6 @@
         private TextBox txtMsg;
         private Button btnEnviar;
         private FlowLayoutPanel flpMensagem;
-        private Button btnLimparChat;
-        private Button btnChatExcluirContato;
         private System.Windows.Forms.Timer timerMensagens;
     }
 }

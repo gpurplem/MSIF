@@ -62,13 +62,20 @@ namespace MSIF.Controller
 
         public void MarcarRecadosLidos(int idRemetente, int idDestinatario)
         {
-            List<Recado> ls = Context.Recado.Where(r =>(r.Remetente.Equals(idRemetente) && r.Destinatario.Equals(idDestinatario))).ToList();
+            List<Recado> ls = Context.Recado.Where(r =>(r.Remetente.Equals(idDestinatario) && r.Destinatario.Equals(idRemetente))).ToList();
 
             foreach (Recado r in ls)
             {
                 r.Status = 1;
                 Context.SaveChanges();
             }
+        }
+
+        public int GetNumeroMensagens(int idLogado)
+        {
+            List<Recado> ls = Context.Recado.Where(r => (r.Destinatario.Equals(idLogado))).ToList();
+
+            return ls.Count;
         }
     }
 }

@@ -23,6 +23,8 @@ namespace MSIF
         private SolicitacaoController solicitacaoController;
         private ContatosController contatosController;
         private RecadoController recadoController;
+        int qtdInicialSolicitacoes;
+        int qtdInicialContatos;
 
         public frmTelaMenuPrincipal(int IdLogado)
         {
@@ -34,6 +36,8 @@ namespace MSIF
             contatosController = new ContatosController();
             usuarioLogado = usuarioController.GetUsuarioObj(this.idLogado);
             recadoController = new RecadoController();
+            qtdInicialSolicitacoes = solicitacaoController.GetNumeroSolicitacoes(IdLogado);
+            qtdInicialContatos = contatosController.GetNumeroContatos(IdLogado);
 
             atualizarCampos(idLogado);
             atualizarSolicitacoes();
@@ -321,10 +325,40 @@ namespace MSIF
             return haNovasMensagens;
         }
 
+        private Boolean verificaNovasSolicitacoes()
+        {
+            if (qtdInicialSolicitacoes != solicitacaoController.GetNumeroSolicitacoes(idLogado))
+            {
+                qtdInicialSolicitacoes = solicitacaoController.GetNumeroSolicitacoes(idLogado);
+                return true;
+            }
+
+            return false;
+        }
+
+        private Boolean verificaNovosContatos()
+        {
+            if (qtdInicialContatos != contatosController.GetNumeroContatos(idLogado))
+            {
+                qtdInicialContatos = contatosController.GetNumeroContatos(idLogado);
+                return true;
+            }
+
+            return false;
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
-            atualizarSolicitacoes();
-            atualizarContatos();
+            if (verificaNovasSolicitacoes())
+            {
+                atualizarSolicitacoes();
+
+            }
+
+            if (verificaNovosContatos())
+            {
+                atualizarContatos();
+            }
         }
     }
 }

@@ -17,29 +17,35 @@ namespace MSIF
     {
         int idLogado;
         int idDestinatario;
+        int qtdInicialMensagens;
+        UsuarioController usuarioController;
+        RecadoController recadoController;
 
         public frmChat(int idLogado, int idDestinatario)
         {
             InitializeComponent();
             this.idLogado = idLogado;
             this.idDestinatario = idDestinatario;
+            this.usuarioController = new UsuarioController();
+            this.recadoController = new RecadoController();
+
+            this.qtdInicialMensagens = recadoController.GetNumeroMensagens(idLogado);
 
             CarregarMensagens();
         }
 
         private void CarregarMensagens()
         {
-            this.flpMensagem.Controls.Clear();
+            recadoController.MarcarRecadosLidos(idLogado, idDestinatario);
 
-            UsuarioController uc = new UsuarioController();
-            RecadoController rc = new RecadoController();
-            List<Recado> ls = rc.GetRecadosObjs(idLogado, idDestinatario);
+            this.flpMensagem.Controls.Clear();
+            List<Recado> ls = recadoController.GetRecadosObjs(idLogado, idDestinatario);
 
             if (ls != null)
             {
                 foreach (Recado recado in ls)
                 {
-                    String nomeRemetenteAtual = uc.GetUsuarioObj(recado.Remetente).Nome;
+                    String nomeRemetenteAtual = usuarioController.GetUsuarioObj(recado.Remetente).Nome;
 
                     Mensagem mensagem = new Mensagem(recado.Dataenvio, nomeRemetenteAtual, recado.Texto);
 
@@ -82,9 +88,24 @@ namespace MSIF
 
         }
 
+        private Boolean verificaNovasMensagens()
+        {
+            if (qtdInicialMensagens != recadoController.GetNumeroMensagens(idLogado))
+            {
+                //CarregarMensagens();
+                qtdInicialMensagens = recadoController.GetNumeroMensagens(idLogado);
+                return true;
+            }
+
+            return false;
+        }
+
         private void timerMensagens_Tick(object sender, EventArgs e)
         {
-            CarregarMensagens();
+            if (verificaNovasMensagens())
+            {
+                CarregarMensagens();
+            }
         }
     }
 }

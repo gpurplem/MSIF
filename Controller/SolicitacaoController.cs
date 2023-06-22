@@ -43,5 +43,12 @@ namespace MSIF.Controller
             return quantidade != 0;
         }
 
+        public int GetNumeroSolicitacoes(int idLogado)
+        {
+            List<Solicitacao> ls = Context.Solicitacao.Where(r => (r.Destinatario.Equals(idLogado))).ToList();
+
+            return ls.Count;
+        }
+
     }
 }

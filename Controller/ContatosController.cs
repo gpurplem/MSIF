@@ -53,5 +53,12 @@ namespace MSIF.Controller
             }
         }
 
+        public int GetNumeroContatos(int idLogado)
+        {
+            int quantidade = Context.Contatos.Where(r => r.Logado.Equals(idLogado)).Count();
+
+            return quantidade;
+        }
+
     }
 }
