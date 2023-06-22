@@ -18,15 +18,26 @@ namespace MSIF
         private int idLogado;
         private Usuario usuarioLogado;
         private UsuarioController usuarioController;
-        Usuario usuarioPesquisado;
+        private Usuario usuarioPesquisado;
+        private SolicitacaoController solicitacaoController;
+        private ContatosController contatosController;
         public frmTelaMenuPrincipal(int IdLogado)
         {
             this.idLogado = IdLogado;
             InitializeComponent();
 
             usuarioController = new UsuarioController();
+            solicitacaoController = new SolicitacaoController();
+            contatosController = new ContatosController();
             usuarioLogado = usuarioController.GetUsuarioObj(this.idLogado);
 
+            atualizarCampos(idLogado);
+            atualizarSolicitacoes();
+            atualizarContatos();
+        }
+
+        public void atualizarCampos(int IdLogado)
+        {
             txtApelidoMeuPerfil.Text = usuarioLogado.Apelido;
             txtEmailMeuPerfil.Text = usuarioLogado.Email;
             lblNomeUsuarioMeuPerfil.Text = usuarioLogado.Nome;
@@ -177,6 +188,7 @@ namespace MSIF
                 }
             }
 
+            atualizarCampos(idLogado);
         }
 
         private void btnSelecionarImagemMeuPerfil_Click(object sender, EventArgs e)
@@ -217,27 +229,28 @@ namespace MSIF
             }
         }
 
-        private void btnAtualizarSolicitacoes_Click(object sender, EventArgs e)
+        public void btnAtualizarSolicitacoes_Click(object sender, EventArgs e)
         {
             this.flpSolicitacoes.Controls.Clear();
 
-            UsuarioController uc = new UsuarioController();
+            atualizarSolicitacoes();
+        }
 
-            SolicitacaoController sc = new SolicitacaoController();
-            List<Solicitacao> ls = sc.GetSolicitacoesObjs(idLogado);
+        public void atualizarSolicitacoes()
+        {
+            List<Solicitacao> ls = solicitacaoController.GetSolicitacoesObjs(idLogado);
 
-            if(ls != null)
+            if (ls != null)
             {
                 foreach (Solicitacao solicitacao in ls)
                 {
                     int idRemetente = solicitacao.Remetente;
 
-                    ContatoResumo contatoResumo = new ContatoResumo(uc.GetUsuarioObj(idRemetente).Apelido, idLogado);
+                    ContatoResumo contatoResumo = new ContatoResumo(usuarioController.GetUsuarioObj(idRemetente).Apelido, idLogado);
                     contatoResumo.Show();
                     flpSolicitacoes.Controls.Add(contatoResumo);
                 }
-            }           
-
+            }
         }
 
         private void flpSolicitacoes_Paint(object sender, PaintEventArgs e)
@@ -253,18 +266,19 @@ namespace MSIF
         private void btnContatosAtualizar_Click(object sender, EventArgs e)
         {
             this.flpContatos.Controls.Clear();
+            atualizarContatos();
+        }
 
-            UsuarioController uc = new UsuarioController();
-            ContatosController cc = new ContatosController();
-
-            List<Contatos> ls = cc.GetContatosObjs(idLogado);
+        public void atualizarContatos()
+        {
+            List<Contatos> ls = contatosController.GetContatosObjs(idLogado);
 
             if (ls != null)
             {
 
                 foreach (Contatos contato in ls)
                 {
-                    ContatoResumo contatoResumo = new ContatoResumo(uc.GetUsuarioObj(contato.Contato).Apelido, idLogado);
+                    ContatoResumo contatoResumo = new ContatoResumo(usuarioController.GetUsuarioObj(contato.Contato).Apelido, idLogado);
                     contatoResumo.Show();
                     flpContatos.Controls.Add(contatoResumo);
                 }

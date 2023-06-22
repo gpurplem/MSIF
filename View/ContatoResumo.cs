@@ -59,6 +59,7 @@ namespace MSIF
             if (Parent.Name == "flpSolicitacoes")
             {
                 frmAceitarRecurasSolicitacao frm = new frmAceitarRecurasSolicitacao(idUsuario, idLogado);
+
                 frm.ShowDialog();
             }
             if (Parent.Name == "flpContatos")
@@ -70,6 +71,8 @@ namespace MSIF
             {
 
             }
+
         }
+
     }
 }

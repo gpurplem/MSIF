@@ -43,7 +43,6 @@ namespace MSIF.View
         {
             SolicitacaoController sc = new SolicitacaoController();
             sc.DeleteSolicitacao(idUsuarioAdd, idLogado);
-
             this.Close();
         }
 
@@ -61,8 +60,8 @@ namespace MSIF.View
 
             SolicitacaoController sc = new SolicitacaoController();
             sc.DeleteSolicitacao(idUsuarioAdd, idLogado);
-
             this.Close();
         }
+
     }
 }
