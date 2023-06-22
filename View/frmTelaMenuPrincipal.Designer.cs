@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             tabControlMenuPrincipal = new TabControl();
             tabPage1 = new TabPage();
             btnContatosAtualizar = new Button();
@@ -56,6 +57,7 @@
             lblEmailMeuPerfil = new Label();
             lblApelidoMeuPerfil = new Label();
             ofdMeuPerfil = new OpenFileDialog();
+            timer1 = new System.Windows.Forms.Timer(components);
             tabControlMenuPrincipal.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage3.SuspendLayout();
@@ -97,6 +99,7 @@
             btnContatosAtualizar.TabIndex = 4;
             btnContatosAtualizar.Text = "Atualizar";
             btnContatosAtualizar.UseVisualStyleBackColor = true;
+            btnContatosAtualizar.Visible = false;
             btnContatosAtualizar.Click += btnContatosAtualizar_Click;
             // 
             // flpContatos
@@ -129,6 +132,7 @@
             btnAtualizarSolicitacoes.TabIndex = 3;
             btnAtualizarSolicitacoes.Text = "Atualizar";
             btnAtualizarSolicitacoes.UseVisualStyleBackColor = true;
+            btnAtualizarSolicitacoes.Visible = false;
             btnAtualizarSolicitacoes.Click += btnAtualizarSolicitacoes_Click;
             // 
             // flpSolicitacoes
@@ -345,6 +349,12 @@
             // 
             ofdMeuPerfil.FileName = "openFileDialog1";
             // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
+            // 
             // frmTelaMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -395,5 +405,6 @@
         private OpenFileDialog ofdMeuPerfil;
         private Button btnAtualizarSolicitacoes;
         private Button btnContatosAtualizar;
+        private System.Windows.Forms.Timer timer1;
     }
 }

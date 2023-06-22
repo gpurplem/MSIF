@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             txtMsg = new TextBox();
             btnEnviar = new Button();
             flpMensagem = new FlowLayoutPanel();
             btnLimparChat = new Button();
             btnChatExcluirContato = new Button();
+            timerMensagens = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // txtMsg
@@ -82,6 +84,12 @@
             btnChatExcluirContato.Text = "Excluir contato";
             btnChatExcluirContato.UseVisualStyleBackColor = true;
             // 
+            // timerMensagens
+            // 
+            timerMensagens.Enabled = true;
+            timerMensagens.Interval = 1000;
+            timerMensagens.Tick += timerMensagens_Tick;
+            // 
             // frmChat
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -104,5 +112,6 @@
         private FlowLayoutPanel flpMensagem;
         private Button btnLimparChat;
         private Button btnChatExcluirContato;
+        private System.Windows.Forms.Timer timerMensagens;
     }
 }

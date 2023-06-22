@@ -51,6 +51,7 @@
             lblMensagemCorpo.Size = new Size(100, 25);
             lblMensagemCorpo.TabIndex = 1;
             lblMensagemCorpo.Text = "mensagem";
+            lblMensagemCorpo.Click += lblMensagemCorpo_Click;
             // 
             // lblDataMsg
             // 

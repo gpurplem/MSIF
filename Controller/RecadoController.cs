@@ -45,5 +45,30 @@ namespace MSIF.Controller
                 return null;
             }
         }
+
+        public List<Recado> GetRecadosObjsParaLogado(int idLogado)
+        {
+            List<Recado> ls = Context.Recado.Where(r =>(r.Destinatario.Equals(idLogado))).ToList();
+
+            if (ls.Count != 0)
+            {
+                return ls;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public void MarcarRecadosLidos(int idRemetente, int idDestinatario)
+        {
+            List<Recado> ls = Context.Recado.Where(r =>(r.Remetente.Equals(idRemetente) && r.Destinatario.Equals(idDestinatario))).ToList();
+
+            foreach (Recado r in ls)
+            {
+                r.Status = 1;
+                Context.SaveChanges();
+            }
+        }
     }
 }

@@ -18,6 +18,7 @@ namespace MSIF
         Usuario usuario;
         int idLogado;
         int idUsuario;
+
         public ContatoResumo(String apelido, int logado)
         {
             InitializeComponent();
@@ -62,9 +63,12 @@ namespace MSIF
 
                 frm.ShowDialog();
             }
-            if (Parent.Name == "flpContatos")
+            else if (Parent.Name == "flpContatos")
             {
                 frmChat frm = new frmChat(idLogado, idUsuario);
+
+                RecadoController rc = new RecadoController();
+                rc.MarcarRecadosLidos(idUsuario, idLogado);
                 frm.ShowDialog();
             }
             else

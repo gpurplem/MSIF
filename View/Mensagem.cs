@@ -29,5 +29,10 @@ namespace MSIF
         {
 
         }
+
+        private void lblMensagemCorpo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

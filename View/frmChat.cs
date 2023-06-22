@@ -43,6 +43,11 @@ namespace MSIF
 
                     Mensagem mensagem = new Mensagem(recado.Dataenvio, nomeRemetenteAtual, recado.Texto);
 
+                    if (recado.Status == 0)
+                    {
+                        mensagem.BackColor = Color.LightCoral;
+                    }
+
                     mensagem.Show();
                     flpMensagem.Controls.Add(mensagem);
                 }
@@ -75,6 +80,11 @@ namespace MSIF
         private void flpMensagem_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void timerMensagens_Tick(object sender, EventArgs e)
+        {
+            CarregarMensagens();
         }
     }
 }

@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//using Timer = System.Windows.Forms.Timer;
 
 namespace MSIF
 {
@@ -21,6 +22,8 @@ namespace MSIF
         private Usuario usuarioPesquisado;
         private SolicitacaoController solicitacaoController;
         private ContatosController contatosController;
+        private RecadoController recadoController;
+
         public frmTelaMenuPrincipal(int IdLogado)
         {
             this.idLogado = IdLogado;
@@ -30,10 +33,16 @@ namespace MSIF
             solicitacaoController = new SolicitacaoController();
             contatosController = new ContatosController();
             usuarioLogado = usuarioController.GetUsuarioObj(this.idLogado);
+            recadoController = new RecadoController();
 
             atualizarCampos(idLogado);
             atualizarSolicitacoes();
             atualizarContatos();
+
+            //TimerSolicitacoes = new Timer();
+            //TimerSolicitacoes.Interval = (5 * 1000); // 5 secs
+            //TimerSolicitacoes.Tick += new EventHandler(atualizarSolicitacoes);
+            //TimerSolicitacoes.Start();
         }
 
         public void atualizarCampos(int IdLogado)
@@ -231,13 +240,13 @@ namespace MSIF
 
         public void btnAtualizarSolicitacoes_Click(object sender, EventArgs e)
         {
-            this.flpSolicitacoes.Controls.Clear();
-
             atualizarSolicitacoes();
         }
 
         public void atualizarSolicitacoes()
         {
+            this.flpSolicitacoes.Controls.Clear();
+
             List<Solicitacao> ls = solicitacaoController.GetSolicitacoesObjs(idLogado);
 
             if (ls != null)
@@ -265,24 +274,57 @@ namespace MSIF
 
         private void btnContatosAtualizar_Click(object sender, EventArgs e)
         {
-            this.flpContatos.Controls.Clear();
             atualizarContatos();
         }
 
         public void atualizarContatos()
         {
+            this.flpContatos.Controls.Clear();
+
             List<Contatos> ls = contatosController.GetContatosObjs(idLogado);
 
             if (ls != null)
             {
-
                 foreach (Contatos contato in ls)
                 {
                     ContatoResumo contatoResumo = new ContatoResumo(usuarioController.GetUsuarioObj(contato.Contato).Apelido, idLogado);
+
+                    if(haNovasMensagens(contato.Contato))
+                    {
+                        contatoResumo.BackColor = Color.LightGreen;
+                    }
+
                     contatoResumo.Show();
                     flpContatos.Controls.Add(contatoResumo);
                 }
             }
+        }
+
+        public Boolean haNovasMensagens(int RemetenteId)
+        {
+            Boolean haNovasMensagens = false;
+
+            List<Recado> recados = recadoController.GetRecadosObjsParaLogado(idLogado);
+
+            if(recados != null)
+            {
+                foreach(Recado recado in recados)
+                {
+                   if(recado.Remetente == RemetenteId && recado.Status == 0)
+                    {
+                        haNovasMensagens = true;
+                        return haNovasMensagens;
+                    }
+                }
+            }
+
+            return haNovasMensagens;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            atualizarSolicitacoes();
+            atualizarContatos();
         }
     }
 }
