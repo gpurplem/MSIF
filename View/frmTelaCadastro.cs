@@ -62,8 +62,9 @@ namespace MSIF
             //Arquivo
             if (nomeArquivo.Equals("Selecionar imagem"))
             {
-                nomeArquivo = "6";
-            } else
+                nomeArquivo = "-1";
+            }
+            else
             {
                 byte[] imageData = File.ReadAllBytes(fileDialog.FileName);
                 ImagemController ic = new ImagemController();

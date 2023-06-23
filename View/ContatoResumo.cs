@@ -23,12 +23,16 @@ namespace MSIF
             idUsuario = usuario.UsuarioId;
 
             String idImagem = usuario.Url;
-            ImagemController ic = new ImagemController();
-            Imagem img = ic.GetImagemObj(int.Parse(idImagem));
-            using (MemoryStream stream = new MemoryStream(img.ImageData))
+
+            if (!idImagem.Equals("-1"))
             {
-                pbFotoUsuario.Image = Image.FromStream(stream);
-            }
+                ImagemController ic = new ImagemController();
+                Imagem img = ic.GetImagemObj(int.Parse(idImagem));
+                using (MemoryStream stream = new MemoryStream(img.ImageData))
+                {
+                    pbFotoUsuario.Image = Image.FromStream(stream);
+                }
+            }            
         }
 
         private void ContatoResumo_MouseClick(object sender, MouseEventArgs e)
