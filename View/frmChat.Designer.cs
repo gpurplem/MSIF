@@ -37,14 +37,14 @@
             // 
             // txtMsg
             // 
-            txtMsg.Location = new Point(11, 404);
+            txtMsg.Location = new Point(12, 421);
             txtMsg.Name = "txtMsg";
             txtMsg.Size = new Size(659, 31);
             txtMsg.TabIndex = 1;
             // 
             // btnEnviar
             // 
-            btnEnviar.Location = new Point(676, 404);
+            btnEnviar.Location = new Point(677, 418);
             btnEnviar.Name = "btnEnviar";
             btnEnviar.Size = new Size(112, 34);
             btnEnviar.TabIndex = 2;
@@ -70,13 +70,22 @@
             // 
             // frmChat
             // 
+            AcceptButton = btnEnviar;
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
+            AutoSize = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = Color.LightSteelBlue;
             ClientSize = new Size(800, 492);
             Controls.Add(flpMensagem);
             Controls.Add(btnEnviar);
             Controls.Add(txtMsg);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            MaximizeBox = false;
             Name = "frmChat";
+            ShowIcon = false;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MSIF - Chat";
             ResumeLayout(false);
             PerformLayout();

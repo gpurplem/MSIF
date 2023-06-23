@@ -41,11 +41,15 @@ namespace MSIF
             lblNomeUsuarioMeuPerfil.Text = usuarioLogado.Nome;
 
             String idImagem = usuarioLogado.Url;
-            ImagemController ic = new ImagemController();
-            Imagem img = ic.GetImagemObj(int.Parse(idImagem));
-            using (MemoryStream stream = new MemoryStream(img.ImageData))
+
+            if (!idImagem.Equals("-1"))
             {
-                picFotoMeuPerfil.Image = Image.FromStream(stream);
+                ImagemController ic = new ImagemController();
+                Imagem img = ic.GetImagemObj(int.Parse(idImagem));
+                using (MemoryStream stream = new MemoryStream(img.ImageData))
+                {
+                    picFotoMeuPerfil.Image = Image.FromStream(stream);
+                }
             }
         }
 
@@ -161,7 +165,17 @@ namespace MSIF
                 if (!haContatoRepetido && !haSolicitacaoRepetida)
                 {
                     sc.Salvar(solicitacao);
+                    lblRetornoSolicitacao.Text = "Solicitação enviada com sucesso!";
+                    lblRetornoSolicitacao.ForeColor = Color.Green;
+                } else
+                {
+                    lblRetornoSolicitacao.Text = "Solicitação já enviada!";
+                    lblRetornoSolicitacao.ForeColor = Color.Red;
                 }
+            } else
+            {
+                lblRetornoSolicitacao.Text = "Usuário não encontrado!";
+                lblRetornoSolicitacao.ForeColor = Color.Red;
             }
         }
 
@@ -298,6 +312,7 @@ namespace MSIF
         private void timerContatos_Tick(object sender, EventArgs e)
         {
             atualizarContatos();
+            lblRetornoSolicitacao.Text = "";
         }
     }
 }

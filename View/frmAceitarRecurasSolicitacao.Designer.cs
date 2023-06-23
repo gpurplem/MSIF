@@ -34,9 +34,9 @@
             // 
             // btnSolicitacaoAceitar
             // 
-            btnSolicitacaoAceitar.Location = new Point(12, 42);
+            btnSolicitacaoAceitar.Location = new Point(239, 19);
             btnSolicitacaoAceitar.Name = "btnSolicitacaoAceitar";
-            btnSolicitacaoAceitar.Size = new Size(112, 34);
+            btnSolicitacaoAceitar.Size = new Size(121, 57);
             btnSolicitacaoAceitar.TabIndex = 0;
             btnSolicitacaoAceitar.Text = "Aceitar";
             btnSolicitacaoAceitar.UseVisualStyleBackColor = true;
@@ -44,9 +44,9 @@
             // 
             // btnSolicitacaoRejeitar
             // 
-            btnSolicitacaoRejeitar.Location = new Point(130, 42);
+            btnSolicitacaoRejeitar.Location = new Point(25, 19);
             btnSolicitacaoRejeitar.Name = "btnSolicitacaoRejeitar";
-            btnSolicitacaoRejeitar.Size = new Size(112, 34);
+            btnSolicitacaoRejeitar.Size = new Size(130, 57);
             btnSolicitacaoRejeitar.TabIndex = 1;
             btnSolicitacaoRejeitar.Text = "Rejeitar";
             btnSolicitacaoRejeitar.UseVisualStyleBackColor = true;
@@ -54,12 +54,20 @@
             // 
             // frmAceitarRecurasSolicitacao
             // 
+            AcceptButton = btnSolicitacaoAceitar;
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
+            AutoSize = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = Color.LightSteelBlue;
             ClientSize = new Size(393, 98);
             Controls.Add(btnSolicitacaoRejeitar);
             Controls.Add(btnSolicitacaoAceitar);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            MaximizeBox = false;
             Name = "frmAceitarRecurasSolicitacao";
+            ShowIcon = false;
             Text = "MSIF - Aceitar/Recusar";
             ResumeLayout(false);
         }

@@ -35,6 +35,7 @@
             // 
             // pbFotoUsuario
             // 
+            pbFotoUsuario.Image = Properties.Resources.SEM_FOTO;
             pbFotoUsuario.Location = new Point(3, 3);
             pbFotoUsuario.Name = "pbFotoUsuario";
             pbFotoUsuario.Size = new Size(82, 74);
@@ -45,7 +46,7 @@
             // lblNomeUsuario
             // 
             lblNomeUsuario.AutoSize = true;
-            lblNomeUsuario.Location = new Point(91, 24);
+            lblNomeUsuario.Location = new Point(91, 27);
             lblNomeUsuario.Name = "lblNomeUsuario";
             lblNomeUsuario.Size = new Size(121, 25);
             lblNomeUsuario.TabIndex = 1;
@@ -55,6 +56,8 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
+            BackColor = Color.LightSteelBlue;
             BorderStyle = BorderStyle.FixedSingle;
             Controls.Add(lblNomeUsuario);
             Controls.Add(pbFotoUsuario);
