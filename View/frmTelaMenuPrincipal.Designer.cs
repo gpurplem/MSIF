@@ -31,10 +31,8 @@
             components = new System.ComponentModel.Container();
             tabControlMenuPrincipal = new TabControl();
             tabPage1 = new TabPage();
-            btnContatosAtualizar = new Button();
             flpContatos = new FlowLayoutPanel();
             tabPage3 = new TabPage();
-            btnAtualizarSolicitacoes = new Button();
             flpSolicitacoes = new FlowLayoutPanel();
             tabPage4 = new TabPage();
             btnPesquisarAdicionar = new Button();
@@ -81,7 +79,7 @@
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(btnContatosAtualizar);
+            tabPage1.BackColor = Color.LightSteelBlue;
             tabPage1.Controls.Add(flpContatos);
             tabPage1.Location = new Point(4, 34);
             tabPage1.Name = "tabPage1";
@@ -89,18 +87,6 @@
             tabPage1.Size = new Size(467, 632);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Contatos";
-            tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // btnContatosAtualizar
-            // 
-            btnContatosAtualizar.Location = new Point(178, 578);
-            btnContatosAtualizar.Name = "btnContatosAtualizar";
-            btnContatosAtualizar.Size = new Size(112, 34);
-            btnContatosAtualizar.TabIndex = 4;
-            btnContatosAtualizar.Text = "Atualizar";
-            btnContatosAtualizar.UseVisualStyleBackColor = true;
-            btnContatosAtualizar.Visible = false;
-            btnContatosAtualizar.Click += btnContatosAtualizar_Click;
             // 
             // flpContatos
             // 
@@ -108,13 +94,13 @@
             flpContatos.FlowDirection = FlowDirection.TopDown;
             flpContatos.Location = new Point(3, 6);
             flpContatos.Name = "flpContatos";
-            flpContatos.Size = new Size(458, 566);
+            flpContatos.Size = new Size(458, 620);
             flpContatos.TabIndex = 0;
             flpContatos.WrapContents = false;
             // 
             // tabPage3
             // 
-            tabPage3.Controls.Add(btnAtualizarSolicitacoes);
+            tabPage3.BackColor = Color.LightSteelBlue;
             tabPage3.Controls.Add(flpSolicitacoes);
             tabPage3.Location = new Point(4, 34);
             tabPage3.Name = "tabPage3";
@@ -122,18 +108,6 @@
             tabPage3.Size = new Size(467, 632);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Solicitações";
-            tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // btnAtualizarSolicitacoes
-            // 
-            btnAtualizarSolicitacoes.Location = new Point(179, 572);
-            btnAtualizarSolicitacoes.Name = "btnAtualizarSolicitacoes";
-            btnAtualizarSolicitacoes.Size = new Size(112, 34);
-            btnAtualizarSolicitacoes.TabIndex = 3;
-            btnAtualizarSolicitacoes.Text = "Atualizar";
-            btnAtualizarSolicitacoes.UseVisualStyleBackColor = true;
-            btnAtualizarSolicitacoes.Visible = false;
-            btnAtualizarSolicitacoes.Click += btnAtualizarSolicitacoes_Click;
             // 
             // flpSolicitacoes
             // 
@@ -141,12 +115,13 @@
             flpSolicitacoes.FlowDirection = FlowDirection.TopDown;
             flpSolicitacoes.Location = new Point(7, 6);
             flpSolicitacoes.Name = "flpSolicitacoes";
-            flpSolicitacoes.Size = new Size(451, 560);
+            flpSolicitacoes.Size = new Size(451, 620);
             flpSolicitacoes.TabIndex = 0;
             flpSolicitacoes.WrapContents = false;
             // 
             // tabPage4
             // 
+            tabPage4.BackColor = Color.LightSteelBlue;
             tabPage4.Controls.Add(btnPesquisarAdicionar);
             tabPage4.Controls.Add(flpApelidoPesquisa);
             tabPage4.Controls.Add(btnApelidoPesquisa);
@@ -157,7 +132,6 @@
             tabPage4.Size = new Size(467, 632);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Pesquisar";
-            tabPage4.UseVisualStyleBackColor = true;
             // 
             // btnPesquisarAdicionar
             // 
@@ -181,7 +155,7 @@
             // 
             // btnApelidoPesquisa
             // 
-            btnApelidoPesquisa.Location = new Point(346, 11);
+            btnApelidoPesquisa.Location = new Point(346, 9);
             btnApelidoPesquisa.Name = "btnApelidoPesquisa";
             btnApelidoPesquisa.Size = new Size(112, 34);
             btnApelidoPesquisa.TabIndex = 5;
@@ -199,7 +173,7 @@
             // lblApelidoPesquisa
             // 
             lblApelidoPesquisa.AutoSize = true;
-            lblApelidoPesquisa.Location = new Point(7, 17);
+            lblApelidoPesquisa.Location = new Point(7, 16);
             lblApelidoPesquisa.Name = "lblApelidoPesquisa";
             lblApelidoPesquisa.Size = new Size(74, 25);
             lblApelidoPesquisa.TabIndex = 3;
@@ -207,6 +181,7 @@
             // 
             // tabPage5
             // 
+            tabPage5.BackColor = Color.LightSteelBlue;
             tabPage5.Controls.Add(lblNomeUsuarioMeuPerfil);
             tabPage5.Controls.Add(picFotoMeuPerfil);
             tabPage5.Controls.Add(btnSelecionarImagemMeuPerfil);
@@ -225,12 +200,11 @@
             tabPage5.Size = new Size(467, 632);
             tabPage5.TabIndex = 4;
             tabPage5.Text = "Meu perfil";
-            tabPage5.UseVisualStyleBackColor = true;
             // 
             // lblNomeUsuarioMeuPerfil
             // 
             lblNomeUsuarioMeuPerfil.AutoSize = true;
-            lblNomeUsuarioMeuPerfil.Location = new Point(136, 225);
+            lblNomeUsuarioMeuPerfil.Location = new Point(165, 278);
             lblNomeUsuarioMeuPerfil.Name = "lblNomeUsuarioMeuPerfil";
             lblNomeUsuarioMeuPerfil.Size = new Size(121, 25);
             lblNomeUsuarioMeuPerfil.TabIndex = 35;
@@ -238,7 +212,8 @@
             // 
             // picFotoMeuPerfil
             // 
-            picFotoMeuPerfil.Location = new Point(136, 23);
+            picFotoMeuPerfil.Image = Properties.Resources.SEM_FOTO;
+            picFotoMeuPerfil.Location = new Point(134, 58);
             picFotoMeuPerfil.Name = "picFotoMeuPerfil";
             picFotoMeuPerfil.Size = new Size(212, 185);
             picFotoMeuPerfil.SizeMode = PictureBoxSizeMode.Zoom;
@@ -247,7 +222,7 @@
             // 
             // btnSelecionarImagemMeuPerfil
             // 
-            btnSelecionarImagemMeuPerfil.Location = new Point(185, 422);
+            btnSelecionarImagemMeuPerfil.Location = new Point(214, 475);
             btnSelecionarImagemMeuPerfil.Name = "btnSelecionarImagemMeuPerfil";
             btnSelecionarImagemMeuPerfil.Size = new Size(179, 34);
             btnSelecionarImagemMeuPerfil.TabIndex = 33;
@@ -257,9 +232,9 @@
             // 
             // btnSalvarMeuPerfil
             // 
-            btnSalvarMeuPerfil.Location = new Point(61, 464);
+            btnSalvarMeuPerfil.Location = new Point(147, 546);
             btnSalvarMeuPerfil.Name = "btnSalvarMeuPerfil";
-            btnSalvarMeuPerfil.Size = new Size(163, 34);
+            btnSalvarMeuPerfil.Size = new Size(179, 34);
             btnSalvarMeuPerfil.TabIndex = 32;
             btnSalvarMeuPerfil.Text = "Salvar mudanças";
             btnSalvarMeuPerfil.UseVisualStyleBackColor = true;
@@ -267,14 +242,14 @@
             // 
             // txtSenha2MeuPerfil
             // 
-            txtSenha2MeuPerfil.Location = new Point(185, 382);
+            txtSenha2MeuPerfil.Location = new Point(214, 435);
             txtSenha2MeuPerfil.Name = "txtSenha2MeuPerfil";
             txtSenha2MeuPerfil.Size = new Size(179, 31);
             txtSenha2MeuPerfil.TabIndex = 31;
             // 
             // txtSenha1MeuPerfil
             // 
-            txtSenha1MeuPerfil.Location = new Point(185, 345);
+            txtSenha1MeuPerfil.Location = new Point(214, 398);
             txtSenha1MeuPerfil.Name = "txtSenha1MeuPerfil";
             txtSenha1MeuPerfil.Size = new Size(179, 31);
             txtSenha1MeuPerfil.TabIndex = 30;
@@ -282,14 +257,14 @@
             // txtEmailMeuPerfil
             // 
             txtEmailMeuPerfil.Enabled = false;
-            txtEmailMeuPerfil.Location = new Point(185, 308);
+            txtEmailMeuPerfil.Location = new Point(214, 361);
             txtEmailMeuPerfil.Name = "txtEmailMeuPerfil";
             txtEmailMeuPerfil.Size = new Size(179, 31);
             txtEmailMeuPerfil.TabIndex = 29;
             // 
             // txtApelidoMeuPerfil
             // 
-            txtApelidoMeuPerfil.Location = new Point(185, 271);
+            txtApelidoMeuPerfil.Location = new Point(214, 324);
             txtApelidoMeuPerfil.Name = "txtApelidoMeuPerfil";
             txtApelidoMeuPerfil.Size = new Size(179, 31);
             txtApelidoMeuPerfil.TabIndex = 28;
@@ -297,7 +272,7 @@
             // lblImagemPerfilMeuPerfil
             // 
             lblImagemPerfilMeuPerfil.AutoSize = true;
-            lblImagemPerfilMeuPerfil.Location = new Point(56, 422);
+            lblImagemPerfilMeuPerfil.Location = new Point(85, 475);
             lblImagemPerfilMeuPerfil.Name = "lblImagemPerfilMeuPerfil";
             lblImagemPerfilMeuPerfil.Size = new Size(123, 25);
             lblImagemPerfilMeuPerfil.TabIndex = 27;
@@ -306,7 +281,7 @@
             // lblSenha2MeuPerfil
             // 
             lblSenha2MeuPerfil.AutoSize = true;
-            lblSenha2MeuPerfil.Location = new Point(61, 388);
+            lblSenha2MeuPerfil.Location = new Point(90, 441);
             lblSenha2MeuPerfil.Name = "lblSenha2MeuPerfil";
             lblSenha2MeuPerfil.Size = new Size(118, 25);
             lblSenha2MeuPerfil.TabIndex = 26;
@@ -315,7 +290,7 @@
             // lblSenha1MeuPerfil
             // 
             lblSenha1MeuPerfil.AutoSize = true;
-            lblSenha1MeuPerfil.Location = new Point(74, 345);
+            lblSenha1MeuPerfil.Location = new Point(103, 398);
             lblSenha1MeuPerfil.Name = "lblSenha1MeuPerfil";
             lblSenha1MeuPerfil.Size = new Size(105, 25);
             lblSenha1MeuPerfil.TabIndex = 25;
@@ -324,7 +299,7 @@
             // lblEmailMeuPerfil
             // 
             lblEmailMeuPerfil.AutoSize = true;
-            lblEmailMeuPerfil.Location = new Point(118, 308);
+            lblEmailMeuPerfil.Location = new Point(147, 361);
             lblEmailMeuPerfil.Name = "lblEmailMeuPerfil";
             lblEmailMeuPerfil.Size = new Size(61, 25);
             lblEmailMeuPerfil.TabIndex = 24;
@@ -333,7 +308,7 @@
             // lblApelidoMeuPerfil
             // 
             lblApelidoMeuPerfil.AutoSize = true;
-            lblApelidoMeuPerfil.Location = new Point(105, 271);
+            lblApelidoMeuPerfil.Location = new Point(134, 324);
             lblApelidoMeuPerfil.Name = "lblApelidoMeuPerfil";
             lblApelidoMeuPerfil.Size = new Size(74, 25);
             lblApelidoMeuPerfil.TabIndex = 23;
@@ -361,6 +336,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(475, 673);
             Controls.Add(tabControlMenuPrincipal);
+            MaximizeBox = false;
             Name = "frmTelaMenuPrincipal";
             Text = "MenuPrincipal";
             tabControlMenuPrincipal.ResumeLayout(false);
@@ -402,8 +378,6 @@
         private FlowLayoutPanel flpContatos;
         private Button btnPesquisarAdicionar;
         private OpenFileDialog ofdMeuPerfil;
-        private Button btnAtualizarSolicitacoes;
-        private Button btnContatosAtualizar;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timerContatos;
     }

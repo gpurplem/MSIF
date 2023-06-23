@@ -66,6 +66,8 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
+            BackColor = Color.LightSteelBlue;
             BorderStyle = BorderStyle.FixedSingle;
             Controls.Add(lblDataMsg);
             Controls.Add(lblMensagemCorpo);
