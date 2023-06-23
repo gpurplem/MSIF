@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MSIF.ContatoResumo">
+    <Position X="0.5" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQAQAAAAACAEAAAAAACAAAACAAAAAAQAAAAACAAAACA=</HashCode>
+      <FileName>View\ContatoResumo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.frmChat">
+    <Position X="3.25" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIAQAAIACCAAAAAAAACAQAADEAEAQgBIAAAAAAACAAA=</HashCode>
+      <FileName>View\frmChat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.frmTelaCadastro">
+    <Position X="13.25" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAACKCCAACAIACAIIACEAAAAIAAAAQAAAEAEAA=</HashCode>
+      <FileName>View\frmTelaCadastro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.frmTelaLogin">
+    <Position X="0.5" Y="9.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gAAgAEAABCICAACAACCAIAACABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\frmTelaLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.frmTelaMenuPrincipal">
+    <Position X="15.75" Y="2.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AgQwZIAhIiKOSQAIACKAsCEiEAcAtAQKAgAkIAABUAA=</HashCode>
+      <FileName>View\frmTelaMenuPrincipal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Mensagem">
+    <Position X="2.75" Y="10.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAQEAAACAAAAAKAACAAAACAAAAAAAAAAAQAAAAAEA=</HashCode>
+      <FileName>View\Mensagem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Program">
+    <Position X="5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Properties.Resources">
+    <Position X="9.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAEAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Controller.ContatosController">
+    <Position X="0.5" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAACAAAAAAAAIAgAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Controller\ContatosController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Controller.DefaultController">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\DefaultController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Controller.ImagemController">
+    <Position X="3" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAFAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\ImagemController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Controller.RecadoController">
+    <Position X="5.25" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAEAAAAACAAAAAYAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Controller\RecadoController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Controller.SolicitacaoController">
+    <Position X="8.25" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAACAAAAAAAAAgAAIAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Controller\SolicitacaoController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Controller.UsuarioController">
+    <Position X="11" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAIgAABgAAAAACAAAAAAAAIAAAAEBAAAAAAAAIAAA=</HashCode>
+      <FileName>Controller\UsuarioController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Data.DataContext">
+    <Position X="11.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAIAAAAQAAAABAAAAAEAAAIAAA=</HashCode>
+      <FileName>Data\DataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Migrations.jjj">
+    <Position X="11.25" Y="8" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20230530002903_jjj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Migrations.two">
+    <Position X="6.75" Y="11.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20230530010836_two.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Migrations.Img">
+    <Position X="9" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20230605223249_Img.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Migrations.DataContextModelSnapshot">
+    <Position X="0.5" Y="8.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Migrations\DataContextModelSnapshot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Model.Contatos">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAABAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Contatos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Model.Imagem">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Imagem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Model.Recado">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABQEAAAAAAAAAAAAAAIAAQAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Model\Recado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Model.Solicitacao">
+    <Position X="8.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAEAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Model\Solicitacao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.Model.Usuario">
+    <Position X="5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEACAAAAAAAAAIAAAAAKAAAAAACAAAAAEAAAA=</HashCode>
+      <FileName>Model\Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.View.frmAceitarRecurasSolicitacao">
+    <Position X="10" Y="9.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IAIQAAAAACAAQBAAAACAAAACAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\frmAceitarRecurasSolicitacao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSIF.View.frmRecuperarSenha">
+    <Position X="7.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAIAAAAEEAAAAAAAAA=</HashCode>
+      <FileName>View\frmRecuperarSenha.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
