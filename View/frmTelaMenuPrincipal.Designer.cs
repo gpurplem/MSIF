@@ -57,6 +57,7 @@
             ofdMeuPerfil = new OpenFileDialog();
             timer1 = new System.Windows.Forms.Timer(components);
             timerContatos = new System.Windows.Forms.Timer(components);
+            lblRetornoSolicitacao = new Label();
             tabControlMenuPrincipal.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage3.SuspendLayout();
@@ -122,6 +123,7 @@
             // tabPage4
             // 
             tabPage4.BackColor = Color.LightSteelBlue;
+            tabPage4.Controls.Add(lblRetornoSolicitacao);
             tabPage4.Controls.Add(btnPesquisarAdicionar);
             tabPage4.Controls.Add(flpApelidoPesquisa);
             tabPage4.Controls.Add(btnApelidoPesquisa);
@@ -330,6 +332,14 @@
             timerContatos.Interval = 7000;
             timerContatos.Tick += timerContatos_Tick;
             // 
+            // lblRetornoSolicitacao
+            // 
+            lblRetornoSolicitacao.AutoSize = true;
+            lblRetornoSolicitacao.Location = new Point(7, 589);
+            lblRetornoSolicitacao.Name = "lblRetornoSolicitacao";
+            lblRetornoSolicitacao.Size = new Size(0, 25);
+            lblRetornoSolicitacao.TabIndex = 8;
+            // 
             // frmTelaMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -380,5 +390,6 @@
         private OpenFileDialog ofdMeuPerfil;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timerContatos;
+        private Label lblRetornoSolicitacao;
     }
 }
