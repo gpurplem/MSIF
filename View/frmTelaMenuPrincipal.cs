@@ -41,12 +41,16 @@ namespace MSIF
             lblNomeUsuarioMeuPerfil.Text = usuarioLogado.Nome;
 
             String idImagem = usuarioLogado.Url;
-            ImagemController ic = new ImagemController();
-            Imagem img = ic.GetImagemObj(int.Parse(idImagem));
-            using (MemoryStream stream = new MemoryStream(img.ImageData))
+
+            if(!idImagem.Equals("-1"))
             {
-                picFotoMeuPerfil.Image = Image.FromStream(stream);
-            }
+                ImagemController ic = new ImagemController();
+                Imagem img = ic.GetImagemObj(int.Parse(idImagem));
+                using (MemoryStream stream = new MemoryStream(img.ImageData))
+                {
+                    picFotoMeuPerfil.Image = Image.FromStream(stream);
+                }
+            }            
         }
 
         private void btnApelidoPesquisa_Click(object sender, EventArgs e)

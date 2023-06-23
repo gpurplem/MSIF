@@ -62,7 +62,7 @@ namespace MSIF
             //Arquivo
             if (nomeArquivo.Equals("Selecionar imagem"))
             {
-                nomeArquivo = "6";
+                nomeArquivo = "-1";
             }
             else
             {
